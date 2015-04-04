@@ -1,2 +1,53 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
-    
+
+@-webkit-keyframes BackgroundAnimation {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes BackgroundAnimation {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-o-keyframes BackgroundAnimation {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes BackgroundAnimation { 
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+
+
+header{
+    background: linear-gradient(123deg, #13d09f, #1373d0);
+    background-size: 400% 400%;
+
+    -webkit-animation: BackgroundAnimation 30s ease infinite;
+    -moz-animation: BackgroundAnimation 30s ease infinite;
+    -o-animation: BackgroundAnimation 30s ease infinite;
+    animation: BackgroundAnimation 30s ease infinite;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .container-fluid{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        h1{
+            font-size: 70px;
+            padding-bottom: 20px;
+        }
+        h2{
+            font-size: 40px;
+            padding-bottom: 10px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
