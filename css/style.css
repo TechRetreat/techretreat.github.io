@@ -5007,7 +5007,8 @@ header {
       font-size: 20px;
       height: 40px;
       width: 350px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      color: black; }
     header #mc_embed_signup input.button {
       display: inline-block;
       font-size: 20px;
