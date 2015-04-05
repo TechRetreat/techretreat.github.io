@@ -34,10 +34,7 @@
     z-index: 0;
 
 }
-.logo{
-    height:75%;
-    width:auto;
-}
+
 h1{
     font-size: 70px;
     margin-bottom: 20px;
@@ -70,10 +67,14 @@ header{
     display: flex;
     align-items: center;
     color:azure;
+    padding-bottom: 20px;
     .container-fluid{
         margin: 0;
         width: 100%;
         text-align: center;
+        .logo.img-responsive{
+            margin: auto;
+        }
     }
     #mc_embed_signup{
         clear:left;

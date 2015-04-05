@@ -4955,10 +4955,6 @@ button.close {
   opacity: 0.5;
   z-index: 0; }
 
-.logo {
-  height: 75%;
-  width: auto; }
-
 h1 {
   font-size: 70px;
   margin-bottom: 20px;
@@ -4986,11 +4982,14 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  color: azure; }
+  color: azure;
+  padding-bottom: 20px; }
   header .container-fluid {
     margin: 0;
     width: 100%;
     text-align: center; }
+    header .container-fluid .logo.img-responsive {
+      margin: auto; }
   header #mc_embed_signup {
     clear: left;
     text-align: center;
