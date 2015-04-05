@@ -32,40 +32,33 @@
     font-weight: 700;
 }
 
-
+// General CSS rules
+h1, h2, h3, p, a{
+    @include ArimoBold;
+}
 
 h1{
     font-size: 70px;
     margin-bottom: 20px;
-    margin-top: 25px;
-    color: black;
-    @include ArimoBold;
+    margin-top: 20px;
 }
 h2{
     font-size: 40px;
     margin-bottom: 20px;
-    color: black;
-    @include ArimoBold;
+}
+h3{
+    font-size: 28px;
 }
 p{
     font-size: 20px;
-    color: black;
-    @include ArimoBold;
 }
-
-.love{
-    margin-top: 30px;
-    @include ArimoBold;
-}
-.about{
-    background: url('../waterloo-campus.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-attachment: fixed;
-    h1, h2, p{
-        color:azure;
+a{
+    &:hover{
+        text-decoration: none;
     }
 }
+
+
 header{
     background: linear-gradient(123deg, #13d09f, #8a58d9);
     background-size: 400% 400%;
@@ -77,18 +70,19 @@ header{
     z-index: -1;
 
     min-height: 100vh;
-    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: flex;
     align-items: center;
-    color:azure;
-    padding-bottom: 30px;
+    color: azure;
+    @include ArimoBold;
 
     .container-fluid{
         margin: 0;
         width: 100%;
         text-align: center;
         .logo.img-responsive{
-            width:300px;
+            width: 300px;
             height: auto;
             margin: auto;
         }
@@ -99,19 +93,20 @@ header{
         top:0;
         left:0;
         right:0;
-        height:100vh;
-        background: transparent url('../overlay.png');
+        min-height:100vh;
+        background-image: url('../overlay.png');
         opacity: 0.5;
         z-index: 0;
 
     }
+
+    //Signup form
     #mc_embed_signup{
-        clear:left;
-        text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         form{
             text-align: center;
             padding: 0;
@@ -119,9 +114,10 @@ header{
                 display:inline-block;
                 margin:0;
                 border-radius:4px;
+                border: none;
                 font-size: 20px;
                 height: 40px;
-                width: 350px;
+                width: 400px;
                 margin-bottom: 10px;
                 color: black;
                 @include ArimoBold;
@@ -130,19 +126,46 @@ header{
             input.button{
                 display: inline-block;
                 font-size: 20px;
-                min-width: 110px;
+                min-width: 100px;
                 height: 40px;
                 @include ArimoBold;
             }
         }
-
     }
-    a{
-        color: black;
+    a.fa{
+        color: azure;
+
         &:hover{
-            color: lighten(black, 35%);
+            color: black;
             text-decoration: none;
         }
+        &:focus{
+            color: azure;
+            text-decoration: none;
+        }
+
+    }
+}
+
+section.about{
+    background: url('../waterloo-campus.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h1, h2, p{
+        color:azure;
+    }
+    a{
+        color: #00c0ff;
+        &:hover{
+            color: #63d9ff;
+        }
+    }
+    .love{
+        margin-top: 30px;
+        @include ArimoBold;
     }
 }
 
@@ -151,9 +174,9 @@ header{
     h1{
         font-size: 35px;
         margin-bottom: 10px;
-        margin-top: 12px;
+        margin-top: 10px;
     }
-    h2{
+    h2, h3{
         font-size: 18px;
         margin-bottom: 10px;
     }
@@ -164,11 +187,10 @@ header{
         #mc_embed_signup form{
             input.email{
                 font-size: 15px;
-                width: 200px;
+                width: 100%;
             }
             input.button{
                 text-align: center;
-                display: block;
                 font-size: 15px;
                 min-width: 70px;
                 margin: auto;
@@ -176,5 +198,7 @@ header{
             }
         }
     }
-
+    section.about{
+        background-size: auto;
+    }
 }

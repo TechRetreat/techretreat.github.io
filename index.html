@@ -9,6 +9,7 @@
         <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
         <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href = "css/style.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -32,13 +33,13 @@
                             </div>
                         </form>
                     </div>
+                    <a href = "#about" class = "fa fa-chevron-circle-down fa-4x"></a>
 
-                    <!--End mc_embed_signup-->
 
                 </div>
             </div>
         </header>
-        <section class="about">
+        <section class="about" id = "about">
             <div class ="container-fluid">
                 <div class = "col-lg-8 col-lg-offset-2">
                     <h1>Waterloo Tech Retreat</h1>
@@ -51,8 +52,28 @@
                 </div>
             </div>
         </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/velocity.min.js"></script>
         <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script>
+            //Source: http://codepen.io/markhillard/details/iqnlh
+            $(document).ready(function() {
+                // bind click event to all internal page anchors
+                $("a[href*=#]").bind("click", function(e) {
+                    // prevent default action and bubbling
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // set target to anchor's "href" attribute
+                    var target = $(this).attr("href");
+                    // scroll to each target
+                    $(target).velocity("scroll", {
+                        duration: 500,
+                        offset: -40,
+                        easing: "ease-in-out"
+                    });
+                });
+            });
+        </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
