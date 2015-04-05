@@ -57,7 +57,15 @@ p{
     margin-top: 30px;
     @include ArimoBold;
 }
-
+.about{
+    background: url('../waterloo-campus.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    h1, h2, p{
+        color:azure;
+    }
+}
 header{
     background: linear-gradient(123deg, #13d09f, #8a58d9);
     background-size: 400% 400%;
