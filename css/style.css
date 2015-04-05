@@ -5042,6 +5042,7 @@ section.about {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
+  background-position: center bottom;
   padding-top: 30px;
   padding-bottom: 30px; }
   section.about h1, section.about h2, section.about p {
