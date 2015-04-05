@@ -57,16 +57,18 @@ a{
         text-decoration: none;
     }
 }
-
-
-header{
-    background: linear-gradient(123deg, #13d09f, #8a58d9);
-    background-size: 400% 400%;
-
+/*
     -webkit-animation: BackgroundAnimation 20s ease infinite;
     -moz-animation: BackgroundAnimation 20s ease infinite;
     -o-animation: BackgroundAnimation 20s ease infinite;
     animation: BackgroundAnimation 20s ease infinite;
+background-size: 400% 400%;
+*/
+
+header{
+    background: linear-gradient(123deg, #13d09f, #8a58d9);
+
+    transform: translateZ(0);
     z-index: -1;
 
     min-height: 100vh;
@@ -77,12 +79,20 @@ header{
     color: azure;
     @include ArimoBold;
 
+    .read-more{
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        text-align: center;
+    }
+
     .container-fluid{
         margin: 0;
         width: 100%;
         text-align: center;
         .logo.img-responsive{
-            width: 300px;
+            width: 250px;
             height: auto;
             margin: auto;
         }

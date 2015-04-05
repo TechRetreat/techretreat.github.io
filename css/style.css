@@ -4965,13 +4965,16 @@ p {
 a:hover {
   text-decoration: none; }
 
+/*
+    -webkit-animation: BackgroundAnimation 20s ease infinite;
+    -moz-animation: BackgroundAnimation 20s ease infinite;
+    -o-animation: BackgroundAnimation 20s ease infinite;
+    animation: BackgroundAnimation 20s ease infinite;
+background-size: 400% 400%;
+*/
 header {
   background: linear-gradient(123deg, #13d09f, #8a58d9);
-  background-size: 400% 400%;
-  -webkit-animation: BackgroundAnimation 20s ease infinite;
-  -moz-animation: BackgroundAnimation 20s ease infinite;
-  -o-animation: BackgroundAnimation 20s ease infinite;
-  animation: BackgroundAnimation 20s ease infinite;
+  transform: translateZ(0);
   z-index: -1;
   min-height: 100vh;
   padding-top: 30px;
@@ -4981,12 +4984,18 @@ header {
   color: azure;
   font-family: Arimo, Arial, sans-serif;
   font-weight: 700; }
+  header .read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center; }
   header .container-fluid {
     margin: 0;
     width: 100%;
     text-align: center; }
     header .container-fluid .logo.img-responsive {
-      width: 300px;
+      width: 250px;
       height: auto;
       margin: auto; }
   header .background-overlay {
