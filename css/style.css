@@ -4966,10 +4966,10 @@ a:hover {
   text-decoration: none; }
 
 /*
-    -webkit-animation: BackgroundAnimation 20s ease infinite;
-    -moz-animation: BackgroundAnimation 20s ease infinite;
-    -o-animation: BackgroundAnimation 20s ease infinite;
-    animation: BackgroundAnimation 20s ease infinite;
+-webkit-animation: BackgroundAnimation 20s ease infinite;
+-moz-animation: BackgroundAnimation 20s ease infinite;
+-o-animation: BackgroundAnimation 20s ease infinite;
+animation: BackgroundAnimation 20s ease infinite;
 background-size: 400% 400%;
 */
 header {
@@ -4983,7 +4983,10 @@ header {
   align-items: center;
   color: azure;
   font-family: Arimo, Arial, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
   header .read-more {
     position: absolute;
     bottom: 0;
