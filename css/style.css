@@ -4943,6 +4943,14 @@ button.close {
   100% {
     background-position: 0% 77%; } }
 
+html {
+  position: relative;
+  min-height: 100%;
+  width: 100%; }
+
+body {
+  margin-bottom: 180px; }
+
 h1, h2, h3, p, a {
   font-family: Arimo, Arial, sans-serif;
   font-weight: 700; }
@@ -4962,8 +4970,13 @@ h3 {
 p {
   font-size: 20px; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  color: #00c0ff; }
+  a:hover {
+    color: #63d9ff;
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
 
 /*
 -webkit-animation: BackgroundAnimation 20s ease infinite;
@@ -5043,11 +5056,7 @@ header {
     color: azure;
     padding-bottom: 20px; }
     header a.fa:hover {
-      color: black;
-      text-decoration: none; }
-    header a.fa:focus {
-      color: azure;
-      text-decoration: none; }
+      color: black; }
 
 section.about {
   background: url('../waterloo-campus.jpg');
@@ -5059,14 +5068,34 @@ section.about {
   padding-bottom: 30px; }
   section.about h1, section.about h2, section.about p {
     color: azure; }
-  section.about a {
-    color: #00c0ff; }
-    section.about a:hover {
-      color: #63d9ff; }
-  section.about .love {
-    margin-top: 30px;
+
+section.faq {
+  background: linear-gradient(123deg, #13bad0, #f361ff);
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  section.faq p.question {
     font-family: Arimo, Arial, sans-serif;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 5px; }
+  section.faq p.answer {
+    font-family: Arimo, Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 180px;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white; }
+  footer .love {
+    margin-top: 20px;
+    font-family: Arimo, Arial, sans-serif;
+    font-weight: 400; }
 
 @media (max-width: 800px) {
   h1 {

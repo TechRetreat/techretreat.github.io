@@ -32,7 +32,19 @@
     font-weight: 700;
 }
 
+$footerHeight: 180px;
+
 // General CSS rules
+html {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+body{
+    margin-bottom: $footerHeight;
+}
+
 h1, h2, h3, p, a{
     @include ArimoBold;
 }
@@ -53,10 +65,18 @@ p{
     font-size: 20px;
 }
 a{
+    color: #00c0ff;
     &:hover{
+        color: #63d9ff;
+        text-decoration: none;
+    }
+    &:focus{
         text-decoration: none;
     }
 }
+
+
+
 /*
 -webkit-animation: BackgroundAnimation 20s ease infinite;
 -moz-animation: BackgroundAnimation 20s ease infinite;
@@ -148,13 +168,7 @@ header{
         padding-bottom: 20px;
         &:hover{
             color: black;
-            text-decoration: none;
         }
-        &:focus{
-            color: azure;
-            text-decoration: none;
-        }
-
     }
 }
 
@@ -169,18 +183,39 @@ section.about{
     h1, h2, p{
         color:azure;
     }
-    a{
-        color: #00c0ff;
-        &:hover{
-            color: #63d9ff;
-        }
-    }
-    .love{
-        margin-top: 30px;
+
+}
+
+section.faq{
+    background: linear-gradient(123deg, #13bad0, #f361ff);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    p.question{
         @include ArimoBold;
+        margin-bottom: 5px;
+    }
+    p.answer{
+        @include Arimo;
+        margin-bottom: 20px;
     }
 }
 
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: $footerHeight;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+
+    .love{
+        margin-top: 20px;
+        @include Arimo;
+    }
+}
 // For mobile devices.
 @media (max-width: 800px){
     h1{
