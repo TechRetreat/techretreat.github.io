@@ -75,8 +75,6 @@ a{
     }
 }
 
-
-
 /*
 -webkit-animation: BackgroundAnimation 20s ease infinite;
 -moz-animation: BackgroundAnimation 20s ease infinite;
@@ -130,6 +128,7 @@ header{
         z-index: 0;
 
     }
+
 
     //Signup form
     #mc_embed_signup{
@@ -190,6 +189,9 @@ section.faq{
     background: linear-gradient(123deg, #13bad0, #f361ff);
     padding-top: 30px;
     padding-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
     p.question{
         @include ArimoBold;
         margin-bottom: 5px;
@@ -198,6 +200,11 @@ section.faq{
         @include Arimo;
         margin-bottom: 20px;
     }
+    .white_tint{
+        background-color: rgba(255,255,255,0.3);
+        border-radius: 10px;
+    }
+
 }
 
 footer{
