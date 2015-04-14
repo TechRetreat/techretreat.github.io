@@ -5020,7 +5020,7 @@ header {
     left: 0;
     right: 0;
     min-height: 100vh;
-    background-image: url('../overlay.png');
+    background-image: url('../img/overlay.png');
     opacity: 0.5;
     z-index: 0; }
   header #mc_embed_signup {
@@ -5059,7 +5059,7 @@ header {
       color: black; }
 
 section.about {
-  background: url('../waterloo-campus.jpg');
+  background: url('../img/waterloo-campus.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
@@ -5121,6 +5121,8 @@ footer {
     font-size: 15px;
     min-width: 70px;
     margin: auto; }
+  header a.fa {
+    padding-bottom: 0; }
   section.about {
     background-size: auto; } }
 
