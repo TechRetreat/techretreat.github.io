@@ -32,11 +32,17 @@ module.exports = function(grunt) {
             }
         },
 
-    'serve': {
-        'path': '/'
-    }
+        'serve': {
+            'path': '/',
+            options: {
+                port: 9000,
+                'all': {
+                    tasks: ['sass','cssmin'], // required
+                    output: '/index.html'
+                }
+            }
+        },
 
-    }
     });
 
     //grunt.loadNpmTasks('grunt-contrib-jshint');
