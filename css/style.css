@@ -5706,9 +5706,7 @@ animation: BackgroundAnimation 20s ease infinite;
 background-size: 400% 400%;
 */
 header {
-  background: linear-gradient(123deg, #13d09f, #8a58d9);
   transform: translateZ(0);
-  z-index: -1;
   min-height: 100vh;
   padding-bottom: 30px;
   display: flex;
@@ -5740,9 +5738,17 @@ header {
     left: 0;
     right: 0;
     min-height: 100vh;
+    background: linear-gradient(123deg, #13d09f, #8a58d9);
+    z-index: -2; }
+  header .background-overlay-dots {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
     background-image: url("../img/overlay.png");
-    opacity: 0.5;
-    z-index: 0; }
+    z-index: -1; }
   header #mc_embed_signup {
     display: flex;
     align-items: center;
