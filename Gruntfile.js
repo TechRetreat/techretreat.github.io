@@ -30,13 +30,20 @@ module.exports = function(grunt) {
                     'css/style.min.css': 'css/style.css'
                 }
             }
-        }
+        },
+
+    'serve': {
+        'path': '/'
+    }
+
+    }
     });
 
     //grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-serve');
     grunt.registerTask('default', ['sass','cssmin']);
 
 };
