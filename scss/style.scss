@@ -32,7 +32,7 @@
     font-weight: 700;
 }
 
-$footerHeight: 180px;
+$footerHeight: 200px;
 
 // General CSS rules
 html {
@@ -45,7 +45,7 @@ body{
     margin-bottom: $footerHeight;
 }
 
-h1, h2, h3, p, a{
+h1, h2, h3, h4, p, a{
     @include ArimoBold;
 }
 
@@ -60,6 +60,9 @@ h2{
 }
 h3{
     font-size: 28px;
+}
+h4{
+    font-size: 20px;
 }
 p{
     font-size: 20px;
@@ -83,7 +86,13 @@ animation: BackgroundAnimation 20s ease infinite;
 background-size: 400% 400%;
 */
 
+.fa{
+    display: inline-block;
+}
 
+.venue{
+    color:azure;
+}
 
 header{
     transform: translateZ(0);
@@ -238,7 +247,7 @@ footer{
     }
     h2, h3{
         font-size: 18px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     p{
         font-size: 14px;

@@ -4949,9 +4949,9 @@ html {
   width: 100%; }
 
 body {
-  margin-bottom: 180px; }
+  margin-bottom: 200px; }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
   font-family: Arimo, Arial, sans-serif;
   font-weight: 700; }
 
@@ -4966,6 +4966,9 @@ h2 {
 
 h3 {
   font-size: 28px; }
+
+h4 {
+  font-size: 20px; }
 
 p {
   font-size: 20px; }
@@ -4985,6 +4988,12 @@ a {
 animation: BackgroundAnimation 20s ease infinite;
 background-size: 400% 400%;
 */
+.fa {
+  display: inline-block; }
+
+.venue {
+  color: azure; }
+
 header {
   transform: translateZ(0);
   min-height: 100vh;
@@ -5100,7 +5109,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 180px;
+  height: 200px;
   background-color: black;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -5118,7 +5127,7 @@ footer {
     margin-top: 10px; }
   h2, h3 {
     font-size: 18px;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
   p {
     font-size: 14px; }
   header #mc_embed_signup form input.email {
