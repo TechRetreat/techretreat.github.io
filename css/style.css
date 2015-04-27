@@ -5081,6 +5081,7 @@ section.faq {
   padding-top: 30px;
   padding-bottom: 30px;
   -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
   section.faq p.question {
@@ -5131,6 +5132,10 @@ footer {
   header a.fa {
     padding-bottom: 0; }
   section.about {
-    background-size: auto; } }
+    background-size: auto; }
+  section.faq {
+    background-color: rgba(255, 255, 255, 0.3); }
+    section.faq .white_tint {
+      background-color: transparent; } }
 
 /*# sourceMappingURL=style.css.map */

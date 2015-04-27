@@ -195,6 +195,7 @@ section.faq{
     padding-top: 30px;
     padding-bottom: 30px;
     -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
     p.question{
@@ -262,6 +263,12 @@ footer{
     }
     section.about{
         background-size: auto;
+    }
+    section.faq{
+        background-color: rgba(255,255,255,0.3);
+        .white_tint{
+            background-color: transparent;
+        }
     }
 }
 
