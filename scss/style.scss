@@ -96,6 +96,7 @@ background-size: 400% 400%;
 
 header{
     transform: translateZ(0);
+    min-height: 100%;
     min-height: 100vh;
     padding-bottom: 30px;
     display: flex;
@@ -129,7 +130,9 @@ header{
         top:0;
         left:0;
         right:0;
+        min-height: 100%;
         min-height:100vh;
+        background: #13d09f;
         background: linear-gradient(123deg, #13d09f, #8a58d9);
         z-index: -2;
     }
@@ -139,6 +142,7 @@ header{
         top:0;
         left:0;
         right:0;
+        min-height: 100%;
         min-height:100vh;
             background-image: url('../img/overlay.png');
         z-index: -1;
@@ -200,6 +204,7 @@ section.about{
 }
 
 section.faq{
+    background: #13bad0;
     background: linear-gradient(123deg, #13bad0, #f361ff);
     padding-top: 30px;
     padding-bottom: 30px;
