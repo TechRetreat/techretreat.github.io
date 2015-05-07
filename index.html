@@ -26,13 +26,17 @@
         <link rel="manifest" href="/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">    
-	</head>
+        <meta name="theme-color" content="#ffffff">
+    </head>
     <body>
-
         <header>
             <div class="background-overlay-dots"></div>
             <div class="background-overlay"></div>
+            <ul id="scene" class="background-overlay-dots">
+                <li class="layer rocket" data-depth="0.20"><img src="/img/techretreat-shaded-rocket.png"></li>
+                <li class="layer moon" data-depth="0.20"><img src="/img/techretreat-shaded-moon.png"></li>
+                <li class="layer earth" data-depth="0.05"><img src="/img/techretreat-shaded-bkg.png"></li>
+            </ul>
             <div class ="container-fluid">
                 <div class="row">
                     <div class = "col-lg-8 col-lg-offset-2">
@@ -55,7 +59,7 @@
                     </div>
                 </div>
             </div>
-          <div class = "read-more">
+            <div class = "read-more">
                 <a href = "#about" class = "fa fa-chevron-circle-down fa-4x"></a>
             </div>
 
@@ -78,10 +82,10 @@
                     <h1>FAQs</h1>
                     <p class = "question">Q: Who can come?</p>
                     <p class = "answer">A: High school students, or if you just recently graduated from high school and would like to attend before university! </p>
-                    
+
                     <p class = "question">Q: I have no/little experience with technology - can I still come?</p>
                     <p class = "answer">A: Tech Retreat focuses on having fun, learning, and collaborating. We're actually designing it so that students with no experience will have an awesome time! If you get stuck on something, don't worry about it - there will be mentors that can help.</p>
-                    
+
                     <p class = "question">Q: As a high school student, why do I want to come to this retreat?</p>
                     <p class = "answer">A: You’ll also be spending time with awesome people who you’ll get to meet and work with. It's also a great chance to learn a bit about university life. That's all we can say for now though, so leave your email with us and stay posted!</p>
 
@@ -100,8 +104,9 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/velocity.min.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
         <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script>
             //Source: http://codepen.io/markhillard/details/iqnlh
@@ -121,6 +126,8 @@
                     });
                 });
             });
+            var $scene = $('#scene').parallax();
+            $scene.parallax('enable');
         </script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

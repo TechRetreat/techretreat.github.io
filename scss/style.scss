@@ -93,7 +93,33 @@ background-size: 400% 400%;
 .venue{
     color:azure;
 }
-
+.earth{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    text-align: center;
+    z-index:-1;
+}
+.rocket{
+    position: absolute;
+    height: 100%; width: 100%;
+    right: 2em;
+    top:1em;
+}
+.rocket img{
+    width: 300px;
+    height: auto;
+}
+.moon{
+    position:absolute;
+    left: 2em;
+    top:1em;
+}
+.moon img{
+    width: 200px;
+    height: auto;
+}
 header{
     transform: translateZ(0);
     min-height: 100%;
@@ -136,8 +162,12 @@ header{
         right:0;
         min-height: 100%;
         min-height:100vh;
-        background: #13d09f;
-        background: linear-gradient(123deg, #13d09f, #8a58d9);
+        background-image: url('/img/techretreat-shaded-bkg.jpg');
+        background-color: #2f0057;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: fixed;
+        background-position: center top;
         z-index: -2;
     }
     .background-overlay-dots{
@@ -148,7 +178,7 @@ header{
         right:0;
         min-height: 100%;
         min-height:100vh;
-            background-image: url('../img/overlay.png');
+        background-image: none;
         z-index: -1;
     }
     //Signup form
