@@ -123,13 +123,16 @@ a{
     width: 50%;
     height: auto;
 }
+header, section.container-fluid{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 header{
     overflow-x: hidden;
     overflow-y: hidden;
     transform: translateZ(0);
-    min-height: 100%;
+    height: 100%;
     min-height: 100vh;
-    padding-bottom: 30px;
     position: relative;
     display: -webkit-flex;
     display: flex;
@@ -239,18 +242,14 @@ section.about{
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
-    padding-top: 30px;
-    padding-bottom: 30px;
     h1, h2, h3, p{
         color:azure;
     }
 
 }
 
-section.faq{
+section.faq{ 
     background-color: #b266f2;
-    padding-top: 30px;
-    padding-bottom: 30px;
     h1{
         @include OpenSans;
     }
@@ -261,6 +260,15 @@ section.faq{
     p.answer{
         @include OpenSansLight;
         margin-bottom: 20px;
+    }
+}
+
+section.sponsors-partners{
+    h1{
+        @include OpenSans;
+    }
+    .sponsors, .partners{
+        text-align: center;
     }
 }
 
