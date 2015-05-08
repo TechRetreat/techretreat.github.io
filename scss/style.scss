@@ -227,7 +227,7 @@ header{
         }
     }
     a.fa{
-        color: azure;
+        color: white;
         padding-bottom: 20px;
         &:hover{
             color: black;
@@ -243,13 +243,14 @@ section.about{
     background-attachment: fixed;
     background-position: center bottom;
     h1, h2, h3, p{
-        color:azure;
+        color: white;
     }
 
 }
 
 section.faq{ 
-    background-color: #b266f2;
+    background-color: #A06CD5;
+    color: black;
     h1{
         @include OpenSans;
     }
@@ -277,7 +278,7 @@ footer{
     position: absolute;
     bottom: 0;
     height: $footerHeight;
-    background-color: black;
+    background-color: #2a1447;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;

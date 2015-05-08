@@ -5118,7 +5118,7 @@ header {
         font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400; }
   header a.fa {
-    color: azure;
+    color: white;
     padding-bottom: 20px; }
     header a.fa:hover {
       color: black; }
@@ -5131,10 +5131,11 @@ section.about {
   background-attachment: fixed;
   background-position: center bottom; }
   section.about h1, section.about h2, section.about h3, section.about p {
-    color: azure; }
+    color: white; }
 
 section.faq {
-  background-color: #b266f2; }
+  background-color: #A06CD5;
+  color: black; }
   section.faq h1 {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400; }
@@ -5158,7 +5159,7 @@ footer {
   position: absolute;
   bottom: 0;
   height: 210px;
-  background-color: black;
+  background-color: #2a1447;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
