@@ -4949,20 +4949,23 @@ html {
   width: 100%; }
 
 body {
-  margin-bottom: 200px; }
+  margin-bottom: 210px; }
 
 h1, h2, h3, h4, p, a {
-  font-family: Arimo, Arial, sans-serif;
-  font-weight: 700; }
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400; }
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 h1 {
-  font-size: 70px;
-  margin-bottom: 20px;
-  margin-top: 20px; }
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 70px; }
 
 h2 {
-  font-size: 40px;
-  margin-bottom: 20px; }
+  font-size: 40px; }
 
 h3 {
   font-size: 28px; }
@@ -4971,6 +4974,8 @@ h4 {
   font-size: 20px; }
 
 p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
   font-size: 20px; }
 
 a {
@@ -4981,13 +4986,6 @@ a {
   a:focus {
     text-decoration: none; }
 
-/*
--webkit-animation: BackgroundAnimation 20s ease infinite;
--moz-animation: BackgroundAnimation 20s ease infinite;
--o-animation: BackgroundAnimation 20s ease infinite;
-animation: BackgroundAnimation 20s ease infinite;
-background-size: 400% 400%;
-*/
 .fa {
   display: inline-block; }
 
@@ -5041,8 +5039,8 @@ header {
   -webkit-align-items: center;
   align-items: center;
   color: azure;
-  font-family: Arimo, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
   -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
@@ -5060,7 +5058,7 @@ header {
       width: 250px;
       height: auto;
       margin: auto; }
-  header .background-overlay {
+  header .background {
     width: 100%;
     position: absolute;
     top: 0;
@@ -5071,11 +5069,11 @@ header {
     background-image: url('/img/techretreat-shaded-bkg.jpg');
     background-color: #2f0057;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center top;
     z-index: -2; }
-  header .background-overlay-dots {
+  header .parallax {
     width: 100%;
     position: absolute;
     top: 0;
@@ -5106,16 +5104,16 @@ header {
         width: 400px;
         margin-bottom: 10px;
         color: black;
-        font-family: Arimo, Arial, sans-serif;
-        font-weight: 700;
-        background-color: rgba(255, 255, 255, 0.6); }
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 400;
+        background-color: rgba(255, 255, 255, 0.2); }
       header #mc_embed_signup form input.button {
         display: inline-block;
         font-size: 20px;
         min-width: 100px;
         height: 40px;
-        font-family: Arimo, Arial, sans-serif;
-        font-weight: 700; }
+        font-family: "Open Sans", Arial, sans-serif;
+        font-weight: 400; }
   header a.fa {
     color: azure;
     padding-bottom: 20px; }
@@ -5126,40 +5124,35 @@ section.about {
   background: url('../img/waterloo-campus.png');
   background-color: black;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center bottom;
   padding-top: 30px;
   padding-bottom: 30px; }
-  section.about h1, section.about h2, section.about p {
+  section.about h1, section.about h2, section.about h3, section.about p {
     color: azure; }
 
 section.faq {
-  background: #13bad0;
-  background: linear-gradient(123deg, #13bad0, #f361ff);
+  background-color: #b266f2;
   padding-top: 30px;
-  padding-bottom: 30px;
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
+  padding-bottom: 30px; }
+  section.faq h1 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400; }
   section.faq p.question {
-    font-family: Arimo, Arial, sans-serif;
-    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
     margin-bottom: 5px; }
   section.faq p.answer {
-    font-family: Arimo, Arial, sans-serif;
-    font-weight: 400;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
     margin-bottom: 20px; }
-  section.faq .white_tint {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px; }
 
 footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 200px;
+  height: 210px;
   background-color: black;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -5167,34 +5160,41 @@ footer {
   color: white; }
   footer .love {
     margin-top: 20px;
-    font-family: Arimo, Arial, sans-serif;
-    font-weight: 400; }
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300; }
+
+@media (max-width: 1300px) {
+  header {
+    background-size: 200% 100%; } }
 
 @media (max-width: 800px) {
+  h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px; }
   h1 {
-    font-size: 35px;
-    margin-bottom: 10px;
-    margin-top: 10px; }
-  h2, h3 {
-    font-size: 18px;
-    margin-bottom: 5px; }
+    font-size: 35px; }
+  h2 {
+    font-size: 25px; }
+  h3 {
+    font-size: 18px; }
   p {
     font-size: 14px; }
-  header #mc_embed_signup form input.email {
-    font-size: 15px;
-    width: 100%; }
-  header #mc_embed_signup form input.button {
-    text-align: center;
-    font-size: 15px;
-    min-width: 70px;
-    margin: auto; }
+  header #mc_embed_signup {
+    margin-left: 10%;
+    margin-right: 10%; }
+    header #mc_embed_signup form {
+      width: 100%; }
+      header #mc_embed_signup form input.email {
+        font-size: 15px;
+        width: 100%; }
+      header #mc_embed_signup form input.button {
+        text-align: center;
+        font-size: 15px;
+        min-width: 70px;
+        margin: auto; }
   header a.fa {
     padding-bottom: 0; }
   section.about {
-    background-size: auto; }
-  section.faq {
-    background-color: rgba(255, 255, 255, 0.3); }
-    section.faq .white_tint {
-      background-color: transparent; } }
+    background-size: auto; } }
 
 /*# sourceMappingURL=style.css.map */
