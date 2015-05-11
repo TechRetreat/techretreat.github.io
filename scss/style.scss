@@ -103,8 +103,10 @@ a{
     height: auto;
     position:absolute;
     bottom:0;
-    left:0;
-    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 .rocket{
     position: absolute;
@@ -118,9 +120,10 @@ a{
 .moon{
     position: absolute;
     padding-left:10%;
+    padding-top: 50px;
 }
 .moon img{
-    width: 50%;
+    width: 75%;
     height: auto;
 }
 header, section.container-fluid{
