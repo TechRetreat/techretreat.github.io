@@ -129,6 +129,9 @@ a{
 }
 
 section.sponsors-partners {
+    .sponsors .partners{
+        line-height: 30px;
+    }
     .inline-img{
         display:inline-block;
         max-width: 300px;
@@ -138,6 +141,7 @@ section.sponsors-partners {
         border-width:5px;
         border-style:dashed;
         padding: 25px;
+        white-space: nowrap;
     }
 }
 header, section.container-fluid{
@@ -187,7 +191,9 @@ header{
     #mc-embedded-subscribe{
         background-color: #00c0ff !important;
     }
-
+    #mc-embedded-subscribe:hover{
+        background-color: #26c8fd !important;
+    }
     .container-fluid{
         margin: 0;
         width: 100%;

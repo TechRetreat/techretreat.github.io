@@ -10,7 +10,7 @@
             },
             "linting.collapsed": false,
             "fonts.fontSize": "16px",
-            "brackets-git.gitPath": "git"
+            "brackets-git.gitPath": "/usr/local/bin/git"
         }
     }
 }

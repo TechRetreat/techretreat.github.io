@@ -5031,6 +5031,8 @@ a {
   width: 75%;
   height: auto; }
 
+section.sponsors-partners .sponsors .partners {
+  line-height: 30px; }
 section.sponsors-partners .inline-img {
   display: inline-block;
   max-width: 300px;
@@ -5038,7 +5040,8 @@ section.sponsors-partners .inline-img {
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
-  padding: 25px; }
+  padding: 25px;
+  white-space: nowrap; }
 
 header, section.container-fluid {
   padding-top: 50px;
@@ -5081,6 +5084,8 @@ header {
     text-align: center; }
   header #mc-embedded-subscribe {
     background-color: #00c0ff !important; }
+  header #mc-embedded-subscribe:hover {
+    background-color: #26c8fd !important; }
   header .container-fluid {
     margin: 0;
     width: 100%;
