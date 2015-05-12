@@ -317,6 +317,9 @@ section.about{
     h1, h2, h3, p{
         color: white;
     }
+    p{
+      @include OpenSans;
+    } 
 }
 
 section.faq{
