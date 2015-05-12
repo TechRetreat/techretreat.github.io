@@ -5051,17 +5051,21 @@ header, section.container-fluid {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-section.showcase p.sub {
-  font-size: 14px; }
-section.showcase .img-showcase {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto; }
-section.showcase .img-rocket {
-  height: 400px;
-  width: auto; }
+section.showcase {
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
+  section.showcase p.sub {
+    font-size: 14px; }
+  section.showcase .img-showcase {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto; }
+  section.showcase .img-rocket {
+    height: 400px;
+    width: auto; }
 
 .tagline {
   text-align: center;
