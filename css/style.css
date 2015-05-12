@@ -4965,7 +4965,8 @@ h1 {
   font-size: 70px; }
 
 h2 {
-  font-size: 40px; }
+  font-size: 46px;
+  margin-bottom: 30px; }
 
 h3 {
   font-family: "Open Sans", Arial, sans-serif;
@@ -4981,6 +4982,7 @@ p {
   font-size: 20px; }
 
 a {
+  transition: all 0.3s ease;
   color: #00c0ff; }
   a:hover {
     color: #63d9ff;
@@ -5082,10 +5084,6 @@ header {
     left: 0;
     width: 100%;
     text-align: center; }
-  header #mc-embedded-subscribe {
-    background-color: #00c0ff !important; }
-  header #mc-embedded-subscribe:hover {
-    background-color: #26c8fd !important; }
   header .container-fluid {
     margin: 0;
     width: 100%;
@@ -5134,27 +5132,48 @@ header {
         display: inline-block;
         margin: 0;
         border-radius: 4px;
-        border: none;
-        font-size: 20px;
+        border: 1px solid rgba(255, 255, 255, 0);
+        font-size: 18px;
+        padding: 6px;
         height: 40px;
         width: 400px;
-        margin-bottom: 10px;
-        color: black;
+        max-width: 100%;
+        margin: 20px auto;
+        color: white;
         font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400;
-        background-color: rgba(255, 255, 255, 0.2); }
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease; }
+        header #mc_embed_signup form input.email.placeholder {
+          color: white;
+          opacity: 0.7; }
+        header #mc_embed_signup form input.email:-moz-placeholder {
+          color: white;
+          opacity: 0.7; }
+        header #mc_embed_signup form input.email::-webkit-input-placeholder {
+          color: white;
+          opacity: 0.7; }
+        header #mc_embed_signup form input.email:hover {
+          border: 1px solid rgba(255, 255, 255, 0.4); }
       header #mc_embed_signup form input.button {
         display: inline-block;
         font-size: 20px;
         min-width: 100px;
         height: 40px;
+        transition: all 0.3s ease;
+        background-color: #FFF;
+        color: #2F1447;
         font-family: "Open Sans", Arial, sans-serif;
         font-weight: 400; }
+        header #mc_embed_signup form input.button:hover {
+          background-color: #FFF;
+          opacity: 0.7; }
   header a.fa {
     color: white;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    opacity: 0.6; }
     header a.fa:hover {
-      color: black; }
+      opacity: 0.8; }
 
 section.about {
   background: url('../img/waterloo-campus.png');
@@ -5168,7 +5187,7 @@ section.about {
 
 section.faq {
   background-color: #A06CD5;
-  color: black; }
+  color: white; }
   section.faq h1 {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400; }
@@ -5240,8 +5259,7 @@ footer {
     header #mc_embed_signup form {
       width: 100%; }
       header #mc_embed_signup form input.email {
-        font-size: 15px;
-        width: 100%; }
+        font-size: 15px; }
       header #mc_embed_signup form input.button {
         text-align: center;
         font-size: 15px;
