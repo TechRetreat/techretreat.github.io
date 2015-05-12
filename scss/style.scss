@@ -149,6 +149,8 @@ section.sponsors-partners {
         border-style:dashed;
         padding: 25px;
         white-space: nowrap;
+        line-height: 75px;
+        margin: 5px;
     }
 }
 header, section.container-fluid{
@@ -170,6 +172,10 @@ section.showcase{
         height: 400px;
         width: auto;
     }
+}
+.tagline{
+    text-align: center;
+    padding: 40px 0 0 10px;
 }
 header{
     overflow-x: hidden;
