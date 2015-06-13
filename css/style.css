@@ -5038,7 +5038,7 @@ section.sponsors-partners .sponsors, section.sponsors-partners .partners {
 section.sponsors-partners .inline-img {
   display: inline-block;
   max-height: 150px;
-  max-width: auto; }
+  max-width: 300px; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
