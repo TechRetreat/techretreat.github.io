@@ -5033,12 +5033,12 @@ a {
   width: 75%;
   height: auto; }
 
-section.sponsors-partners .sponsors .partners {
+section.sponsors-partners .sponsors, section.sponsors-partners .partners {
   line-height: 30px; }
 section.sponsors-partners .inline-img {
   display: inline-block;
-  max-width: 300px;
-  max-height: auto; }
+  max-height: 150px;
+  max-width: auto; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;

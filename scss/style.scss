@@ -136,13 +136,13 @@ a{
 }
 
 section.sponsors-partners {
-    .sponsors .partners{
+    .sponsors, .partners{
         line-height: 30px;
     }
     .inline-img{
         display:inline-block;
-        max-width: 300px;
-        max-height: auto;
+        max-height: 150px;
+        max-width: auto;
     }
     .invitation{
         border-width:5px;
