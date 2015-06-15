@@ -324,11 +324,16 @@ section.faq{
     }
     p.question{
         @include OpenSans;
-        margin-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: 1.75em;
+        font-weight: bold;
+
     }
     p.answer{
         @include OpenSansLight;
         margin-bottom: 20px;
+        padding-left:20px;
+        color: #e7e1ed;
     }
 }
 
