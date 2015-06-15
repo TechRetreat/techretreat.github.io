@@ -125,6 +125,18 @@ a{
     width: 50%;
     height: auto;
 }
+// For mobile devices.
+@media (max-width: 800px){
+  .rocket{
+      position: absolute;
+      padding-left:70%;
+      padding-top: 70vh;
+  }
+  .rocket img{
+      width: 75%;
+      height: auto;
+  }
+}
 .moon{
     position: absolute;
     padding-left:10%;
@@ -135,15 +147,28 @@ a{
     height: auto;
 }
 
+@media (max-width: 800px){
+  .moon{
+      position: absolute;
+      padding-left:10%;
+      padding-top: 50px;
+  }
+  .moon img{
+      width: 50%;
+      height: auto;
+  }
+}
+
 section.sponsors-partners {
     .sponsors, .partners{
         line-height: 30px;
     }
     .inline-img{
         display:inline-block;
-        max-height: 150px;
-        max-width: 300px;
+        max-height: 100px;
+        width: auto;
     }
+
     .invitation{
         border-width:5px;
         border-style:dashed;
