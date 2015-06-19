@@ -5058,6 +5058,8 @@ section.sponsors-partners .inline-img {
   max-height: 150px;
   width: auto;
   margin-top: 40px; }
+section.sponsors-partners .rest img {
+  max-height: 110px !important; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
