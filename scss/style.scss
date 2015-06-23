@@ -2,452 +2,501 @@
 
 // General CSS rules and mixins
 @-webkit-keyframes BackgroundAnimation {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
+  0% {
+    background-position: 0% 77%
+  }
+  50% {
+    background-position: 100% 24%
+  }
+  100% {
+    background-position: 0% 77%
+  }
 }
+
 @-moz-keyframes BackgroundAnimation {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
+  0% {
+    background-position: 0% 77%
+  }
+  50% {
+    background-position: 100% 24%
+  }
+  100% {
+    background-position: 0% 77%
+  }
 }
+
 @-o-keyframes BackgroundAnimation {
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
-}
-@keyframes BackgroundAnimation { 
-    0%{background-position:0% 77%}
-    50%{background-position:100% 24%}
-    100%{background-position:0% 77%}
-}
-
-@mixin OpenSans{
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 400;
+  0% {
+    background-position: 0% 77%
+  }
+  50% {
+    background-position: 100% 24%
+  }
+  100% {
+    background-position: 0% 77%
+  }
 }
 
-@mixin OpenSansLight{
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 300;
+@keyframes BackgroundAnimation {
+  0% {
+    background-position: 0% 77%
+  }
+  50% {
+    background-position: 100% 24%
+  }
+  100% {
+    background-position: 0% 77%
+  }
 }
+
+@mixin OpenSans {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin OpenSansLight {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+}
+
 @mixin placeholder {
-    &.placeholder { @content }
-    &:-moz-placeholder { @content }
-    &::-webkit-input-placeholder { @content }
+  &.placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-webkit-input-placeholder {
+    @content
+  }
 }
 
 $footerHeight: 210px;
 
 // General CSS rules
 html {
-    position: relative;
-    min-height: 100%;
-    width: 100%;
+  position: relative;
+  min-height: 100%;
+  width: 100%;
 }
 
-body{
-    margin-bottom: $footerHeight;
+body {
+  margin-bottom: $footerHeight;
 }
 
-h1, h2, h3, h4, p, a{
-    @include OpenSans;
+h1, h2, h3, h4, p, a {
+  @include OpenSans;
 }
 
-h1, h2, h3{
-    margin-top: 20px;
-    margin-bottom: 20px;
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-h1{
-    @include OpenSansLight;
-    font-size: 70px;
-}
-h2{
-    font-size: 46px;
-    margin-bottom: 30px;
-}
-h3{
-    @include OpenSansLight;
-    font-size: 28px;
-}
-h4{
-    font-size: 20px;
-}
-p{
-    @include OpenSansLight;
-    font-size: 20px;
-}
-a{
-    transition: all 0.3s ease;
-    color: #00c0ff;
-    &:hover{
-        color: #63d9ff;
-        text-decoration: none;
-    }
-    &:focus{
-        text-decoration: none;
-    }
+h1 {
+  @include OpenSansLight;
+  font-size: 70px;
 }
 
-.fa{
-    display: inline-block;
+h2 {
+  font-size: 46px;
+  margin-bottom: 30px;
 }
 
-.venue{
-    color:azure;
+h3 {
+  @include OpenSansLight;
+  font-size: 28px;
 }
-.earth{
-    display: inline-block;
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    text-align: center;
-    z-index:-1;
+
+h4 {
+  font-size: 20px;
 }
-.earth img{
+
+p {
+  @include OpenSansLight;
+  font-size: 20px;
+}
+
+a {
+  transition: all 0.3s ease;
+  color: #00c0ff;
+  &:hover {
+    color: #63d9ff;
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.fa {
+  display: inline-block;
+}
+
+.venue {
+  color: azure;
+}
+
+.earth {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
+}
+
+.earth img {
+  width: 75%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.rocket {
+  position: absolute;
+  padding-left: 70%;
+  padding-top: 10%;
+}
+
+.rocket img {
+  width: 50%;
+  height: auto;
+}
+
+// For mobile devices.
+@media (max-width: 800px) {
+  .rocket {
+    position: absolute;
+    padding-left: 70%;
+    padding-top: 70vh;
+  }
+  .rocket img {
     width: 75%;
     height: auto;
-    position:absolute;
-    bottom:0;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+  }
 }
-.rocket{
+
+.moon {
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 50px;
+}
+
+.moon img {
+  width: 75%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .moon {
     position: absolute;
-    padding-left:70%;
-    padding-top:10%;
-}
-.rocket img{
+    padding-left: 10%;
+    padding-top: 50px;
+  }
+  .moon img {
     width: 50%;
     height: auto;
-}
-// For mobile devices.
-@media (max-width: 800px){
-  .rocket{
-      position: absolute;
-      padding-left:70%;
-      padding-top: 70vh;
-  }
-  .rocket img{
-      width: 75%;
-      height: auto;
-  }
-}
-.moon{
-    position: absolute;
-    padding-left:10%;
-    padding-top: 50px;
-}
-.moon img{
-    width: 75%;
-    height: auto;
-}
-
-@media (max-width: 800px){
-  .moon{
-      position: absolute;
-      padding-left:10%;
-      padding-top: 50px;
-  }
-  .moon img{
-      width: 50%;
-      height: auto;
   }
 }
 
 section.sponsors-partners {
-    .sponsors, .partners{
-        line-height: 30px;
-    }
-    .inline-img{
-        display:inline-block;
-        max-height: 150px;
-        width: auto;
-        margin-top: 40px;
-    }
-  .gold img{
+  .sponsors, .partners {
+    line-height: 30px;
+  }
+  .inline-img {
+    display: inline-block;
+    max-height: 110px;
+    width: auto;
+    margin: 20px 20px;
+  }
+  .gold img {
     max-height: 180px !important;
   }
-  .rest img{
-    max-height: 110px !important;
+
+  .invitation {
+    border-width: 5px;
+    border-style: dashed;
+    padding: 25px;
+    white-space: nowrap;
+    line-height: 75px;
+    margin: 5px;
+  }
+}
+
+header, section.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section.showcase {
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+
+  p.sub {
+    font-size: 14px;
+  }
+  .img-showcase {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-rocket {
+    height: 400px;
+    width: auto;
+  }
+}
+
+.tagline {
+  text-align: center;
+  padding: 40px 0 0 10px;
+}
+
+header {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translateZ(0);
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  color: azure;
+  @include OpenSans;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+
+  .social {
+    padding-top: 20px;
+  }
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
   }
 
-    .invitation{
-        border-width:5px;
-        border-style:dashed;
-        padding: 25px;
-        white-space: nowrap;
-        line-height: 75px;
-        margin: 5px;
-    }
-}
-header, section.container-fluid{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-section.showcase{
-    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
-
-    p.sub{
-        font-size: 14px;
-    }
-    .img-showcase{
-        position:absolute;
-        left: 0;
-        right:0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .img-rocket{
-        height: 400px;
-        width: auto;
-    }
-}
-.tagline{
+  .container-fluid {
+    margin: 0;
+    width: 100%;
+    //padding-top: 50px; //different in chrome/safari
     text-align: center;
-    padding: 40px 0 0 10px;
-}
-header{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transform: translateZ(0);
-    height: 100%;
+    .logo.img-responsive {
+      width: 250px;
+      height: auto;
+      margin: auto;
+    }
+  }
+  .background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
     min-height: 100vh;
-    position: relative;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    color: azure;
-    @include OpenSans;
-    -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.75);
-
-    .social{
-      padding-top:20px;
-    }
-    .read-more{
-        position:absolute;
-        bottom:0;
-        left:0;
-        width:100%;
-        text-align: center;
-    }
-
-    .container-fluid{
-        margin: 0;
-        width: 100%;
-        //padding-top: 50px; //different in chrome/safari
-        text-align: center;
-        .logo.img-responsive{
-            width: 250px;
-            height: auto;
-            margin: auto;
-        }
-    }
-    .background{
-        width:100%;
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        min-height: 100%;
-        min-height:100vh;
-        background-image: url('/img/techretreat-shaded-bkg.jpg');
-        background-color: #2f0057;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center top;
-        z-index: -2;
-    }
-
-    .parallax{
-        width:100%;
-        position:absolute;
-        top:0;
-        left:0;
-        right:0;
-        min-height: 100%;
-        min-height:100vh;
-        background-image: none;
-        z-index: -1;
-    }
-
-    a.signup{
-        display: inline-block;
-        font-size: 20px;
-        min-width: 100px;
-        line-height: 40px;
-        border-radius: 2px;
-        width: 150px;
-        height: 40px;
-        transition: all 0.3s ease;
-        background-color:#FFF;
-        color: #2F1447;
-        @include OpenSans;
-        &:hover {
-            background-color:#FFF;
-            opacity: 0.7;
-        }
-    }
-    a.fa{
-        color: white;
-        padding-bottom: 20px;
-        opacity:0.6;
-        &:hover{
-            opacity:0.8;
-        }
-    }
-}
-
-section.about{
-    background: url('../img/waterloo-campus.png');
-    background-color: black;
+    background-image: url('/img/techretreat-shaded-bkg.jpg');
+    background-color: #2f0057;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center bottom;
-    h1, h2, h3, p{
-        color: white;
-    }
-    p{
-      @include OpenSans;
-    } 
-}
+    background-position: center top;
+    z-index: -2;
+  }
 
-section.faq{
-    background-color: #A06CD5;
-    color: white;
-    h1{
-        @include OpenSans;
-    }
-    p.question{
-        @include OpenSans;
-        margin-bottom: 20px;
-        font-size: 1.75em;
-        font-weight: bold;
-
-    }
-    p.answer{
-        @include OpenSansLight;
-        margin-bottom: 20px;
-        padding-left:20px;
-        color: #e7e1ed;
-    }
-}
-
-section.sponsors-partners{
-    h1{
-        @include OpenSans;
-    }
-    .sponsors, .partners{
-        text-align: center;
-    }
-}
-
-footer{
+  .parallax {
     width: 100%;
     position: absolute;
-    bottom: 0;
-    height: $footerHeight;
-    background-color: #2a1447;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-    color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    min-height: 100vh;
+    background-image: none;
+    z-index: -1;
+  }
 
-    .love{
-        margin-top: 20px;
-        @include OpenSansLight;
+  a.signup {
+    display: inline-block;
+    font-size: 20px;
+    min-width: 100px;
+    line-height: 40px;
+    border-radius: 2px;
+    width: 150px;
+    height: 40px;
+    transition: all 0.3s ease;
+    background-color: #FFF;
+    color: #2F1447;
+    @include OpenSans;
+    &:hover {
+      background-color: #FFF;
+      opacity: 0.7;
     }
+  }
+  a.fa {
+    color: white;
+    padding-bottom: 20px;
+    opacity: 0.6;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
-@media (max-width: 1300px){
-  header{
+section.about {
+  background: url('../img/waterloo-campus.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  h1, h2, h3, p {
+    color: white;
+  }
+  p {
+    @include OpenSans;
+  }
+}
+
+section.faq {
+  background-color: #A06CD5;
+  color: white;
+  h1 {
+    @include OpenSans;
+  }
+  p.question {
+    @include OpenSans;
+    margin-bottom: 20px;
+    font-size: 1.75em;
+    font-weight: bold;
+
+  }
+  p.answer {
+    @include OpenSansLight;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: #e7e1ed;
+  }
+}
+
+section.sponsors-partners {
+  h1 {
+    @include OpenSans;
+  }
+  .sponsors, .partners {
+    text-align: center;
+  }
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: $footerHeight;
+  background-color: #2a1447;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+
+  .love {
+    margin-top: 20px;
+    @include OpenSansLight;
+  }
+}
+
+@media (max-width: 1300px) {
+  header {
     background-size: 200% 100%;
   }
 }
-// For mobile devices.
-@media (max-width: 991px){
 
-    section.showcase{
-        p.sub{
-            font-size: 14px;
-        }
-        .img-showcase{
-            display:none;
-        }
-        .img-rocket{
-            height: 400px;
-            width: auto;
-        }
+// For mobile devices.
+@media (max-width: 991px) {
+
+  section.showcase {
+    p.sub {
+      font-size: 14px;
     }
+    .img-showcase {
+      display: none;
+    }
+    .img-rocket {
+      height: 400px;
+      width: auto;
+    }
+  }
 
 }
+
 // For mobile devices.
-@media (max-width: 800px){
-    h1, h2, h3{
-      margin-top: 10px;
-      margin-bottom: 10px;
+@media (max-width: 800px) {
+  h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  section.showcase {
+    p.sub {
+      font-size: 14px;
     }
-    h1{
-        font-size: 35px;
+    .img-showcase {
+      display: none;
     }
-    h2{
-      font-size: 25px; 
+    .img-rocket {
+      height: 400px;
+      width: auto;
     }
-    h3{
-        font-size: 18px;
-    }
-    p{
-        font-size: 14px;
-    }
-    section.showcase{
-        p.sub{
-            font-size: 14px;
-        }
-        .img-showcase{
-            display:none;
-        }
-        .img-rocket{
-            height: 400px;
-            width: auto;
-        }
-    }
-    header{
-        #mc_embed_signup{
-            margin-left: 10%;
-            margin-right: 10%;
-            form{
-                width: 100%;
+  }
+  header {
+    #mc_embed_signup {
+      margin-left: 10%;
+      margin-right: 10%;
+      form {
+        width: 100%;
 
-                input.email{
-                    font-size: 15px;
-                }
-                input.button{
-                    text-align: center;
-                    font-size: 15px;
-                    min-width: 70px;
-                    margin: auto;
+        input.email {
+          font-size: 15px;
+        }
+        input.button {
+          text-align: center;
+          font-size: 15px;
+          min-width: 70px;
+          margin: auto;
 
-                }
-            }
         }
-        a.fa{
-            padding-bottom: 0;
-        }
+      }
     }
-    section.about{
-        background-size: auto;
+    a.fa {
+      padding-bottom: 0;
     }
+  }
+  section.about {
+    background-size: auto;
+  }
 }
 
 

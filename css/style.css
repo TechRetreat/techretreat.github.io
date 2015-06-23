@@ -5055,13 +5055,11 @@ section.sponsors-partners .sponsors, section.sponsors-partners .partners {
   line-height: 30px; }
 section.sponsors-partners .inline-img {
   display: inline-block;
-  max-height: 150px;
+  max-height: 110px;
   width: auto;
-  margin-top: 40px; }
+  margin: 20px 20px; }
 section.sponsors-partners .gold img {
   max-height: 180px !important; }
-section.sponsors-partners .rest img {
-  max-height: 110px !important; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
