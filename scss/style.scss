@@ -204,7 +204,26 @@ a {
     height: auto;
   }
 }
-
+section.schedule{
+    td, th{
+        color: black;
+        text-align: center;
+        border-top: 1px solid #969696 !important;
+    }
+    background: #fff1eb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h1, h2, h4, p{
+        color: black;
+    }
+  .table td:nth-child(2),
+  .table td:nth-child(3) {
+    width: 50%;
+  }
+  .table td:nth-child(2) {
+    width: 25%;
+  }
+}
 section.sponsors-partners {
   .sponsors, .partners {
     line-height: 30px;

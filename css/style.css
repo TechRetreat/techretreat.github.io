@@ -5051,6 +5051,21 @@ a {
     width: 50%;
     height: auto; } }
 
+section.schedule {
+  background: #fff1eb;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  section.schedule td, section.schedule th {
+    color: black;
+    text-align: center;
+    border-top: 1px solid #969696 !important; }
+  section.schedule h1, section.schedule h2, section.schedule h4, section.schedule p {
+    color: black; }
+  section.schedule .table td:nth-child(2), section.schedule .table td:nth-child(3) {
+    width: 50%; }
+  section.schedule .table td:nth-child(2) {
+    width: 25%; }
+
 section.sponsors-partners .sponsors, section.sponsors-partners .partners {
   line-height: 30px; }
 section.sponsors-partners .inline-img {
