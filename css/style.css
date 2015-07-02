@@ -5072,9 +5072,11 @@ section.sponsors-partners .inline-img {
   display: inline-block;
   max-height: 110px;
   width: auto;
-  margin: 20px 20px; }
-section.sponsors-partners .gold img {
-  max-height: 180px !important; }
+  margin: 40px; }
+section.sponsors-partners .gold {
+  margin-bottom: 50px; }
+  section.sponsors-partners .gold img {
+    max-height: 220px !important; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
