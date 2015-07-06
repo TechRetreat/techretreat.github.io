@@ -461,7 +461,17 @@ footer {
       width: auto;
     }
   }
-
+  section.sponsors-partners{
+    .inline-img{
+      margin: 15px 0;
+      max-width: 40%;
+    }
+    .gold img{
+      max-width: 95%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
 }
 
 // For mobile devices.
