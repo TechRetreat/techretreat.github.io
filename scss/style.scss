@@ -169,6 +169,16 @@ a {
   height: auto;
 }
 
+.table > tbody > tr > th, .table > tbody > tr > td{
+  border-top: none !important;
+  border-bottom: 1px solid #A8A5A5;
+  color: #302E2F;
+}
+
+.table > tbody > tr > th{
+  background-color: #41286B;
+  color: white;
+}
 // For mobile devices.
 @media (max-width: 800px) {
   .rocket {
@@ -394,7 +404,7 @@ section.about {
 }
 
 section.faq {
-  background-color: #A06CD5;
+  background-color: #244C69;
   color: white;
   h1 {
     @include OpenSans;
