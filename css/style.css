@@ -4996,6 +4996,13 @@ a {
 .venue {
   color: azure; }
 
+.center {
+  text-align: center; }
+
+.center-img {
+  margin-left: auto;
+  margin-right: auto; }
+
 .earth {
   display: inline-block;
   position: absolute;
