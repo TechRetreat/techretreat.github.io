@@ -5171,10 +5171,10 @@ header {
     display: inline-block;
     font-size: 20px;
     min-width: 100px;
-    line-height: 40px;
+    line-height: 60px;
     border-radius: 2px;
-    width: 200px;
-    height: 40px;
+    width: 300px;
+    height: 60px;
     transition: all 0.3s ease;
     background-color: #FFF;
     color: #2F1447;
