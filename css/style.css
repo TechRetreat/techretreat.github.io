@@ -4903,46 +4903,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-@-webkit-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
-@-moz-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
-@-o-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
-@keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%; }
-
-  50% {
-    background-position: 100% 24%; }
-
-  100% {
-    background-position: 0% 77%; } }
-
 html {
   position: relative;
   min-height: 100%;
@@ -5030,8 +4990,14 @@ a {
   color: #302E2F; }
 
 .table > tbody > tr > th {
-  background-color: #41286B;
-  color: white; }
+  color: #41286B; }
+
+.table tbody tr td:first-child, .table tbody tr th:first-child {
+  width: 15%; }
+.table tbody tr td:nth-child(2), .table tbody tr th:nth-child(2) {
+  width: 42.5%; }
+.table tbody tr td:last-child, .table tbody tr th:last-child {
+  width: 42.5%; }
 
 @media (max-width: 800px) {
   .rocket {
@@ -5066,14 +5032,9 @@ section.schedule {
   padding-bottom: 30px; }
   section.schedule td, section.schedule th {
     color: black;
-    text-align: center;
     border-top: 1px solid #969696 !important; }
   section.schedule h1, section.schedule h2, section.schedule h4, section.schedule p {
     color: black; }
-  section.schedule .table td:nth-child(2), section.schedule .table td:nth-child(3) {
-    width: 50%; }
-  section.schedule .table td:nth-child(2) {
-    width: 25%; }
 
 section.sponsors-partners .sponsors, section.sponsors-partners .partners {
   line-height: 30px; }

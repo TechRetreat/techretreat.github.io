@@ -1,54 +1,5 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
-// General CSS rules and mixins
-@-webkit-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%
-  }
-  50% {
-    background-position: 100% 24%
-  }
-  100% {
-    background-position: 0% 77%
-  }
-}
-
-@-moz-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%
-  }
-  50% {
-    background-position: 100% 24%
-  }
-  100% {
-    background-position: 0% 77%
-  }
-}
-
-@-o-keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%
-  }
-  50% {
-    background-position: 100% 24%
-  }
-  100% {
-    background-position: 0% 77%
-  }
-}
-
-@keyframes BackgroundAnimation {
-  0% {
-    background-position: 0% 77%
-  }
-  50% {
-    background-position: 100% 24%
-  }
-  100% {
-    background-position: 0% 77%
-  }
-}
-
 @mixin OpenSans {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
@@ -176,8 +127,21 @@ a {
 }
 
 .table > tbody > tr > th{
-  background-color: #41286B;
-  color: white;
+  color: #41286B;
+}
+
+.table{
+  tbody tr td, tbody tr th{
+    &:first-child{
+      width: 15%;
+    }
+    &:nth-child(2){
+      width: 42.5%;
+    }
+    &:last-child{
+      width: 42.5%;
+    }
+  }
 }
 // For mobile devices.
 @media (max-width: 800px) {
@@ -217,7 +181,6 @@ a {
 section.schedule{
     td, th{
         color: black;
-        text-align: center;
         border-top: 1px solid #969696 !important;
     }
     background: #ECECEC;
@@ -226,13 +189,6 @@ section.schedule{
     h1, h2, h4, p{
         color: black;
     }
-  .table td:nth-child(2),
-  .table td:nth-child(3) {
-    width: 50%;
-  }
-  .table td:nth-child(2) {
-    width: 25%;
-  }
 }
 section.sponsors-partners {
   .sponsors, .partners {
@@ -541,6 +497,3 @@ footer {
     background-size: auto;
   }
 }
-
-
-
