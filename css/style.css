@@ -5000,11 +5000,13 @@ a {
   color: #41286B; }
 
 .table tbody tr td:first-child, .table tbody tr th:first-child {
-  width: 15%; }
+  width: 12%; }
 .table tbody tr td:nth-child(2), .table tbody tr th:nth-child(2) {
-  width: 42.5%; }
+  width: 18%; }
+.table tbody tr td:nth-child(3), .table tbody tr th:nth-child(3) {
+  width: 35%; }
 .table tbody tr td:last-child, .table tbody tr th:last-child {
-  width: 42.5%; }
+  width: 35%; }
 
 @media (max-width: 800px) {
   .rocket {

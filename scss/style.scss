@@ -143,13 +143,16 @@ a {
 .table{
   tbody tr td, tbody tr th{
     &:first-child{
-      width: 15%;
+      width: 12%;
     }
     &:nth-child(2){
-      width: 42.5%;
+      width: 18%;
+    }
+    &:nth-child(3){
+      width: 35%;
     }
     &:last-child{
-      width: 42.5%;
+      width: 35%;
     }
   }
 }
