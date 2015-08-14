@@ -94,7 +94,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="/js/velocity.min.js"></script>
     <script type="text/javascript" src="/js/jquery.parallax.min.js"></script>
-    <script type="text/javascript" src="jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script>
       //Source: http://codepen.io/markhillard/details/iqnlh
@@ -130,7 +130,7 @@
       $("#clock")
         .countdown("2015/08/15 18:30", function(event) {
         $(this).text(
-          event.strftime('%Dd %Hh %Mmins %Ssecs')
+          event.strftime('%Hh %Mmins %Ssecs')
         );
       });
     </script>

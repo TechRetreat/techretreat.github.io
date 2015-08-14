@@ -50,7 +50,7 @@
                         <h1>Tech Retreat</h1>
                         <h3>August 15, 2015 | University of Waterloo</h3>
                         <a class = "signup" class="button" href="mailto:hello@techretreat.ca">Media or Sponsorship Inquiries</a>
-                        <h4 style="margin-top: 30px">Applications have closed. You must be accepted to attend Tech Retreat.</h4>
+                        <h4 style="margin-top: 30px"><b id="clock"></b></h4>
                       <div class="social"><p><a class="fa fa-2x fa-envelope-square" href="mailto:hello@techretreat.ca"></a> <a class="fa fa-2x fa-facebook-square" href="https://www.facebook.com/events/1609625819283850/"></a> <a class="fa fa-2x fa-twitter-square" href="http://twitter.com/TechRetreat"></a></p></div>
                     </div>
                 </div>
@@ -273,6 +273,7 @@
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script type="text/javascript" src="js/velocity.min.js"></script>
         <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+      <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
         <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script>
             //Source: http://codepen.io/markhillard/details/iqnlh
@@ -305,5 +306,13 @@
             ga('send', 'pageview');
 
         </script>
+      <script type="text/javascript">
+      $("#clock")
+        .countdown("2015/08/15 8:00", function(event) {
+        $(this).text(
+          event.strftime('See you in %Hh %Mmins %Ssecs!')
+        );
+      });
+    </script>
     </body>
 </html>
