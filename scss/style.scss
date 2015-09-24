@@ -119,15 +119,20 @@ a {
   right: 0;
 }
 
-.rocket {
+.motif {
   position: absolute;
-  padding-left: 70%;
-  padding-top: 10%;
+  padding-left: 65%;
+  padding-top: 40%;
 }
 
-.rocket img {
-  width: 50%;
+.motif img {
+  width: 100%;
   height: auto;
+}
+
+.logo{
+  width:30%;
+  height:auto;
 }
 
 .table > tbody > tr > th, .table > tbody > tr > td{
@@ -309,8 +314,7 @@ header {
     right: 0;
     min-height: 100%;
     min-height: 100vh;
-    background-image: url('/img/techretreat-shaded-bkg.jpg');
-    background-color: #2f0057;
+    background-color: #fff;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
