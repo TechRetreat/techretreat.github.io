@@ -67,7 +67,32 @@
       <div class= "row">
         <div class = "col-md-8 col-lg-offset-2">
           <h3><span>Finance</span></h3>
-          <span>Time to crunch the numbers. </span>
+          <span>Time to crunch the numbers. For finance, we received a total of $5250 from our amazing sponsors. Our financial sponsors include:
+            <ul>
+              <li>
+                Communitech and Enflick as gold sponsors (provided us a package valued at over $2000)
+
+              </li>
+
+              <li>
+                Shopify as silver sponsor (provided us a package valued at over $1000)
+
+              </li>
+
+              <li>
+                Velocity and Accelerator Center as bronze sponsors (provided us a package valued at over $500)
+
+              </li>
+
+              <li>
+                The Department of Software Engineering of the University of Waterloo who also provided us $250
+
+              </li>
+            </ul>
+            <span>This $5250 was spent accordingly:</span>
+            <div id="cashmoney" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+          </span>
           <h3><span>Outreach</span></h3>
           <span>As this was the first year Tech Retreat was running, we directly reached out to students in high school and surveyed their interest in a hackathon and learnathon solely for secondary school students. </span>
 
@@ -113,8 +138,8 @@
       </div>
       <div class= "row" style="background-color:#eee;padding-top: 10px;">
         <div class = "col-md-8 col-lg-offset-2">
-      <h3>Admissions at a glance</h3>
-          </div>
+          <h3>Admissions at a glance</h3>
+        </div>
       </div>
       <div class= "row" style="background-color:#eee; padding: 10px;">
         <div class = "col-md-1 col-lg-offset-2" style="text-align:center;">
@@ -231,7 +256,7 @@
           <h3><span>Open Source</span></h3>
           <span>All code and teaching documents developed for Tech Retreat are fully open source and they can be found on <a href="https://github.com/TechRetreat">our GitHub organization</a>.</span><br><br>
           <span>Among them, <a href="http://techtanks.techretreat.ca/">TechTanks</a> is a game we’ve developed to teach Ruby programing to a novice coders by allowing them to create the AI for a tank, and then to fight each other. A lot of the code for this project was forked off RTanque, which itself is a open source clone of the popular RoboCode game. TechTanks is still online and we will be keeping it online indefinitely for your enjoyment!</span>
-            <img src="img/transparency_report/techtanks.jpg" style="width:100%;height:auto;">
+          <img src="img/transparency_report/techtanks.jpg" style="width:100%;height:auto;">
           <h3><span>Social Media</span></h3>
           <h3><span>Comments from participants</span></h3>
           <h4><span>Time</span></h4>
@@ -279,9 +304,9 @@
 
           <span>The data is clear above - a slight majority of you would have liked more time to work on your projects. We definitely feel where you’re coming from and will make a push to make Tech Retreat a two-day event in 2016. </span>
 
-<h4><span>Mentors</span></h4>
+          <h4><span>Mentors</span></h4>
           <span>Learning and helping out students is a core element of Tech Retreat, and to make sure of that, we had a 1:5 mentor to student ratio. One of useful vital statistics is to see if participants had help when they needed it.</span>
-                    <br><br>
+          <br><br>
 
           <p><b>Did you or your team ask for a mentor's help?</b></p>
 
@@ -298,49 +323,27 @@
 
           <p><b>Hacker love,</b></p>
 
-          <b>The Tech Retreat Team</b>
-
-          <br><br>
-
-          <span>Ruo Tai Sun</span>
-
-          <span>Tammy Liu</span>
-
-          <span>Daniel Rampelt</span>
-
-          <span>Yu Chen Hou </span>
-
-          <span>Jason Zukewich</span>
-
-          <span>Deon Hua </span>
-
-          <span>Panashe Mahachi</span>
-
-          <span>Bilal Akhtar </span>
-
-          <span>Cora Lam</span>
-
-          <span>Andrew Gapic </span>
-
-          <span>Kingsong Chen</span>
-
-          <span>Dave Pagurek</span>
-
-          <span>Steven Kong</span>
-
-          <span>Wendy Lu</span>
-
-          <span>Amy Li</span>
-
-          <span>Simon Fan</span>
-
-          <span>Adam Klen</span>
-
-          <span>Joey Pereira</span>
-
-          <span>Robert Gawdzik</span>
-
-          <span>… and all the fantastic mentors and volunteers</span>
+          <b>The Tech Retreat Team,</b> <br /> <br />
+          <b>RuoTai Sun</b><br />
+          <b>Tammy Liu</b><br />
+          <b>Daniel Rampelt</b><br />
+          <b>Yu Chen Hou</b><br />
+          <b>Jason Zukewich</b><br />
+          <b>Deon Hua</b><br />
+          <b>Panashe Mahachi</b><br />
+          <b>Bilal Akhtar</b><br />
+          <b>Cora Lam</b>MC<br />
+          <b>Andrew Gapic</b><br />
+          <b>Kingsong Chen</b><br />
+          <b>Dave Pagurek</b><br />
+          <b>Steven Kong</b><br />
+          <b>Wendy Lu</b><br />
+          <b>Amy Li</b><br />
+          <b>Simon Fan</b><br />
+          <b>Adam Klen</b><br />
+          <b>Joey Pereira</b><br />
+          <b>Robert Gawdzik</b><br />
+          … <b>and all the fantastic mentors and volunteers</b>
 
           &nbsp;
         </div>
@@ -479,7 +482,87 @@
 
           }]
         });
+        //Finances
+        $('#cashmoney').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+            text: 'Budget breakdown'
+          },
+          subtitle: {
+            text: 'in CAD$'
+          },credits: {
+            enabled: false
+          },
+          xAxis: {
+            categories: [
+              'Item'
+            ],
+            crosshair: true
+          },
+          yAxis: {
+            min: 0,
+            title: {
+              text: 'Amount)'
+            }
+          },
+          tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>${point.y:.0f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0
+            }
+          },
+          series: [{
+            name: 'Dinner from Bianca’s pizza',
+            data: [844.31]
 
+          }, {
+            name: 'Snacks, water and other drinks',
+            data: [457.68]
+
+          }, {
+            name: 'Prizes',
+            data: [991.83]
+
+          }, {
+            name: 'Badges and Lanyards',
+            data: [305.04]
+
+          }, {
+            name: 'T-shirts',
+            data: [1330.01]
+
+          }, {
+            name: 'Stickers',
+            data: [75.60]
+
+          }, {
+            name: 'Hardware parts for learnathon',
+            data: [459.68]
+
+          }, {
+            name: 'Signs',
+            data: [448.57]
+
+          }, {
+            name: 'Criminal check reimbursements',
+            data: [100]
+
+          }, {
+            name: 'Misc funds',
+            data: [103.11]
+
+          }]
+        });
         //Grade completed
         $('#grade').highcharts({
           chart: {
