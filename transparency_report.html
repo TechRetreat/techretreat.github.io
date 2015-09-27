@@ -84,7 +84,7 @@
       </div>
       <div class= "row">
         <div class = "col-md-4 col-lg-offset-2">
-                    <span>In order to make things as fair as possible, the organizing team decided on a admission process that had each application looked over by at least 3 organizers, then were given a score from 0 to 10. The criteria was different from hackathon and learnathon, we looked for experience while taking account of passion from the answers for the hackathon, and only took account of passion for learning for the learnathon component. None of the other information submitted during the application process was looked at, in fact, they were deliberately obscured from the organizers during the admission process.</span>
+          <span>In order to make things as fair as possible, the organizing team decided on a admission process that had each application looked over by at least 3 organizers, then were given a score from 0 to 10. The criteria was different from hackathon and learnathon, we looked for experience while taking account of passion from the answers for the hackathon, and only took account of passion for learning for the learnathon component. None of the other information submitted during the application process was looked at, in fact, they were deliberately obscured from the organizers during the admission process.</span>
 
           <br><br>
 
@@ -145,35 +145,25 @@
 
           <br><br>
 
-          <span>As for gender distribution, our initial pool of applicants was 25% female. After the admission process, 15% those admitted into the hackathon were female and 20% of those in the learnathon were female. This is a key area we will be working on to improve for the next iteration of Tech Retreat.</span>
+          <span>As for gender distribution, our initial pool of applicants was 19.64% female. After the admission process, 12% those admitted into the hackathon were female and 19% of those in the learnathon were female. This is a key area we will be working on to improve for the next iteration of Tech Retreat.</span>
 
-          <strong><strong>
+          <br>
 
-            </strong></strong>
-          <table>
-            <tbody>
-              <tr>
-                <td><span>Last Grade Complete</span></td>
-                <td><span>Frequency</span></td>
-              </tr>
-              <tr>
-                <td><span>9</span></td>
-                <td><span>56</span></td>
-              </tr>
-              <tr>
-                <td><span>10</span></td>
-                <td><span>104</span></td>
-              </tr>
-              <tr>
-                <td><span>11</span></td>
-                <td><span>107</span></td>
-              </tr>
-              <tr>
-                <td><span>12</span></td>
-                <td><span>107</span></td>
-              </tr>
-            </tbody>
-          </table>
+          Also, it might be interesting to look at the last completed grade of the applicants. Graph time!
+          <div id="grade" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+      </div>
+      <div class= "row">
+        <div class = "col-md-4 col-lg-offset-2">
+          <div id="genderapplicant" style="min-width: 310px; height: 200px; max-width: 600px; margin: 0 auto"></div>
+        </div>
+        <div class = "col-md-4">
+          <div id="genderaccepted" style="min-width: 310px; height: 200px; max-width: 600px; margin: 0 auto"></div>
+        </div>
+      </div>
+      <div class= "row">
+        <div class = "col-md-8 col-lg-offset-2">
+
           <br><br>
 
           <span>In terms of interest, most of you were interested in the following, based on keywords in the application form;</span>
@@ -182,7 +172,7 @@
 
           <br><br>
           <h3><span>Hacker Relations</span></h3>
-          <span>We sent a lot of emails out to you. In total… we sent out a total of 56 Mailchimp campaigns (we sent different emails to different streams), which totalled 3579 emails.</span>
+          <span>We sent a lot of emails out to you. In total… we sent out a total of 56 Mailchimp campaigns (we sent different emails to different streams), which totalled 3579 emails. We've also received over 60 questions on Facebook about the event, and many more via email.</span>
 
 
 
@@ -228,7 +218,7 @@
           <br><br>
 
           <span>In terms of visuals, we bought a photo backdrop (hopefully you got a shot!), a retractable banner to guide you to us, and lawn signs to direct you to Mathematics 3. We used 8 different spaces for Tech Retreat, so we also printed 66 signs to direct you to the right place. </span>
-<div id="logistics" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+          <div id="logistics" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
           <br><br>
           <h3><span>Open Source</span></h3>
           <span>All code and teaching documents developed for Tech Retreat are fully open source and they can be found on our GitHub organization [</span><a href="https://github.com/TechRetreat"><span>https://github.com/TechRetreat</span></a><span>].</span>
@@ -406,72 +396,215 @@
         });
 
         //Logistics
-         $('#logistics').highcharts({
-        chart: {
+        $('#logistics').highcharts({
+          chart: {
             type: 'column'
-        },
-        title: {
+          },
+          title: {
             text: 'Buy ALL the things!'
-        },
-        subtitle: {
+          },
+          subtitle: {
             text: 'A graph of everything we got'
-        },
-        xAxis: {
+          },
+          xAxis: {
             categories: [
-                'Item'
+              'Item'
             ],
             crosshair: true
-        },
-        yAxis: {
+          },
+          yAxis: {
             min: 0,
             title: {
-                text: 'Amount)'
+              text: 'Amount)'
             }
-        },
-        tooltip: {
+          },
+          tooltip: {
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
+            '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
             footerFormat: '</table>',
             shared: true,
             useHTML: true
-        },
-        plotOptions: {
+          },
+          plotOptions: {
             column: {
-                pointPadding: 0.2,
-                borderWidth: 0
+              pointPadding: 0.2,
+              borderWidth: 0
             }
-        },
-        series: [{
+          },
+          series: [{
             name: 'Pizza slices',
             data: [800]
 
-        }, {
+          }, {
             name: 'Chips',
             data: [600]
 
-        }, {
+          }, {
             name: 'Pop/Juice',
             data: [840]
 
-        }, {
+          }, {
             name: 'Lanyards',
             data: [250]
 
-        }, {
+          }, {
             name: 'Stickers',
             data: [200]
 
-        }, {
+          }, {
             name: 'T-Shirts',
             data: [250]
 
-        }, {
-            name: 'Lawn Signs',
-            data: [80]
+          }, {
+            name: 'Signs',
+            data: [66]
 
-        }]
-    });
+          }, {
+            name: 'Backdrop',
+            data: [1]
+
+          }]
+        });
+
+        //Grade completed
+        $('#grade').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+            text: 'What grade did you just complete?'
+          },
+          xAxis: {
+            categories: [
+              'Applied',
+              'Accepted'
+            ],
+            crosshair: true
+          },
+          yAxis: {
+            min: 0,
+            title: {
+              text: 'Amount)'
+            }
+          },
+          tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+          },
+          plotOptions: {
+            column: {
+              pointPadding: 0.2,
+              borderWidth: 0
+            }
+          },
+          series: [{
+            name: '9',
+            data: [56, 18]
+
+          }, {
+            name: '10',
+            data: [104, 35]
+
+          }, {
+            name: '11',
+            data: [107, 44]
+
+          }, {
+            name: '12',
+            data: [107, 42]
+
+          }]
+        });
+
+        $('#genderapplicant').highcharts({
+          chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+          },
+          title: {
+            text: 'Gender of applicants'
+          },
+          tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                  color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+              }
+            }
+          },
+          series: [{
+            name: "Gender",
+            colorByPoint: true,
+            data: [{
+              name: "Male",
+              y: 77.18
+            }, {
+              name: "Female",
+              y:19.64,
+              sliced: true,
+              selected: true
+            }, {
+              name: "Prefer Not Say",
+              y: 3.17
+            }]
+          }]
+        });
+
+        $('#genderaccepted').highcharts({
+          chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+          },
+          title: {
+            text: 'Gender of accepted applicants'
+          },
+          tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+          },
+          plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                  color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+              }
+            }
+          },
+          series: [{
+            name: "Gender",
+            colorByPoint: true,
+            data: [{
+              name: "Male",
+              y: 84.21
+            }, {
+              name: "Female",
+              y: 15.79,
+              sliced: true,
+              selected: true
+            }]
+          }]
+        });
       });
     </script>
     <script>
