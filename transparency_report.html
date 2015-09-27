@@ -111,7 +111,7 @@
           <h4>Admissions at a glance</h43>
         </div>
       </div>
-      <div class= "row" style="background-color:#ccc;">
+      <div class= "row" style="background-color:#eee;">
         <div class = "col-md-1 col-lg-offset-2" style="text-align:center;">
           <h1>4</h1>
           <p>Hackathon</p>
@@ -164,21 +164,23 @@
       <div class= "row">
         <div class = "col-md-8 col-lg-offset-2">
 
-          <br><br>
+        </div>
+      </div>
+      <div class= "row" style="background-color:#eee;">
+        <div class = "col-md-8 col-lg-offset-2" style="text-align:center; padding: 20px; ">
+          <p>What can we say?</p>
+          <h3>The most common Tech Retreat student would be a male, in grade 11 or 12, and coming from Mississauga.</h3>
+        </div>
+      </div>
+      <div class= "row">
+        <div class = "col-md-8 col-lg-offset-2">
+          <h3><span>Experience and Interest</span></h3>
+          <p>According to the applications, here are what students are most most likely to have experience in these technologies (by searching for keywords in the text that was included in the application):</p>
+          <div id="experience" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
+          <div id="interest" style="min-width: 300px; height: 400px; margin: 0 auto"></div>
 
-          <span>In terms of interest, most of you were interested in the following, based on keywords in the application form;</span>
-
-          <br><br>
-
-          <br><br>
           <h3><span>Hacker Relations</span></h3>
           <span>We sent a lot of emails out to you. In total… we sent out a total of 56 Mailchimp campaigns (we sent different emails to different streams), which totalled 3579 emails. We've also received over 60 questions on Facebook about the event, and many more via email.</span>
-
-
-
-
-
-          <br><br>
         </div>
       </div>
       <div class= "row">
@@ -361,6 +363,8 @@
           chart: {
             type: 'funnel',
             marginRight: 100
+          },credits: {
+            enabled: false
           },
           title: {
             text: 'Applied to attending Tech Retreat!',
@@ -405,6 +409,8 @@
           },
           subtitle: {
             text: 'A graph of everything we got'
+          },credits: {
+            enabled: false
           },
           xAxis: {
             categories: [
@@ -518,7 +524,9 @@
             name: '12',
             data: [107, 42]
 
-          }]
+          }],credits: {
+            enabled: false
+          }
         });
 
         $('#genderapplicant').highcharts({
@@ -527,6 +535,8 @@
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie'
+          },credits: {
+            enabled: false
           },
           title: {
             text: 'Gender of applicants'
@@ -571,6 +581,8 @@
             plotBorderWidth: null,
             plotShadow: false,
             type: 'pie'
+          },credits: {
+            enabled: false
           },
           title: {
             text: 'Gender of accepted applicants'
@@ -603,6 +615,153 @@
               sliced: true,
               selected: true
             }]
+          }]
+        });
+
+        $('#experience').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+            text: 'Experience'
+          },
+          subtitle: {
+            text: 'What experience did the students have?'
+          },credits: {
+            enabled: false
+          },
+          xAxis: {
+            type: 'category',
+            labels: {
+              rotation: -45,
+              style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+              }
+            }
+          },
+          yAxis: {
+            min: 0,
+            title: {
+              text: 'Number of students'
+            }
+          },
+          legend: {
+            enabled: false
+          },
+          tooltip: {
+            pointFormat: 'Number of students: <b>{point.y:.0f}</b>'
+          },
+          series: [{
+            name: 'Students',
+            data: [
+              ['Android',	54],
+              ['Angular',	7],
+              ['Arduino',	68],
+              ['C#',	31],
+              ['C++',	90],
+              ['Computer Science',	126],
+              ['Game',	66],
+              ['hackathon',	27],
+              ['Hardware',	71],
+              ['HTML',	113],
+              ['iOS',	20],
+              ['Java',	204],
+              ['JavaScript',	66],
+              ['Python',	134],
+              ['Robotic',	79],
+              ['Web',	107]
+            ],
+            dataLabels: {
+              enabled: true,
+              rotation: -90,
+              color: '#FFFFFF',
+              align: 'right',
+              format: '{point.y:.0f}', // one decimal
+              y: 10, // 10 pixels down from the top
+              style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+              }
+            }
+          }]
+        });
+
+        $('#interest').highcharts({
+          chart: {
+            type: 'column'
+          },
+          title: {
+            text: 'An INTERESTing graph'
+          },
+          subtitle: {
+            text: 'What interests did the students have?'
+          },credits: {
+            enabled: false
+          },
+          xAxis: {
+            type: 'category',
+            labels: {
+              rotation: -45,
+              style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+              }
+            }
+          },
+          yAxis: {
+            min: 0,
+            title: {
+              text: 'Number of students'
+            }
+          },
+          legend: {
+            enabled: false
+          },
+          tooltip: {
+            pointFormat: 'Number of students: <b>{point.y:.0f}</b>'
+          },
+          series: [{
+            name: 'Students',
+            data: [
+              ['Android',	54],
+              ['algorithm',	8],
+              ['Arduino', 17],
+              ['Amazon',	4],
+              ['Android',	35],
+              ['Apple',	44],
+              ['Apps',	26],
+              ['Arduino',	17],
+              ['artificial intelligence',	12],
+              ['design',	24],
+              ['finance',	2],
+              ['Game',	23],
+              ['Google',	77],
+              ['Hardware',	32],
+              ['intel',	35],
+              ['Microsoft',	39],
+              ['Mobile',	28],
+              ['Myo',	13],
+              ['Oculus',	26],
+              ['pebble',	14],
+              ['Programming',	34],
+              ['Robot',	24],
+              ['Tesla',	17],
+              ['wearable',	14],
+              ['web',	27]
+            ],
+            dataLabels: {
+              enabled: true,
+              rotation: -90,
+              color: '#FFFFFF',
+              align: 'right',
+              format: '{point.y:.0f}', // one decimal
+              y: 10, // 10 pixels down from the top
+              style: {
+                fontSize: '13px',
+                fontFamily: 'Verdana, sans-serif'
+              }
+            }
           }]
         });
       });
