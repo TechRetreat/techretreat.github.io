@@ -79,21 +79,29 @@
           <h3><span>Acceptances</span></h3>
 
           <span>Tech Retreat received </span><b>470</b><span> valid applications (from </span><b>504</b><span> total applications) over the course of 2 months. We say valid because some students applied more than once, and there were applicants with fake names and incomplete application form. This was a lot more than we expected and we had to resort to an admission process in order to admit </span><b>160</b><span> learners and hackers.</span>
+          <br><br>
+        </div>
+      </div>
+      <div class= "row">
+        <div class = "col-md-4 col-lg-offset-2">
+                    <span>In order to make things as fair as possible, the organizing team decided on a admission process that had each application looked over by at least 3 organizers, then were given a score from 0 to 10. The criteria was different from hackathon and learnathon, we looked for experience while taking account of passion from the answers for the hackathon, and only took account of passion for learning for the learnathon component. None of the other information submitted during the application process was looked at, in fact, they were deliberately obscured from the organizers during the admission process.</span>
 
           <br><br>
 
-          <span>In order to make things as fair as possible, the organizing team decided on a admission process that had each application looked over by at least 3 organizers, then were given a score from 0 to 10. The criteria was different from hackathon and learnathon, we looked for experience while taking account of passion from the answers for the hackathon, and only took account of passion for learning for the learnathon component. None of the other information submitted during the application process was looked at, in fact, they were deliberately obscured from the organizers during the admission process.</span>
-
-          <br><br>
+        </div>
+        <div class = "col-md-4">
+          <img src="img/transparency_report/yum_data.png" style="width:100%;height:auto;"/>
+          <p class="center">Yum... Data.</p>
+        </div>
+      </div>
+      <div class= "row">
+        <div class = "col-md-8 col-lg-offset-2">
 
           <span>After each applicant was given 3 scores by the assigned organizers, we normalized every score a given organizer gave in order to avoid bias with some organizers assigning a higher or lower grade than others.</span>
 
           <br><br>
 
           <span>Then, we decided as a group on the cutoff score, which was chosen in order to admit a portion of hackers and learners for the first round. Some hackers and learners were asked to switch streams that we thought were a better fit for their skills and ability. Then we sent out the acceptance letters, and waited. </span>
-
-          <br><br>
-
           <span>Then, based on the number of people who replied, we sent out a few more acceptances for round 2, 3 and so on.</span>
 
           <br><br>
@@ -220,7 +228,7 @@
           <br><br>
 
           <span>In terms of visuals, we bought a photo backdrop (hopefully you got a shot!), a retractable banner to guide you to us, and lawn signs to direct you to Mathematics 3. We used 8 different spaces for Tech Retreat, so we also printed 66 signs to direct you to the right place. </span>
-
+<div id="logistics" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
           <br><br>
           <h3><span>Open Source</span></h3>
           <span>All code and teaching documents developed for Tech Retreat are fully open source and they can be found on our GitHub organization [</span><a href="https://github.com/TechRetreat"><span>https://github.com/TechRetreat</span></a><span>].</span>
@@ -396,6 +404,74 @@
             ]
           }]
         });
+
+        //Logistics
+         $('#logistics').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Buy ALL the things!'
+        },
+        subtitle: {
+            text: 'A graph of everything we got'
+        },
+        xAxis: {
+            categories: [
+                'Item'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Amount)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Pizza slices',
+            data: [800]
+
+        }, {
+            name: 'Chips',
+            data: [600]
+
+        }, {
+            name: 'Pop/Juice',
+            data: [840]
+
+        }, {
+            name: 'Lanyards',
+            data: [250]
+
+        }, {
+            name: 'Stickers',
+            data: [200]
+
+        }, {
+            name: 'T-Shirts',
+            data: [250]
+
+        }, {
+            name: 'Lawn Signs',
+            data: [80]
+
+        }]
+    });
       });
     </script>
     <script>
