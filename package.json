@@ -1,7 +1,7 @@
 {
-  "name": "TechRetreat",
+  "name": "EngHack",
   "version": "1.0.0",
-  "description": "Waterloo Tech Retreat\r ===============\r A website for the Waterloo Tech Retreat.",
+  "description": "EngHack",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TechRetreat/techretreat.github.io/issues"
+    "url": "https://github.com/EngHack/enghack.github.io/issues"
   },
-  "homepage": "https://github.com/TechRetreat/techretreat.github.io",
+  "homepage": "https://github.com/EngHack/enghack.github.io/",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-cssmin": "^0.12.2",
@@ -21,6 +21,6 @@
   },
     "repository": {
     "type": "git",
-    "url": "git://github.com/TechRetreat/techretreat.github.io.git"
+    "url": "git://github.com/EngHack/enghack.github.io.git"
     }
 }
