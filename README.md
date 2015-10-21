@@ -1,6 +1,6 @@
-Waterloo Tech Retreat
+EngHack
 ===============
-A website for the Waterloo Tech Retreat.
+EngHack's website.
 
 ### Development Environment
 Ensure you have npm and bower installed, and that you've cloned this repo.
