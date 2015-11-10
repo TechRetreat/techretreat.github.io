@@ -10,19 +10,7 @@
   font-weight: 300;
 }
 
-@mixin placeholder {
-  &.placeholder {
-    @content
-  }
-  &:-moz-placeholder {
-    @content
-  }
-  &::-webkit-input-placeholder {
-    @content
-  }
-}
-
-$footerHeight: 210px;
+$footerHeight: 0;
 
 // General CSS rules
 html {
@@ -97,28 +85,6 @@ a {
   margin-right: auto;
 }
 
-
-.earth {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: -1;
-}
-
-.earth img {
-  width: 75%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-}
-
 .motif {
   position: absolute;
   padding-left: 65%;
@@ -160,29 +126,6 @@ a {
       width: 35%;
     }
   }
-}
-// For mobile devices.
-@media (max-width: 800px) {
-  .rocket {
-    position: absolute;
-    padding-left: 70%;
-    padding-top: 70vh;
-  }
-  .rocket img {
-    width: 75%;
-    height: auto;
-  }
-}
-
-.moon {
-  position: absolute;
-  padding-left: 10%;
-  padding-top: 50px;
-}
-
-.moon img {
-  width: 75%;
-  height: auto;
 }
 
 @media (max-width: 800px) {
@@ -485,24 +428,6 @@ footer {
     }
   }
   header {
-    #mc_embed_signup {
-      margin-left: 10%;
-      margin-right: 10%;
-      form {
-        width: 100%;
-
-        input.email {
-          font-size: 15px;
-        }
-        input.button {
-          text-align: center;
-          font-size: 15px;
-          min-width: 70px;
-          margin: auto;
-
-        }
-      }
-    }
     a.fa {
       padding-bottom: 0;
     }

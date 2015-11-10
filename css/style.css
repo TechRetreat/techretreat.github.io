@@ -5027,7 +5027,7 @@ html {
   width: 100%; }
 
 body {
-  margin-bottom: 210px; }
+  margin-bottom: 0; }
 
 h1, h2, h3, h4, p, a {
   font-family: "Open Sans", Arial, sans-serif;
@@ -5081,25 +5081,6 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-.earth {
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: -1; }
-
-.earth img {
-  width: 75%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0; }
-
 .motif {
   position: absolute;
   padding-left: 65%;
@@ -5129,24 +5110,6 @@ a {
   width: 35%; }
 .table tbody tr td:last-child, .table tbody tr th:last-child {
   width: 35%; }
-
-@media (max-width: 800px) {
-  .rocket {
-    position: absolute;
-    padding-left: 70%;
-    padding-top: 70vh; }
-  .rocket img {
-    width: 75%;
-    height: auto; } }
-
-.moon {
-  position: absolute;
-  padding-left: 10%;
-  padding-top: 50px; }
-
-.moon img {
-  width: 75%;
-  height: auto; }
 
 @media (max-width: 800px) {
   .moon {
@@ -5329,7 +5292,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  height: 210px;
+  height: 0;
   background-color: #2a1447;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -5379,18 +5342,6 @@ footer {
   section.showcase .img-rocket {
     height: 400px;
     width: auto; }
-  header #mc_embed_signup {
-    margin-left: 10%;
-    margin-right: 10%; }
-    header #mc_embed_signup form {
-      width: 100%; }
-      header #mc_embed_signup form input.email {
-        font-size: 15px; }
-      header #mc_embed_signup form input.button {
-        text-align: center;
-        font-size: 15px;
-        min-width: 70px;
-        margin: auto; }
   header a.fa {
     padding-bottom: 0; }
   section.about {
