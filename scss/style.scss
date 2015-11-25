@@ -10,19 +10,11 @@
   font-weight: 300;
 }
 
-@mixin placeholder {
-  &.placeholder {
-    @content
-  }
-  &:-moz-placeholder {
-    @content
-  }
-  &::-webkit-input-placeholder {
-    @content
-  }
-}
-
 $footerHeight: 210px;
+$lightPurple: #7C4360;
+$darkPurple: #41286B;
+$blue: #244C69;
+$offWhite: #CAAC8F;
 
 // General CSS rules
 html {
@@ -33,6 +25,9 @@ html {
 
 body {
   margin-bottom: $footerHeight;
+  &.error-page{
+    margin-bottom: 0;
+  }
 }
 
 h1, h2, h3, h4, p, a {
@@ -69,15 +64,17 @@ p {
 }
 
 a {
-  transition: all 0.3s ease;
-  color: #00c0ff;
-  &:hover {
-    color: #63d9ff;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: $offWhite;
+  &:hover{
     text-decoration: none;
+    color: lighten($offWhite, 10%);
   }
-  &:focus {
-    text-decoration: none;
-  }
+}
+
+div.social{
+  font-size: 20px;
 }
 
 .fa {
@@ -88,15 +85,16 @@ a {
   color: azure;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
-.center-img{
+.center-img {
   margin-left: auto;
   margin-right: auto;
 }
 
+// Parallax!
 
 .earth {
   display: inline-block;
@@ -106,56 +104,65 @@ a {
   right: 0;
   text-align: center;
   z-index: -1;
-}
-
-.earth img {
-  width: 75%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  img {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
 }
 
 .rocket {
   position: absolute;
   padding-left: 70%;
   padding-top: 10%;
+  img {
+    width: 50%;
+    height: auto;
+  }
 }
 
-.rocket img {
-  width: 50%;
-  height: auto;
+.moon {
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 50px;
+  img {
+    width: 75%;
+    height: auto;
+  }
 }
 
-.table > tbody > tr > th, .table > tbody > tr > td{
+.table > tbody > tr > th, .table > tbody > tr > td {
   border-top: none !important;
   border-bottom: 1px solid #A8A5A5;
   color: #302E2F;
 }
 
-.table > tbody > tr > th{
+.table > tbody > tr > th {
   color: #41286B;
 }
 
-.table{
-  tbody tr td, tbody tr th{
-    &:first-child{
+.table {
+  tbody tr td, tbody tr th {
+    &:first-child {
       width: 12%;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       width: 18%;
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       width: 35%;
     }
-    &:last-child{
+    &:last-child {
       width: 35%;
     }
   }
 }
+
 // For mobile devices.
 @media (max-width: 800px) {
   .rocket {
@@ -167,20 +174,7 @@ a {
     width: 75%;
     height: auto;
   }
-}
 
-.moon {
-  position: absolute;
-  padding-left: 10%;
-  padding-top: 50px;
-}
-
-.moon img {
-  width: 75%;
-  height: auto;
-}
-
-@media (max-width: 800px) {
   .moon {
     position: absolute;
     padding-left: 10%;
@@ -191,43 +185,34 @@ a {
     height: auto;
   }
 }
-section.schedule{
-    td, th{
-        color: black;
-        border-top: 1px solid #969696 !important;
-    }
-    background: #ECECEC;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    h1, h2, h4, p{
-        color: black;
-    }
+
+section.schedule {
+  td, th {
+    color: black;
+    border-top: 1px solid #969696 !important;
+  }
+  background: #ECECEC;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  h1, h2, h4, p {
+    color: black;
+  }
 }
+
 section.sponsors-partners {
   .sponsors, .partners {
     line-height: 30px;
   }
   .inline-img {
     display: inline-block;
-    max-height: 110px;
+    max-height: 90px;
     width: auto;
     margin: 50px;
   }
   .gold {
-    margin-bottom: 50px;
     img {
-      max-height: 240px !important;
+      max-height: 200px !important;
     }
-  }
-
-
-  .invitation {
-    border-width: 5px;
-    border-style: dashed;
-    padding: 25px;
-    white-space: nowrap;
-    line-height: 75px;
-    margin: 5px;
   }
 }
 
@@ -241,6 +226,9 @@ section.showcase {
   -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
 
+  h3 {
+    line-height: 35px;
+  }
   p.sub {
     font-size: 14px;
   }
@@ -255,11 +243,19 @@ section.showcase {
     height: 400px;
     width: auto;
   }
+  .tagline {
+    text-align: center;
+    padding: 40px 0 0 10px;
+  }
 }
 
-.tagline {
-  text-align: center;
-  padding: 40px 0 0 10px;
+a.fa {
+  color: white;
+  padding-bottom: 20px;
+  opacity: 0.6;
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 header {
@@ -344,14 +340,7 @@ header {
       opacity: 0.7;
     }
   }
-  a.fa {
-    color: white;
-    padding-bottom: 20px;
-    opacity: 0.6;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
+
 }
 
 section.about {
@@ -411,7 +400,6 @@ footer {
   color: white;
 
   .love {
-    margin-top: 20px;
     @include OpenSansLight;
   }
 }
@@ -437,12 +425,12 @@ footer {
       width: auto;
     }
   }
-  section.sponsors-partners{
-    .inline-img{
+  section.sponsors-partners {
+    .inline-img {
       margin: 15px 0;
       max-width: 40%;
     }
-    .gold img{
+    .gold img {
       max-width: 95%;
       margin-left: 0;
       margin-right: 0;
@@ -481,24 +469,6 @@ footer {
     }
   }
   header {
-    #mc_embed_signup {
-      margin-left: 10%;
-      margin-right: 10%;
-      form {
-        width: 100%;
-
-        input.email {
-          font-size: 15px;
-        }
-        input.button {
-          text-align: center;
-          font-size: 15px;
-          min-width: 70px;
-          margin: auto;
-
-        }
-      }
-    }
     a.fa {
       padding-bottom: 0;
     }

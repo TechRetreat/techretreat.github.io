@@ -4910,6 +4910,8 @@ html {
 
 body {
   margin-bottom: 210px; }
+  body.error-page {
+    margin-bottom: 0; }
 
 h1, h2, h3, h4, p, a {
   font-family: "Open Sans", Arial, sans-serif;
@@ -4942,13 +4944,15 @@ p {
   font-size: 20px; }
 
 a {
-  transition: all 0.3s ease;
-  color: #00c0ff; }
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: #CAAC8F; }
   a:hover {
-    color: #63d9ff;
-    text-decoration: none; }
-  a:focus {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #dac6b2; }
+
+div.social {
+  font-size: 20px; }
 
 .fa {
   display: inline-block; }
@@ -4971,25 +4975,31 @@ a {
   right: 0;
   text-align: center;
   z-index: -1; }
-
-.earth img {
-  width: 75%;
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0; }
+  .earth img {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; }
 
 .rocket {
   position: absolute;
   padding-left: 70%;
   padding-top: 10%; }
+  .rocket img {
+    width: 50%;
+    height: auto; }
 
-.rocket img {
-  width: 50%;
-  height: auto; }
+.moon {
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 50px; }
+  .moon img {
+    width: 75%;
+    height: auto; }
 
 .table > tbody > tr > th, .table > tbody > tr > td {
   border-top: none !important;
@@ -5015,18 +5025,7 @@ a {
     padding-top: 70vh; }
   .rocket img {
     width: 75%;
-    height: auto; } }
-
-.moon {
-  position: absolute;
-  padding-left: 10%;
-  padding-top: 50px; }
-
-.moon img {
-  width: 75%;
-  height: auto; }
-
-@media (max-width: 800px) {
+    height: auto; }
   .moon {
     position: absolute;
     padding-left: 10%;
@@ -5049,20 +5048,11 @@ section.sponsors-partners .sponsors, section.sponsors-partners .partners {
   line-height: 30px; }
 section.sponsors-partners .inline-img {
   display: inline-block;
-  max-height: 110px;
+  max-height: 90px;
   width: auto;
   margin: 50px; }
-section.sponsors-partners .gold {
-  margin-bottom: 50px; }
-  section.sponsors-partners .gold img {
-    max-height: 240px !important; }
-section.sponsors-partners .invitation {
-  border-width: 5px;
-  border-style: dashed;
-  padding: 25px;
-  white-space: nowrap;
-  line-height: 75px;
-  margin: 5px; }
+section.sponsors-partners .gold img {
+  max-height: 200px !important; }
 
 header, section.container-fluid {
   padding-top: 50px;
@@ -5072,6 +5062,8 @@ section.showcase {
   -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75); }
+  section.showcase h3 {
+    line-height: 35px; }
   section.showcase p.sub {
     font-size: 14px; }
   section.showcase .img-showcase {
@@ -5083,10 +5075,16 @@ section.showcase {
   section.showcase .img-rocket {
     height: 400px;
     width: auto; }
+  section.showcase .tagline {
+    text-align: center;
+    padding: 40px 0 0 10px; }
 
-.tagline {
-  text-align: center;
-  padding: 40px 0 0 10px; }
+a.fa {
+  color: white;
+  padding-bottom: 20px;
+  opacity: 0.6; }
+  a.fa:hover {
+    opacity: 0.8; }
 
 header {
   overflow-x: hidden;
@@ -5159,12 +5157,6 @@ header {
     header a.signup:hover {
       background-color: #FFF;
       opacity: 0.7; }
-  header a.fa {
-    color: white;
-    padding-bottom: 20px;
-    opacity: 0.6; }
-    header a.fa:hover {
-      opacity: 0.8; }
 
 section.about {
   background: url('../img/waterloo-campus.png');
@@ -5215,7 +5207,6 @@ footer {
   text-align: center;
   color: white; }
   footer .love {
-    margin-top: 20px;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 300; }
 
@@ -5258,18 +5249,6 @@ footer {
   section.showcase .img-rocket {
     height: 400px;
     width: auto; }
-  header #mc_embed_signup {
-    margin-left: 10%;
-    margin-right: 10%; }
-    header #mc_embed_signup form {
-      width: 100%; }
-      header #mc_embed_signup form input.email {
-        font-size: 15px; }
-      header #mc_embed_signup form input.button {
-        text-align: center;
-        font-size: 15px;
-        min-width: 70px;
-        margin: auto; }
   header a.fa {
     padding-bottom: 0; }
   section.about {
