@@ -84,6 +84,7 @@ a.tr-btn{
   transition: all .2s ease;
   font-size: 20px;
   border-radius: 6px;
+  text-align: center;
   @include OpenSans;
   &.tr-btn-primary {
     margin: 40px auto 30px auto;
@@ -97,8 +98,15 @@ a.tr-btn{
   &.tr-btn-secondary{
     color: white;
     border: 2px solid white;
+    background-color: $darkPurple;
     &:hover{
-      background-color: opacify(transparent, 0.4);
+      background-color: transparentize($darkPurple, 0.4);
+    }
+    &.transparent{
+      background-color: transparent;
+      &:hover{
+        background-color: opacify(transparent, 0.4);
+      }
     }
   }
 

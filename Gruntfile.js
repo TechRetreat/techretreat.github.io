@@ -11,10 +11,9 @@ module.exports = function (grunt) {
       }
     },
     sass: {
-      options: {
-        sourceMap: true
-      },
       dist: {
+        options: {
+        },
         files: {
           'css/style.css': 'scss/style.scss'
         }
@@ -45,7 +44,7 @@ module.exports = function (grunt) {
   });
   //grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-http-server');
   grunt.registerTask('default', ['http-server', 'watch']);
