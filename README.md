@@ -1,11 +1,11 @@
-Waterloo Tech Retreat
+Tech Retreat
 ===============
-A website for the Waterloo Tech Retreat.
+A website for Tech Retreat.
 
-The Waterloo Tech Retreat brings together passionate high school students for a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate with like-minded peers to create something amazing.
+Tech Retreat brings together passionate high school students for a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate with like-minded peers to create something amazing.
 
 ### Development Environment
-Ensure you have npm and bower installed, and that you've cloned this repo.
+Ensure you have npm and bower installed, and that you've cloned this repo. You will also need ruby and sass installed.
 
 If you don't have npm, download [Node.js and npm](https://nodejs.org/).
 

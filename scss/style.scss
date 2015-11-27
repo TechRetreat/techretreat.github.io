@@ -71,6 +71,45 @@ a {
     text-decoration: none;
     color: lighten($offWhite, 10%);
   }
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+a.tr-btn{
+  display: block;
+  margin: 10px auto;
+  width: 360px;
+  padding: 15px 30px;
+  transition: all .2s ease;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  @include OpenSans;
+  &.tr-btn-primary {
+    margin: 40px auto 30px auto;
+    text-transform: uppercase;
+    background-color: white;
+    color: $darkPurple;
+    &:hover{
+      background-color: transparentize(white, 0.4);
+    }
+  }
+  &.tr-btn-secondary{
+    color: white;
+    border: 2px solid white;
+    background-color: $darkPurple;
+    &:hover{
+      background-color: transparentize($darkPurple, 0.4);
+    }
+    &.transparent{
+      background-color: transparent;
+      &:hover{
+        background-color: opacify(transparent, 0.4);
+      }
+    }
+  }
+
 }
 
 div.social{
@@ -325,22 +364,6 @@ header {
     background-image: none;
     z-index: -1;
   }
-
-  a.signup {
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 2px;
-    padding: 17px 30px;
-    transition: all 0.3s ease;
-    background-color: #FFF;
-    color: #2F1447;
-    @include OpenSans;
-    &:hover {
-      background-color: #FFF;
-      opacity: 0.7;
-    }
-  }
-
 }
 
 section.about {
