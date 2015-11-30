@@ -76,6 +76,11 @@ a {
   }
 }
 
+header, section.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 a.tr-btn{
   display: block;
   margin: 10px auto;
@@ -112,16 +117,18 @@ a.tr-btn{
 
 }
 
+a.fa {
+  color: white;
+  padding-bottom: 20px;
+  opacity: 0.6;
+  display: inline-block;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 div.social{
   font-size: 20px;
-}
-
-.fa {
-  display: inline-block;
-}
-
-.venue {
-  color: azure;
 }
 
 .center {
@@ -175,67 +182,117 @@ div.social{
   }
 }
 
-.table > tbody > tr > th, .table > tbody > tr > td {
-  border-top: none !important;
-  border-bottom: 1px solid #A8A5A5;
-  color: #302E2F;
-}
-
-.table > tbody > tr > th {
-  color: #41286B;
-}
-
-.table {
-  table-layout: fixed;
-  tbody tr td, tbody tr th {
-    &:first-child {
-      width: 12%;
-    }
-    &:nth-child(2) {
-      width: 18%;
-    }
-    &:nth-child(3) {
-      width: 35%;
-    }
-    &:last-child {
-      width: 35%;
-    }
-  }
-}
-
-// For mobile devices.
+// Parallax Mobile
 @media (max-width: 800px) {
   .rocket {
     position: absolute;
     padding-left: 70%;
     padding-top: 70vh;
+    img {
+      width: 75%;
+      height: auto;
+    }
   }
-  .rocket img {
-    width: 75%;
-    height: auto;
-  }
-
   .moon {
     position: absolute;
     padding-left: 10%;
-    padding-top: 50px;
+    padding-top: 15px;
+    img {
+      width: 50%;
+      height: auto;
+    }
   }
-  .moon img {
-    width: 50%;
-    height: auto;
+}
+
+header {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translateZ(0);
+  height: 100vh;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  color: azure;
+  @include OpenSans;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+
+  .social {
+    padding-top: 20px;
+  }
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-fluid {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-image: url('/img/techretreat-shaded-bkg.jpg');
+    background-color: #2f0057;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    z-index: -2;
+  }
+
+  .parallax {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-image: none;
+    z-index: -1;
   }
 }
 
 section.schedule {
-  td, th {
-    color: black;
-    border-top: 1px solid #969696 !important;
-  }
   background: #ECECEC;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  h1, h2, h4, p {
-    color: black;
+  .table {
+    table-layout: fixed;
+    td {
+      border-top: none !important;
+      border-bottom: 1px solid #A8A5A5;
+      color: #302E2F;
+      img {
+        width: 50%;
+        height: auto;
+      }
+      &:first-child {
+        width: 12%;
+      }
+      &:nth-child(2) {
+        width: 18%;
+      }
+      &:nth-child(3) {
+        width: 35%;
+      }
+      &:last-child {
+        width: 35%;
+      }
+    }
+    th{
+      @extend td;
+      color: #41286B;
+    }
   }
 }
 
@@ -254,11 +311,6 @@ section.sponsors-partners {
       max-height: 200px !important;
     }
   }
-}
-
-header, section.container-fluid {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 section.showcase {
@@ -286,84 +338,6 @@ section.showcase {
   .tagline {
     text-align: center;
     padding: 40px 0 0 10px;
-  }
-}
-
-a.fa {
-  color: white;
-  padding-bottom: 20px;
-  opacity: 0.6;
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
-header {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  transform: translateZ(0);
-  height: 100%;
-  min-height: 100vh;
-  position: relative;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  color: azure;
-  @include OpenSans;
-  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
-
-  .social {
-    padding-top: 20px;
-  }
-  .read-more {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .container-fluid {
-    margin: 0;
-    width: 100%;
-    //padding-top: 50px; //different in chrome/safari
-    text-align: center;
-    .logo.img-responsive {
-      width: 250px;
-      height: auto;
-      margin: auto;
-    }
-  }
-  .background {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100%;
-    min-height: 100vh;
-    background-image: url('/img/techretreat-shaded-bkg.jpg');
-    background-color: #2f0057;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center top;
-    z-index: -2;
-  }
-
-  .parallax {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100%;
-    min-height: 100vh;
-    background-image: none;
-    z-index: -1;
   }
 }
 
@@ -474,7 +448,10 @@ footer {
     font-size: 25px;
   }
   h3 {
-    font-size: 18px;
+    font-size: 20px;
+  }
+  h4{
+    font-size: 17px;
   }
   p {
     font-size: 14px;

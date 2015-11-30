@@ -4,29 +4,15 @@ module.exports = function (grunt) {
       sass: {
         files: ['scss/style.scss'],
         tasks: ['sass']
-      },
-      css: {
-        files: ['css/style.css'],
-        tasks: ['cssmin']
       }
     },
     sass: {
       dist: {
         options: {
+          style: "compressed"
         },
         files: {
           'css/style.css': 'scss/style.scss'
-        }
-      }
-    },
-    cssmin: {
-      options: {
-        shorthandCompacting: false,
-        roundingPrecision: -1
-      },
-      target: {
-        files: {
-          'css/style.min.css': 'css/style.css'
         }
       }
     },
@@ -45,7 +31,6 @@ module.exports = function (grunt) {
   //grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-http-server');
   grunt.registerTask('default', ['http-server', 'watch']);
 };
