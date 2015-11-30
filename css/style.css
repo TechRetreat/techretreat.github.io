@@ -5772,14 +5772,16 @@ div.social {
 .table > tbody > tr > th {
   color: #41286B; }
 
-.table tbody tr td:first-child, .table tbody tr th:first-child {
-  width: 12%; }
-.table tbody tr td:nth-child(2), .table tbody tr th:nth-child(2) {
-  width: 18%; }
-.table tbody tr td:nth-child(3), .table tbody tr th:nth-child(3) {
-  width: 35%; }
-.table tbody tr td:last-child, .table tbody tr th:last-child {
-  width: 35%; }
+.table {
+  table-layout: fixed; }
+  .table tbody tr td:first-child, .table tbody tr th:first-child {
+    width: 12%; }
+  .table tbody tr td:nth-child(2), .table tbody tr th:nth-child(2) {
+    width: 18%; }
+  .table tbody tr td:nth-child(3), .table tbody tr th:nth-child(3) {
+    width: 35%; }
+  .table tbody tr td:last-child, .table tbody tr th:last-child {
+    width: 35%; }
 
 @media (max-width: 800px) {
   .rocket {
@@ -5933,7 +5935,7 @@ section.faq {
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
-    font-size: 1.75em;
+    font-size: 16px;
     font-weight: bold; }
   section.faq p.answer {
     font-family: "Open Sans", Arial, sans-serif;
@@ -5998,6 +6000,8 @@ footer {
   p {
     font-size: 14px; }
 
+  section.showcase h3 {
+    line-height: 24px; }
   section.showcase p.sub {
     font-size: 14px; }
   section.showcase .img-showcase {
@@ -6010,6 +6014,15 @@ footer {
     padding-bottom: 0; }
 
   section.about {
-    background-size: auto; } }
+    background-size: auto; }
+
+  section.faq p.answer {
+    padding-left: 0; }
+
+  a.tr-btn {
+    width: 320px; }
+
+  .table {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
