@@ -16,6 +16,13 @@ module.exports = function (grunt) {
         }
       }
     },
+    autoprefixer: {
+      dist:{
+        files:{
+          'css/style.css':'css/style.css'
+        }
+      }
+    },
     'http-server': {
       'dev': {
         root: '.',
@@ -31,6 +38,7 @@ module.exports = function (grunt) {
   //grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-http-server');
   grunt.registerTask('default', ['http-server', 'watch']);
 };
