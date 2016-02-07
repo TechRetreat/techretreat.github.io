@@ -4,6 +4,10 @@ module.exports = function (grunt) {
       sass: {
         files: ['scss/style.scss'],
         tasks: ['sass']
+      },
+      autoprefixer: {
+        files: ['css/style.css'],
+        tasks: ['autoprefixer']
       }
     },
     sass: {
