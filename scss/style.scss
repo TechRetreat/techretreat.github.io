@@ -171,6 +171,12 @@ a.fa {
   color: $white;
 }
 
+@media all and (max-width: 800px) {
+  html {
+    font-size:0.8em;
+  }
+}
+
 /* Block-specific */
 .header {
   background-color: $purple;
@@ -205,11 +211,27 @@ a.fa {
   padding-bottom:0.5em;
 }
 .header__input {
-  width: 400px;
+  width: 22em;
 }
 .header__form {
   padding-bottom: 0.5em;
 }
+@media all and (max-width: 700px) {
+  .header__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__input {
+    flex: 1;
+    box-sizing: border-box;
+  }
+  .button--primary {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
 a.header__inquiries {
   margin: 2em;
 }
@@ -232,18 +254,20 @@ a.header__inquiries {
 
 }
 
+.sponsors img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 .sponsors div {
-  line-height: 30px;
   text-align: center;
 }
 .inline-img {
   display: inline-block;
-  max-height: 90px;
-  width: auto;
-  margin: 50px;
+  max-height: 8em;
+  border: 2em solid transparent;
 }
 .gold img {
-  max-height: 200px !important;
+  max-height: 12em;
 }
 
 section.footer {
