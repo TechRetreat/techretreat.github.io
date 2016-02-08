@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic);
 
-$purple: #40152A;
-$purple-alpha: rgba(64, 21, 42, 0.4);
-$lightblue: #74A588;
+$purple: #41286B;
+$purple-alpha: rgba(65, 40, 107, 0.4);
+$darkpurple: #21084B;
+$lightblue: #04756F;
 $white: #fff;
 $offwhite: #eee;
 $beige: #D6CCAD;
-$orange: #DC9C76;
-$lightgreen: #FFFF9D;
-$red: #D6655A;
+$orange: #FF2D00;
+$lightorange: #FF8C00;
+$red: #D90000;
 $black: #111;
 
 
@@ -83,7 +84,7 @@ section, header, footer {
   justify-content: flex-start;
   background-color: $white;
 }
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: $offwhite;
 }
 .row {
@@ -111,7 +112,7 @@ section:nth-child(even) {
 }
 a {
   transition: all ease 0.3s;
-  color:$red;
+  color:$lightorange;
 }
 a:hover {
   color: $orange;
@@ -159,16 +160,19 @@ a.fa {
   transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
 }
 .button:hover, a.button:hover {
-  transform: scale(1.1) translate3d( 0, 0, 0);
+  transform: scale(1.1) translate3d( 0, 0, 0 );
 }
 .button--primary, a.button--primary {
   font-size: 1.2em;
-  background-color:$lightblue;
+  background-color:$orange;
   color: $white;
 }
 .button--secondary, a.button--secondary {
-  background-color:$orange;
+  background-color:$lightorange;
   color: $white;
+}
+.button--social {
+  min-width: 1em;
 }
 
 @media all and (max-width: 800px) {
@@ -178,11 +182,11 @@ a.fa {
 }
 
 /* Block-specific */
-.header {
+section.header {
   background-color: $purple;
   color: $white;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: calc(100vh-5rem);
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -271,15 +275,63 @@ a.header__inquiries {
 }
 
 section.footer {
-  background-color: $lightblue;
+  background-color: $darkpurple;
   color: $white;
   text-align: center;
 }
-section.footer a {
-  color: $lightgreen;
+
+section.nav {
+  background-color: $darkpurple;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-section.footer a:hover {
+.scrolled .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.scrolled .nav+section {
+  border-top: 5rem solid transparent;
+}
+nav {
   color: $white;
+  height: 5rem;
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+nav h1 {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+a.nav-link {
+  height: 5rem;
+  line-height: 5rem;
+  padding: 0 2rem;
+  color: $white;
+  -webkit-font-smoothing: antialiased;
+  transform: translate3d( 0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
+}
+a.nav-link:hover {
+  transform: scale(1.1) translate3d( 0, 0, 0 );
+}
+a.nav-link--title {
+  justify-self: flex-start;
+}
+a.nav-link--selected {
+  text-decoration: underline;
+}
+a.nav-link img {
+  box-sizing: border-box;
+  height: 5rem;
+  padding: 0.7rem;
+  width: auto;
 }
 
 /* Header effects */
