@@ -301,6 +301,7 @@ nav {
   justify-content: flex-end;
   padding-top: 0;
   padding-bottom: 0;
+  overflow: hidden;
 }
 nav h1 {
   flex: 1;
@@ -317,16 +318,16 @@ a.nav-link {
   -webkit-font-smoothing: antialiased;
   transform: translate3d( 0, 0, 0);
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
+  transition: all 0.3s ease;
 }
 a.nav-link:hover {
-  transform: scale(1.1) translate3d( 0, 0, 0 );
+  background-color:$lightorange;
 }
 a.nav-link--title {
   justify-self: flex-start;
 }
 a.nav-link--selected {
-  text-decoration: underline;
+  background-color: $orange;
 }
 a.nav-link img {
   box-sizing: border-box;
@@ -358,4 +359,42 @@ a.nav-link img {
   background-position: center;
   background-size: 16rem 26.7rem;
   background-repeat: no-repeat;
+}
+
+.header__astronaut {
+  position: absolute;
+  width: 3rem;
+  height: 5rem;
+}
+.header__astronaut:before {
+  content: '';
+  display: block;
+  background-color: rgba(65, 40, 107, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  bottom:-0.5rem;
+  left:-0.5rem;
+  right:-0.5rem;
+  height: 1rem;
+}
+
+.header__astronaut__body {
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  top:0;
+  background-image: url("../img/astronaut1.png");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.header__astronaut__head {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top:-2.5rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 0.3rem solid #a9d2d4;
 }
