@@ -195,7 +195,7 @@ section.header {
 }
 .header__content {
   position: relative;
-  z-index:10;
+  z-index:9001;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,6 +348,28 @@ a.nav-link img {
   background-position: bottom center;
   background-size: 30rem 15rem;
 }
+.header__bg:after, .header__bg:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.4s linear;
+  opacity: 1;
+}
+.header__bg:after {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.21) 100%);
+  z-index:8999;
+}
+.header__bg:before {
+  background: $purple;
+  z-index:9000;
+  opacity: 0;
+}
+.header__bg.header__bg--dimmed:before {
+  opacity: 1;
+}
 
 .header__rocket {
   position: absolute;
@@ -359,6 +381,7 @@ a.nav-link img {
   background-position: center;
   background-size: 16rem 26.7rem;
   background-repeat: no-repeat;
+  z-index: 45;
 }
 
 .header__astronaut {
@@ -381,18 +404,37 @@ a.nav-link img {
 .header__astronaut__body {
   position: absolute;
   bottom:0;
-  left:0;
-  right:0;
   top:0;
-  background-image: url("../img/astronaut1.png");
   background-size: cover;
   background-position: center bottom;
 }
 
+.astronaut__body--1 {
+  background-image: url("../img/astronaut1.png");
+  left: 0;
+  right: 0;
+}
+.astronaut__body--2 {
+  background-image: url("../img/astronaut2.png");
+  left: -0.2em;
+  right: -0.2em;
+  margin-left: -0.2em;
+}
+.astronaut__body--3 {
+  background-image: url("../img/astronaut3.png");
+  left: -0.5em;
+  right: -0.5em;
+  bottom: 0.5em;
+}
+
 .header__astronaut__head {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 3rem;
+  height: 3rem;
+  background-size: 3.5rem auto;
+  background-position: 45% 40%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top:-2.5rem;
   box-sizing: border-box;
   border-radius: 50%;

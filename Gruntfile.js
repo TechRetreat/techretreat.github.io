@@ -8,6 +8,21 @@ module.exports = function (grunt) {
       autoprefixer: {
         files: ['css/style.css'],
         tasks: ['autoprefixer']
+      },
+      babel: {
+        files: ['src/main.js'],
+        tasks: ['babel']
+      }
+    },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['es2015', 'stage-0']
+      },
+      dist: {
+        files: {
+          'dist/main.js': 'src/main.js'
+        }
       }
     },
     sass: {
@@ -40,6 +55,7 @@ module.exports = function (grunt) {
     }
   });
   //grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-babel');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
