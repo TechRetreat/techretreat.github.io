@@ -6,7 +6,7 @@ module.exports = function (grunt) {
         tasks: ['sass']
       },
       autoprefixer: {
-        files: ['css/style.css'],
+        files: ['tmp/style.css'],
         tasks: ['autoprefixer']
       },
       babel: {
@@ -31,14 +31,14 @@ module.exports = function (grunt) {
           style: "compressed"
         },
         files: {
-          'css/style.css': 'scss/style.scss'
+          'tmp/style.css': 'scss/style.scss'
         }
       }
     },
     autoprefixer: {
       dist:{
         files:{
-          'css/style.css':'css/style.css'
+          'css/style.css':'tmp/style.css'
         }
       }
     },
