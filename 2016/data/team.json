@@ -1,0 +1,58 @@
+{
+  "team": [
+    {
+      "name": "Dave Pagurek",
+      "image": "img/people/dave.jpg",
+      "roles": ["Website", "Design", "Learnathon"],
+      "description": "Resident bad joke teller"
+    },
+    {
+      "name": "Yu Chen Hou",
+      "image": "img/people/yuchen.jpg"
+    },
+    {
+      "name": "Deon Hua",
+      "image": "img/people/deon.jpg"
+    },
+    {
+      "name": "Adam Klen",
+      "image": "img/people/adam.jpg"
+    },
+    {
+      "name": "Jason Zukewich",
+      "image": "img/people/jason.jpg"
+    },
+    {
+      "name": "Kingsong Chen",
+      "image": "img/people/kingsong.jpg"
+    },
+    {
+      "name": "Frieda Rong",
+      "image": "img/people/frieda.jpg"
+    },
+    {
+      "name": "Steven Kong",
+      "image": "img/people/steven.jpg"
+    },
+    {
+      "name": "Bilal Akhtar",
+      "image": "img/people/bilal.jpg"
+    },
+    {
+      "name": "Tammy Liu",
+      "image": "img/people/tammy.jpg"
+    },
+    {
+      "name": "Karel Vuong",
+      "image": "img/people/karel.jpg"
+    },
+    {
+      "name": "Paul Bardea",
+      "image": "img/people/paul.jpg"
+    },
+    {
+      "name": "Joanna Chen",
+      "image": "img/people/joanna.jpg"
+    }
+  ]
+}
