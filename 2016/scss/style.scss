@@ -1,16 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic);
 
-$purple: #41286B;
-$purple-alpha: rgba(65, 40, 107, 0.4);
-$darkpurple: #21084B;
-$lightblue: #04756F;
-$white: #fff;
-$offwhite: #eee;
-$beige: #D6CCAD;
-$orange: #FF2D00;
-$lightorange: #FF8C00;
-$red: #D90000;
-$black: #111;
+$primary: #41286B;
+$primary-alpha: rgba(65, 40, 107, 0.4);
+$primary-shade: #21084B;
+$secondary: #66C2A6;
+$light: #fff;
+$light-shade: #eee;
+$accent: #F07C6C;
+$accent-light: #F07C6C;
+$dark: #111;
 
 
 @mixin OpenSans {
@@ -30,7 +28,7 @@ body {
   @include OpenSans;
 }
 *::selection {
-  background: $orange;
+  background: $accent;
 }
 h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12 {
   @include OpenSansLight;
@@ -82,10 +80,10 @@ section, header, footer {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: $white;
+  background-color: $light;
 }
 section:nth-child(odd) {
-  background-color: $offwhite;
+  background-color: $light-shade;
 }
 .row {
   max-width: 64rem;
@@ -112,10 +110,10 @@ section:nth-child(odd) {
 }
 a {
   transition: all ease 0.3s;
-  color:$lightorange;
+  color:$accent-light;
 }
 a:hover {
-  color: $orange;
+  color: $accent;
 }
 a img {
   border:0;
@@ -129,8 +127,8 @@ a.fa {
   padding: 0.6em;
   margin: 0.3em;
   border-radius: 0.3em;
-  background-color: $white;
-  color: $black;
+  background-color: $light;
+  color: $dark;
   font-size: 1em;
   transition: all 0.3s ease;
 }
@@ -140,7 +138,7 @@ a.fa {
 .text-input:focus {
   outline: 0;
   opacity: 1;
-  background-color: $offwhite;
+  background-color: $light-shade;
 }
 .text-input--primary {
   font-size: 1.2em;
@@ -154,8 +152,8 @@ a.fa {
   border-radius: 0.3em;
   -webkit-font-smoothing: antialiased;
   transform: translate3d( 0, 0, 0);
-  background-color: $white;
-  color: $black;
+  background-color: $light;
+  color: $dark;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
 }
@@ -164,12 +162,12 @@ a.fa {
 }
 .button--primary, a.button--primary {
   font-size: 1.2em;
-  background-color:$orange;
-  color: $white;
+  background-color:$accent;
+  color: $light;
 }
 .button--secondary, a.button--secondary {
-  background-color:$lightorange;
-  color: $white;
+  background-color:$secondary;
+  color: $light;
 }
 .button--social {
   min-width: 1em;
@@ -183,9 +181,9 @@ a.fa {
 
 /* Block-specific */
 section.header {
-  background-color: $purple;
+  background-color: $primary;
   background-image: url("../img/stars.png");
-  color: $white;
+  color: $light;
   box-sizing: border-box;
   min-height: calc(100vh - 5rem);
   justify-content: center;
@@ -207,7 +205,7 @@ section.header {
   right:0;
   bottom:0;
   z-index: 9;
-  background-color:$purple-alpha;
+  background-color:$primary-alpha;
 }
 .header__title {
   text-align: center;
@@ -238,11 +236,10 @@ section.header {
 }
 
 a.header__inquiries {
-  margin: 2em;
+  margin: 4em 2em 0 2em;
 }
 .header__social {
   text-align: center;
-  margin-top:1.8em;
 }
 
 .column--events {
@@ -276,13 +273,13 @@ a.header__inquiries {
 }
 
 section.footer {
-  background-color: $darkpurple;
-  color: $white;
+  background-color: $primary-shade;
+  color: $light;
   text-align: center;
 }
 
 section.nav {
-  background-color: $darkpurple;
+  background-color: $primary-shade;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -296,7 +293,7 @@ section.nav {
   border-top: 5rem solid transparent;
 }
 nav {
-  color: $white;
+  color: $light;
   height: 5rem;
   justify-content: flex-end;
   padding-top: 0;
@@ -314,20 +311,20 @@ a.nav-link {
   height: 5rem;
   line-height: 5rem;
   padding: 0 2rem;
-  color: $white;
+  color: $light;
   -webkit-font-smoothing: antialiased;
   transform: translate3d( 0, 0, 0);
   text-decoration: none;
   transition: all 0.3s ease;
 }
 a.nav-link:hover {
-  background-color:$lightorange;
+  background-color:$accent-light;
 }
 a.nav-link--title {
   justify-self: flex-start;
 }
 a.nav-link--selected {
-  background-color: $orange;
+  background-color: $secondary;
 }
 a.nav-link img {
   box-sizing: border-box;
@@ -363,7 +360,7 @@ a.nav-link img {
   z-index:8999;
 }
 .header__bg:before {
-  background: $purple;
+  background: $primary;
   z-index:9000;
   opacity: 0;
 }
