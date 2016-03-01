@@ -5,6 +5,15 @@ let updateScroll = () => {
 updateScroll();
 window.addEventListener('scroll', updateScroll);
 
+let nav = document.querySelector('nav');
+document.querySelector('.nav-link--toggle').addEventListener('click', () => {
+  if (nav.className.indexOf('open') != -1) {
+    nav.classList.remove('open');
+  } else {
+    nav.classList.add('open');
+  }
+});
+
 class Astronaut {
   static SPRITE_MAX = 3;
   static SPRITE_MIN = 1;

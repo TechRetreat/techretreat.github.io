@@ -97,15 +97,19 @@ section:nth-child(odd) {
   align-items: center;
   justify-content: center;
 }
+.column--double {
+  flex: 2;
+}
 .column:last-child {
   padding-right: 0;
 }
 @media all and (max-width: 1000px) {
   .row {
-    flex-direction: column;
+    display: block;
   }
   .column {
     padding-right: 0;
+    display: block;
   }
 }
 a {
@@ -121,11 +125,14 @@ a img {
 a.fa {
   text-decoration: none;
 }
+.no-break {
+  display: inline-block;
+}
 .text-input {
   box-sizing: border-box;
   border: 0;
   padding: 0.6em;
-  margin: 0.3em;
+  margin: 0.3em 0;
   border-radius: 0.3em;
   background-color: $light;
   color: $dark;
@@ -157,26 +164,73 @@ a.fa {
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
 }
-.button:hover, a.button:hover {
+.button:hover {
   transform: scale(1.1) translate3d( 0, 0, 0 );
 }
 .button--primary, a.button--primary {
   font-size: 1.2em;
-  background-color:$accent;
+  background-color:$secondary;
   color: $light;
 }
 .button--secondary, a.button--secondary {
-  background-color:$secondary;
+  background-color:$accent;
   color: $light;
 }
 .button--social {
   min-width: 1em;
+}
+.button--simple, a.button--simple {
+  font-weight: normal;
+  background-color: transparent;
+  color: $light;
 }
 
 @media all and (max-width: 800px) {
   html {
     font-size:0.8em;
   }
+}
+
+.frame {
+  background-size: cover;
+  background-position: center;
+  width: 16.5rem;
+  height: 16.5rem;
+  margin: 2rem;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+}
+@media all and (max-width: 1000px) {
+  .frame {
+    margin: 2rem auto;
+  }
+}
+.frame--qa:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3rem;
+  right: -2rem;
+  width: 11.2rem;
+  height: 8.9rem;
+  transform: scale(0.8);
+  background-position: center;
+  background-image: url("../img/rover.png");
+  background-size: cover;
+}
+.frame--learnathon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3rem;
+  left: -2rem;
+  width: 6.2rem;
+  height: 11.2rem;
+  transform: scale(0.8);
+  background-position: center;
+  background-image: url("../img/flag.png");
+  background-size: cover;
 }
 
 /* Block-specific */
@@ -197,6 +251,8 @@ section.header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin:0.3em;
+  margin-bottom: 2.5em;
 }
 .header__overlay {
   position: absolute;
@@ -211,23 +267,31 @@ section.header {
   text-align: center;
   font-size: 5em;
   padding-top:0.1em;
-  padding-bottom:0.5em;
+  padding-bottom:0.1em;
+}
+.header__description {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 1em;
 }
 .header__input {
-  width: 22em;
+  box-sizing: border-box;
+  flex: 1;
+  margin-right: 0.5em;
 }
 .header__form {
+  display: flex;
+  width: 100%;
   padding-bottom: 0.5em;
+  max-width: 30em;
 }
 @media all and (max-width: 700px) {
+  .header__input {
+    margin-right: 0;
+  }
   .header__form {
-    display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .header__input {
-    flex: 1;
-    box-sizing: border-box;
   }
   .button--primary {
     padding-left: 2em;
@@ -253,7 +317,9 @@ a.header__inquiries {
 .question {
   font-style: italic;
   padding-bottom: 0.2em;
-
+}
+.answer {
+  margin-left: 2em;
 }
 
 .sponsors img {
@@ -288,6 +354,7 @@ section.nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10000;
 }
 .scrolled .nav+section {
   border-top: 5rem solid transparent;
@@ -309,6 +376,7 @@ nav h1 {
 }
 a.nav-link {
   height: 5rem;
+  text-align: center;
   line-height: 5rem;
   padding: 0 2rem;
   color: $light;
@@ -324,13 +392,35 @@ a.nav-link--title {
   justify-self: flex-start;
 }
 a.nav-link--selected {
-  background-color: $secondary;
+  background-color: rgba(255,255,255,0.2);
 }
 a.nav-link img {
   box-sizing: border-box;
   height: 5rem;
   padding: 0.7rem;
   width: auto;
+}
+a.nav-link--toggle {
+  display: none;
+  cursor: pointer;
+}
+@media all and (max-width: 600px) {
+  nav {
+    display:block;
+    transition: all ease 0.3s;
+  }
+  nav.open {
+    height: 20rem;
+  }
+  nav h1 {
+    display:none;
+  }
+  a.nav-link {
+    display: block;
+  }
+  a.nav-link--toggle {
+    display: block;
+  }
 }
 
 /* Header effects */
@@ -356,7 +446,7 @@ a.nav-link img {
   opacity: 1;
 }
 .header__bg:after {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28) 0%, rgba(0, 0, 0, 0.21) 100%);
+  background: linear-gradient(to bottom,rgba(215, 72, 20, 0.28) 0%, rgba(66, 150, 223, 0.21) 100%);
   z-index:8999;
 }
 .header__bg:before {

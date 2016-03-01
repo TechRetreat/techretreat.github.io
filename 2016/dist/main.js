@@ -9,6 +9,15 @@ var updateScroll = function updateScroll() {
 updateScroll();
 window.addEventListener('scroll', updateScroll);
 
+var nav = document.querySelector('nav');
+document.querySelector('.nav-link--toggle').addEventListener('click', function () {
+  if (nav.className.indexOf('open') != -1) {
+    nav.classList.remove('open');
+  } else {
+    nav.classList.add('open');
+  }
+});
+
 var Astronaut = function Astronaut(img, onLoad) {
   _classCallCheck(this, Astronaut);
 
