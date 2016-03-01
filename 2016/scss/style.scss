@@ -294,6 +294,7 @@ section.header {
 @media all and (max-width: 700px) {
   .header__input {
     margin-right: 0;
+    align-self:stretch;
   }
   .header__form {
     flex-direction: column;
