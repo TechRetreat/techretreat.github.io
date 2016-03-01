@@ -7,7 +7,7 @@ $secondary: #66C2A6;
 $light: #fff;
 $light-shade: #eee;
 $accent: #F07C6C;
-$accent-light: #F07C6C;
+$accent-light: #F39E8E;
 $dark: #111;
 
 
@@ -118,10 +118,10 @@ section:nth-child(odd) {
 }
 a {
   transition: all ease 0.3s;
-  color:$accent-light;
+  color:$accent;
 }
 a:hover {
-  color: $accent;
+  color: $accent-light;
 }
 a img {
   border:0;
@@ -333,6 +333,14 @@ a.header__inquiries {
   max-width: 100%;
   box-sizing: border-box;
 }
+.sponsors a {
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
+  transform: scale(1) translate3d(0,0,0);
+}
+.sponsors a:hover {
+  transform: scale(1.1);
+}
 .sponsors div {
   text-align: center;
 }
@@ -388,12 +396,11 @@ a.nav-link {
   padding: 0 2rem;
   color: $light;
   -webkit-font-smoothing: antialiased;
-  transform: translate3d( 0, 0, 0);
+  transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
   text-decoration: none;
-  transition: all 0.3s ease;
 }
 a.nav-link:hover {
-  background-color:$accent-light;
+  transform: scale(1.1);
 }
 a.nav-link--title {
   justify-self: flex-start;
@@ -533,4 +540,5 @@ a.nav-link--toggle {
   box-sizing: border-box;
   border-radius: 50%;
   border: 0.3rem solid #a9d2d4;
+  position: relative;
 }
