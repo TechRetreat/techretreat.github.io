@@ -242,7 +242,9 @@ a.fa {
 /* Block-specific */
 section.header {
   background-color: $primary;
-  background-image: url("../img/stars.png");
+  background-image: url("../img/stars.jpg");
+  background-size: cover;
+  background-position: center;
   color: $light;
   box-sizing: border-box;
   min-height: calc(100vh - 5rem);
