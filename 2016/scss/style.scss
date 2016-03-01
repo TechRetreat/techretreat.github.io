@@ -135,7 +135,7 @@ a.fa {
 .text-input {
   box-sizing: border-box;
   border: 0;
-  padding: 0.6em;
+  padding: 0.6em 1.1em;
   margin: 0.3em 0;
   border-radius: 0.3em;
   background-color: $light;
@@ -158,7 +158,7 @@ a.fa {
   cursor: pointer;
   display: inline-block;
   border: 0;
-  padding: 0.6em;
+  padding: 0.6em 1.1em;
   margin: 0.3em;
   border-radius: 0.3em;
   -webkit-font-smoothing: antialiased;
@@ -180,7 +180,9 @@ a.fa {
   background-color:$accent;
   color: $light;
 }
-.button--social {
+.button--social, a.button--social {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
   min-width: 1em;
 }
 .button--simple, a.button--simple {
@@ -287,7 +289,7 @@ section.header {
   display: flex;
   width: 100%;
   padding-bottom: 0.5em;
-  max-width: 30em;
+  max-width: 35em;
 }
 @media all and (max-width: 700px) {
   .header__input {
