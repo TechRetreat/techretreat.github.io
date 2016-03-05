@@ -69,6 +69,7 @@ var sample = function sample(arr, size) {
 };
 
 var canvas = document.querySelector('.header__bg');
+var loader = document.querySelector('.header__loader');
 
 var req = new XMLHttpRequest();
 req.addEventListener("load", function () {
@@ -79,6 +80,7 @@ req.addEventListener("load", function () {
       team.map(function (member) {
         return new Astronaut(member.image, function () {
           loaded++;
+          loader.style.width = 100 * loaded / team.length + '%';
           if (loaded == team.length) canvas.classList.remove('header__bg--dimmed');
         });
       }).forEach(function (astronaut) {

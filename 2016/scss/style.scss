@@ -255,21 +255,25 @@ section.header {
 }
 .header__content {
   position: relative;
-  z-index:9001;
+  z-index:9002;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin:0.3em;
   margin-bottom: 2.5em;
 }
-.header__overlay {
+.header__loader {
   position: absolute;
   top:0;
   left:0;
-  right:0;
-  bottom:0;
-  z-index: 9;
-  background-color:$primary-alpha;
+  height: 0.6rem;
+  z-index: 9001;
+  background-color:$secondary;
+  transition: all ease 0.3s;
+  opacity: 0;
+}
+.header__bg--dimmed + .header__loader {
+  opacity: 0.9;
 }
 .header__title {
   text-align: center;
@@ -301,6 +305,9 @@ section.header {
   .header__form {
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+    padding-left:3em;
+    padding-right: 3em;
   }
   .button--primary {
     padding-left: 2em;
@@ -328,7 +335,7 @@ a.header__inquiries {
   padding-bottom: 0.2em;
 }
 .answer {
-  margin-left: 2em;
+  padding-left: 4em;
 }
 
 .sponsors img {

@@ -60,6 +60,7 @@ let sample = (arr, size) => {
 }
 
 let canvas = document.querySelector('.header__bg');
+let loader = document.querySelector('.header__loader');
 
 var req = new XMLHttpRequest();
 req.addEventListener("load", () => {
@@ -69,6 +70,7 @@ req.addEventListener("load", () => {
     team
       .map((member) => new Astronaut(member.image, () => {
         loaded++;
+        loader.style.width = `${100*loaded/team.length}%`;
         if (loaded == team.length) canvas.classList.remove('header__bg--dimmed');
       }))
       .forEach((astronaut) => canvas.appendChild(astronaut.element));
