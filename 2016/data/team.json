@@ -8,7 +8,9 @@
     },
     {
       "name": "Yu Chen Hou",
-      "image": "img/people/yuchen.jpg"
+      "image": "img/people/yuchen.jpg",
+      "roles": ["Website", "Logistics", "Community", "Hackathon", "Learnathon"],
+      "description": "Secretly loves Comic Sans"
     },
     {
       "name": "Deon Hua",
