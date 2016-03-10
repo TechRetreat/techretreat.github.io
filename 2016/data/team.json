@@ -63,6 +63,12 @@
     {
       "name": "Cora Lam",
       "image": "img/people/cora.jpg"
+    },
+    {
+      "name": "RuoTai Sun",
+      "image": "img/people/ruotai.jpg",
+      "roles": ["Logistics", "Sponsorship", "Finance"],
+      "description": "Civ V addict...one more turn..."
     }
   ]
 }
