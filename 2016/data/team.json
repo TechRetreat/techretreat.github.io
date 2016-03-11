@@ -38,7 +38,9 @@
     },
     {
       "name": "Bilal Akhtar",
-      "image": "img/people/bilal.jpg"
+      "image": "img/people/bilal.jpg",
+      "roles": ["Hackathon", "Sponsorship"],
+      "description": "Ayy lmao"
     },
     {
       "name": "Tammy Liu",
