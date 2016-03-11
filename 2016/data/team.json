@@ -62,7 +62,9 @@
     },
     {
       "name": "Cora Lam",
-      "image": "img/people/cora.jpg"
+      "image": "img/people/cora.jpg",
+      "roles": ["Logistics", "Community", "Volunteers"],
+      "description": "A human. Being."
     },
     {
       "name": "RuoTai Sun",
