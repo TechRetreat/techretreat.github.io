@@ -56,7 +56,9 @@
     },
     {
       "name": "Joanna Chen",
-      "image": "img/people/joanna.jpg"
+      "image": "img/people/joanna.jpg",
+      "roles": ["Learnathon", "Website"],
+      "description": "Avid avocado lover."
     },
     {
       "name": "Sarth Frey",
