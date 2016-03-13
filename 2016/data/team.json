@@ -75,6 +75,12 @@
       "image": "img/people/ruotai.jpg",
       "roles": ["Logistics", "Sponsorship", "Finance"],
       "description": "Civ V addict...one more turn..."
+    },
+    {
+      "name": "Simon Fan",
+      "image": "img/people/simon.jpg",
+      "roles": ["Sponsorship", "Events", "Media Relations"],
+      "description": "The dark side of YouTube incarnate"
     }
   ]
 }
