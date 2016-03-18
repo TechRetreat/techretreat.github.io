@@ -52,7 +52,9 @@
     },
     {
       "name": "Paul Bardea",
-      "image": "img/people/paul.jpg"
+      "image": "img/people/paul.jpg",
+      "roles": ["Learnathon", "Hackathon"],
+      "description": "👻 + 🎩 + 💻"
     },
     {
       "name": "Joanna Chen",
