@@ -44,7 +44,9 @@
     },
     {
       "name": "Tammy Liu",
-      "image": "img/people/tammy.jpg"
+      "image": "img/people/tammy.jpg",
+      "roles": ["Project Management", "Design", "Sponsorship"],
+      "description": "☆(^･ω･ ^=)ﾉ"
     },
     {
       "name": "Karel Vuong",
