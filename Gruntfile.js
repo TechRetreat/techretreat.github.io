@@ -4,6 +4,25 @@ module.exports = function (grunt) {
       sass: {
         files: ['scss/style.scss'],
         tasks: ['sass']
+      },
+      autoprefixer: {
+        files: ['tmp/style.css'],
+        tasks: ['autoprefixer']
+      },
+      babel: {
+        files: ['src/main.js'],
+        tasks: ['babel']
+      }
+    },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['es2015', 'stage-0']
+      },
+      dist: {
+        files: {
+          'dist/main.js': 'src/main.js'
+        }
       }
     },
     sass: {
@@ -12,7 +31,14 @@ module.exports = function (grunt) {
           style: "compressed"
         },
         files: {
-          'css/style.css': 'scss/style.scss'
+          'tmp/style.css': 'scss/style.scss'
+        }
+      }
+    },
+    autoprefixer: {
+      dist:{
+        files:{
+          'css/style.css':'tmp/style.css'
         }
       }
     },
@@ -29,8 +55,10 @@ module.exports = function (grunt) {
     }
   });
   //grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-babel');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-http-server');
   grunt.registerTask('default', ['http-server', 'watch']);
 };

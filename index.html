@@ -13,7 +13,7 @@
         content="Tech Retreat brings together passionate high school students at a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. "/>
   <meta property="og:image" content="http://techretreat.ca/img/moonlogo-circled.png"/>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -34,316 +34,140 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<header>
-  <div class="background"></div>
-  <ul id="scene" class="parallax">
-    <li class="layer rocket" data-depth="0.20"><img src="/img/techretreat-shaded-rocket.png"></li>
-    <li class="layer moon" data-depth="0.20"><img src="/img/techretreat-shaded-moon.png"></li>
-    <li class="layer earth" data-depth="0.05"><img src="/img/techretreat-shaded-bkg.png"></li>
-  </ul>
-  <div class="container-fluid">
+  <section class='header'>
+    <div class='header__bg header__bg--dimmed'>
+      <div class='header__rocket'></div>
+    </div>
+    <div class='header__loader'></div>
+    <div class='header__content'>
+      <h1 class='header__title'>Tech Retreat</h1>
+      <p class='header__description'><span class='no-break'>Where passionate high schoolers</span> <span class='no-break'>get together to learn and create</span></p>
+      <form method='post' action='//techretreat.us10.list-manage.com/subscribe/post?u=eb4c7d3a0883a57eed57e8ffa&amp;id=b58a0a6711' novalidate class='header__form'>
+        <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Leave us your email to stay updated!" required class="header__input text-input text-input--primary">
+        <div style="display:inline;position: absolute; left: -5000px;"><input type="text" name="b_eb4c7d3a0883a57eed57e8ffa_9258c0849e" tabindex="-1" value=""></div>
+        <button type="submit" name="subscribe" class="button button--primary">Sign up</button>
+      </form>
+    </div>
+  </section>
+  <section class='nav'>
+    <nav>
+      <a class="nav-link nav-link--toggle">Menu</a>
+      <h1>
+        <a href="/" class="nav-link nav-link--title">
+          <img src="img/rocketlogo.svg" alt="Tech Retreat" />
+        </a>
+      </h1>
+      <a class="nav-link nav-link--selected" href="#">Home</a>
+      <a class="nav-link" href="https://medium.com/@TechRetreat">Blog</a>
+      <a class="nav-link" href="https://www.facebook.com/kwtechretreat/">Community</a>
+    </nav>
+  </section>
+  <section class='about'>
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h1>Tech Retreat</h1>
-
-        <h3>Coming soon!</h3>
-        <form id="mc_embed_signup" class="form-inline signup" method="post" action="//techretreat.us10.list-manage.com/subscribe/post?u=eb4c7d3a0883a57eed57e8ffa&amp;id=b58a0a6711"
-          target="_blank" novalidate >
-          <div class="form-group">
-            <input type="email" value="" name="EMAIL" class="form-control email" id="mce-EMAIL" placeholder="Leave us your email to stay updated!" required>			
-          </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->		
-          <div style="display:inline;position: absolute; left: -5000px;"><input type="text" name="b_eb4c7d3a0883a57eed57e8ffa_9258c0849e" tabindex="-1" value=""></div>	
-          <button type="submit" name="subscribe" class="btn signup-btn">Sign up</button>
-        </form>
-        <!-- <a class="tr-btn tr-btn-primary" href="/organize">Organizer Application</a>
-        <a class="tr-btn tr-btn-secondary transparent" href="/halloffame.html">2015 Hall of Fame</a> -->
-        <a class="tr-btn tr-btn-secondary transparent" href="mailto:hello@techretreat.ca">Media or Sponsorship Inquiries</a> 
-
-        <div class="social">
-          <a class="fa fa-2x fa-envelope-square" href="mailto:hello@techretreat.ca"></a>
-          <a class="fa fa-2x fa-facebook-square" href="https://www.facebook.com/kwtechretreat"></a>
-          <a class="fa fa-2x fa-twitter-square" href="http://twitter.com/TechRetreat"></a>
-        </div>
+      <div class="column column--double">
+        <h2>Learn. Collaborate. Create.</h2>
+        <p>Tech Retreat brings together high school students from all fields of study for a two-day event held in the heart of
+        Canada's technology hub.</p>
+        <p>Ultimately, our goal is to encourage students, not only in the tech field, but all talented individuals to learn and collaborate in building real world applications. Participants will also hear from seasoned speakers and students in the industry. </p>
+        <p>Questions? Sponsorship or media enquiries? Get in touch!</p>
+        <p class='social-buttons'>
+          <a class="button button--social button--secondary fa fa-envelope" href="mailto:hello@techretreat.ca"></a>
+          <a class="button button--social button--secondary fa fa-facebook" href="https://www.facebook.com/kwtechretreat"></a>
+          <a class="button button--social button--secondary fa fa-twitter" href="http://twitter.com/TechRetreat"></a>
+        </p>
+      </div>
+      <div class="column">
+        <div class='frame frame--learnathon' style='background-image:url("img/photos/software.jpg")'></div>
       </div>
     </div>
-  </div>
-  <div class="read-more">
-    <a href="#about" class="fa fa-chevron-circle-down fa-4x"></a>
-  </div>
-</header>
-<section class="about container-fluid">
-  <div class="row" id="about">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h2>Learn. Collaborate. Create.</h2>
-
-      <p>Tech Retreat brings together passionate high school students for a one-day event held in the heart of
-        Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate
-        with like-minded peers to create something amazing.</p>
-
-      <p>Questions? <a href="#contact-us">Get in touch!</a></p>
-    </div>
-  </div>
-</section>
-<section class="showcase container-fluid">
-  <div class="row">
-    <div class="col-md-4 col-lg-offset-2">
-      <img class="img-responsive img-showcase" src="img/techretreat-shaded-moon.png">
-    </div>
-    <div class="col-md-4">
-      <h2>Hackathon</h2>
-
-      <h3>Join us and create something cool with a team of up to 4
-        people. Anyone can apply, but only accepted students may attend.</h3>
-
-      <p>A hackathon is an event where participants can work on any software and hardware project of their
-        choosing without distraction. At the end of the competition you will be given the chance to present your
-        project to the audience for a chance at winning one of the various prizes. There will be mentors and
-        volunteers to assist you at every step of the way.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 col-lg-offset-2">
-      <h2>Learnathon</h2>
-
-      <h3>Join us and learn about technology! Anyone can apply, but only accepted students may attend.</h3>
-
-      <p>Participate in workshops with like-minded peers to learn about software and hardware programming in a fun
-        casual atmosphere. Get the opportunity to talk to leaders from the industry, and upper-year university
-        students completing math and engineering degrees!</p>
-    </div>
-    <div class="col-md-4">
-      <img class="img-responsive img-rocket img-showcase" src="img/techretreat-shaded-rocket.png">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <div class="tagline">
-        <h3>And don't worry about food and drinks - it's on us.</h3>
+  </section>
+  <section class='events'>
+    <h2>The Event</h2>
+    <div class="row">
+      <div class="column column--events">
+        <h3>Hackathon</h3>
+        <h4>Create something cool in a team of up to four.</h4>
+        <p>This is where participants can build any software and hardware project of their choice. At the end, each team will be given the chance to showcase their project to other particpants and judges for a chance to win one or more of the top prizes. There will be mentors and volunteers to assist you at every step of the way.</p>
+          <p>
+          </p>
+      </div>
+      <div class="column column--events">
+        <h3>Learnathon</h3>
+        <h4>Join us and learn about technology.</h4>
+        <p>Participate in workshops with like-minded peers to learn about software and hardware programming in a fun casual atmosphere. Get the opportunity to talk to leaders from the industry, and upper-year university students currently completing math and engineering degrees.</p>
       </div>
     </div>
-  </div>
-</section>
-<!--
-<section class="schedule container-fluid" id="schedule">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h2>Schedule</h2>
+    <h4 class="column--footer">And don't worry about food and drinks—it's on us.</h4>
+  </section>
+  <section class='faq'>
+    <div class="row">
+      <div class="column column--double">
+        <h2>FAQs</h2>
+        <p class="question">Who can attend?</p>
+        <p class="answer"> Any high school student may apply, but only accepted students may attend. </p>
+        
+        <p class="question">When/where is Tech Retreat happening?</p>
+        <p class="answer">Tech Retreat will run on the weekend of July 9-10 at St. Paul’s College, which is located at Canada’s most
+innovative school—The University of Waterloo.</p>
+          
+        <p class="question">How much does this cost?</p>
+        <p class="answer">Nothing! It's absolutely free. Food will also be provided.</p>
+        
+        <p class="question">What food is provided?</p>
+        <p class="answer">Saturday's lunch and dinner along with Sunday's breakfast and lunch will be provided by us. Also, we will have snacks available throughout the weekend.</p>
 
-      <h3>Saturday, August 15, 2015</h3>
-      <table class="table">
-        <tr>
-          <th>Time</th>
-          <th>Location</th>
-          <th>Hackathon</th>
-          <th>Learnathon</th>
-        </tr>
-        <tr>
-          <td>8:00 AM</td>
-          <td>M3 Atrium</td>
-          <td>Registration, Meet New Friends</td>
-          <td>Registration, Meet New Friends</td>
-        </tr>
-        <tr>
-          <td>9:00 AM</td>
-          <td>M3 1006</td>
-          <td>Opening Ceremonies, Sponsor Intros, Keynote Presentations</td>
-          <td>Opening Ceremonies, Sponsor Intros, Keynote Presentations</td>
-        </tr>
-        <tr>
-          <td>9:30 AM</td>
-          <td>E5 2004 / 3052 / LiveLink</td>
-          <td>Hacking Starts! (and Form Teams)</td>
-          <td>Learning Starts! (and Form Teams)</td>
-        </tr>
-        <tr>
-          <td>12:30 PM</td>
-          <td>E5 Aecon Atrium</td>
-          <td></td>
-          <td>Lunch (sponsored by TextNow)</td>
-        </tr>
-        <tr>
-          <td>1:00 PM</td>
-          <td>E5 Aecon Atrium</td>
-          <td>Lunch (sponsored by TextNow)</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>3:00 PM</td>
-          <td>E5 2004</td>
-          <td>Panel</td>
-          <td>Panel</td>
-        </tr>
-        <tr>
-          <td>6:00 PM</td>
-          <td>E5 2004/3052</td>
-          <td></td>
-          <td>Learnathon Project Showcase</td>
-        </tr>
-        <tr>
-          <td>6:30 PM</td>
-          <td>E5 LiveLink</td>
-          <td>Hackathon Project Showcase</td>
-          <td>Hackathon Project Showcase</td>
-        </tr>
-        <tr>
-          <td>7:30 PM</td>
-          <td>M3 Atrium</td>
-          <td>Dinner (sponsored by Communitech)</td>
-          <td>Dinner (sponsored by Communitech)</td>
-        </tr>
-        <tr>
-          <td>7:50 PM</td>
-          <td>M3 1006</td>
-          <td>Closing Ceremonies</td>
-          <td>Closing Ceremonies</td>
-        </tr>
-        <tr>
-          <td>8:30 PM</td>
-          <td>M3 1006</td>
-          <td>Sign Out</td>
-          <td>Sign Out</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</section>
--->
-<section class="faq container-fluid">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h2>FAQs</h2>
+        <p class="question">What should I bring?</p>
+        <p class="answer">A laptop and charger, reusable water bottle, government photo ID (if you're signing out hardware), and your brilliant mind. Feel free to bring a sleeping bag, toothbrush, and other basic amenities for this overnight event.</p>
+          
+        <p class="question">When do I apply?</p>
+        <p class="answer">Applications will open in April. Leave your email with us above and we'll notify you when applications are open. For now, keep up to date by heading over to our <a href="https://www.facebook.com/kwtechretreat" target="_blank">Facebook</a> and <a href="http://twitter.com/TechRetreat" target="_blank">Twitter</a>.</p>
 
-      <p class="question">Can I come?</p>
-
-      <p class="answer"> Any high school student may apply, but only <b>accepted</b> students may attend. </p>
-
-      <p class="question">How much is this going to cost?</p>
-
-      <p class="answer">It's going to be absolutely free! Food will also be provided.</p>
-
-      <p class="question">What food are you providing?</p>
-
-      <p class="answer">We'll be providing lunch, dinner, and snacks - so make sure you grab a bite of breakfast
-        before. There will also be drinks!</p>
-
-      <p class="question">What should I bring to the event?</p>
-
-      <p class="answer">A laptop and charger, reusable water bottle, government photo ID (if you're signing out
-        hardware), and your brilliant mind. Of course, feel free to bring things that can help you - earbuds, a
-        whiteboard, and extra snacks (we'll supply some as well)!</p>
-
-      <p class="question">Can I still apply?</p>
-
-      <p class="answer">Unfortunately, applications have closed. We'll be announcing more opportunities on
-        Facebook and Twitter!</p>
-
-      <p class="question">Is there a code of conduct?</p>
-
-      <p class="answer">Yes, <a href="code.html" alt="Code of conduct">check it out!</a></p>
-    </div>
-  </div>
-</section>
-<!-- SPONSORS -->
-<section class="sponsors-partners container-fluid">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <h2>Sponsors and Partners</h2>
-      <h4>Tech Retreat 2015 wouldn't be possible without the help of our amazing sponsors and partners!</h4>
-    </div>
-    <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-      <div class="partners">
-        <div class="gold">
-          <a href="http://textnow.com" target="_blank"><img class="inline-img"
-                                                            src="img/sponsors/textnow_logo.png"
-                                                            alt="TextNow"/></a>
-          <a href="http://communitech.ca" target="_blank"><img class="inline-img"
-                                                               src="img/sponsors/Communitech.png"
-                                                               alt="Communitech"/></a>
-        </div>
-        <div class="rest">
-          <a href="http://shopify.com" target="_blank"><img class="inline-img" src="img/sponsors/shopify.png"
-                                                            alt="Shopify"/></a>
-          <br/>
-          <a href="http://intel.com" target="_blank"><img class="inline-img" src="img/sponsors/intel.png"
-                                                          alt="Intel Canada"/></a>
-          <a href="https://velocity.uwaterloo.ca" target="_blank"><img class="inline-img"
-                                                                       src="img/sponsors/VelocityLogo.png"
-                                                                       alt="Velocity"/></a>
-          <a href="http://thalmic.com/" target="_blank"><img class="inline-img" src="img/sponsors/thalmic.jpg"
-                                                             alt="Thalmic Labs"/></a>
-          <a href="https://lanilabs.com" target="_blank"><img class="inline-img" src="img/sponsors/lani.png"
-                                                              alt="Lani Labs"/></a>
-          <a href="http://acceleratorcentre.com/" target="_blank"><img class="inline-img"
-                                                                       src="img/sponsors/ac.png"
-                                                                       alt="Accelerator Centre"></a>
-          <a href="https://twilio.com" target="_blank"><img class="inline-img" src="img/sponsors/twilio.png"
-                                                            alt="Twilio"/></a>
-          <a href="http://www.ea.com/ca" target="_blank"><img class="inline-img" src="img/sponsors/ea.jpg"
-                                                              alt="EA Games"/></a>
-          <a href="http://www.choosemuse.com/" target="_blank"><img class="inline-img"
-                                                                    src="img/sponsors/muse.png"
-                                                                    alt="Muse"/></a>
-        </div>
-        <div class="partner">
-          <a href="https://uwaterloo.ca/engineering/" target="_blank"><img class="inline-img"
-                                                                           src="img/sponsors/WaterlooEngineeringLogo.jpg"
-                                                                           alt="Waterloo Engineering"/></a>
-          <a href="https://uwaterloo.ca/software-engineering/" target="_blank"><img class="inline-img"
-                                                                                    src="img/sponsors/WaterlooSE.jpg"
-                                                                                    alt="Waterloo Software Engineering"/></a>
-          <a href="https://uwaterloo.ca/catalyst/" target="_blank"><img class="inline-img"
-                                                                        src="img/sponsors/Catalyst.jpg"
-                                                                        alt="Waterloo Catalyst"/></a>
-          <a href="https://techyon.org" target="_blank"><img class="inline-img" src="img/sponsors/techyon.jpg"
-                                                             alt="Techyon"/></a>
-          <a href="https://hackthenorth.com" target="_blank"><img class="inline-img"
-                                                                  src="img/sponsors/htn.jpg"
-                                                                  alt="Hack The North"/></a>
-        </div>
+        <p class="question">Is there a code of conduct?</p>
+        <p class="answer">Yes, <a href="code.html" alt="Code of conduct">check it out!</a></p>
+      </div>
+      <div class="column">
+        <div class='frame' style='background-image:url("img/photos/outside.jpg")'></div>
+        <div class='frame frame--qa' style='background-image:url("img/photos/hardware.jpg")'></div>
       </div>
     </div>
-  </div>
-</section>
-<footer id="contact-us" class="container-fluid">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <p>Sponsorship inquiries? Questions?</p>
-
-      <p>Say hello!</p>
-
-      <div class="social"><a class="fa fa-2x fa-envelope-square" href="mailto:hello@techretreat.ca"></a> <a
-        class="fa fa-2x fa-facebook-square" href="https://www.facebook.com/kwtechretreat"></a> <a
-        class="fa fa-2x fa-twitter-square" href="http://twitter.com/TechRetreat"></a></div>
-      <p class="love">Made with love.</p>
+  </section>
+  <section class="sponsors">
+    <h2>Sponsors and Partners</h2>
+    <p>Tech Retreat 2015 wouldn't have been possible without the help of our amazing sponsors and partners!</p>
+    <div class="gold">
+      <a href="http://textnow.com" target="_blank"><img class="inline-img" src="img/sponsors/textnow_logo.png" alt="TextNow"/></a>
+      <a href="http://communitech.ca" target="_blank"><img class="inline-img" src="img/sponsors/Communitech.png" alt="Communitech"/></a>
     </div>
-  </div>
-</footer>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/velocity.min.js"></script>
-<script type="text/javascript" src="js/jquery.parallax.min.js"></script>
-<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script>
-  //Source: http://codepen.io/markhillard/details/iqnlh
-  $(document).ready(function () {
-    // bind click event to all internal page anchors
-    $("a[href*=#]").bind("click", function (e) {
-      // prevent default action and bubbling
-      e.preventDefault();
-      e.stopPropagation();
-      // set target to anchor's "href" attribute
-      var target = $(this).attr("href");
-      // scroll to each target
-      $(target).velocity("scroll", {
-        duration: 500,
-        offset: -40,
-        easing: "ease-in-out"
-      });
-    });
-  });
-  var $scene = $('#scene').parallax();
-  $scene.parallax('enable');
-</script>
+    <div class="rest">
+      <a href="http://shopify.com" target="_blank"><img class="inline-img" src="img/sponsors/shopify.png" alt="Shopify"/></a>
+      <br/>
+      <a href="http://intel.com" target="_blank"><img class="inline-img" src="img/sponsors/intel.png" alt="Intel Canada"/></a>
+      <a href="https://velocity.uwaterloo.ca" target="_blank"><img class="inline-img" src="img/sponsors/VelocityLogo.png" alt="Velocity"/></a>
+      <a href="http://thalmic.com/" target="_blank"><img class="inline-img" src="img/sponsors/thalmic.jpg" alt="Thalmic Labs"/></a>
+      <a href="https://lanilabs.com" target="_blank"><img class="inline-img" src="img/sponsors/lani.png" alt="Lani Labs"/></a>
+      <a href="http://acceleratorcentre.com/" target="_blank"><img class="inline-img" src="img/sponsors/ac.png" alt="Accelerator Centre"></a>
+      <a href="https://twilio.com" target="_blank"><img class="inline-img" src="img/sponsors/twilio.png" alt="Twilio"/></a>
+      <a href="http://www.ea.com/ca" target="_blank"><img class="inline-img" src="img/sponsors/ea.jpg" alt="EA Games"/></a>
+      <a href="http://www.choosemuse.com/" target="_blank"><img class="inline-img" src="img/sponsors/muse.png" alt="Muse"/></a>
+    </div>
+    <div class="partner">
+      <a href="https://uwaterloo.ca/engineering/" target="_blank"><img class="inline-img" src="img/sponsors/WaterlooEngineeringLogo.jpg" alt="Waterloo Engineering"/></a>
+      <a href="https://uwaterloo.ca/software-engineering/" target="_blank"><img class="inline-img" src="img/sponsors/WaterlooSE.jpg" alt="Waterloo Software Engineering"/></a>
+      <a href="https://uwaterloo.ca/catalyst/" target="_blank"><img class="inline-img" src="img/sponsors/Catalyst.jpg" alt="Waterloo Catalyst"/></a>
+      <a href="https://techyon.org" target="_blank"><img class="inline-img" src="img/sponsors/techyon.jpg" alt="Techyon"/></a>
+      <a href="https://hackthenorth.com" target="_blank"><img class="inline-img" src="img/sponsors/htn.jpg" alt="Hack The North"/></a>
+    </div>
+  </section>
+  <section class='footer'>
+    <p>Sponsorship inquiries? Questions? Say hello!</p>
+    <p>
+      <a class="button button--social fa fa-envelope" href="mailto:hello@techretreat.ca"></a>
+      <a class="button button--social fa fa-facebook" href="https://www.facebook.com/kwtechretreat"></a>
+      <a class="button button--social fa fa-twitter" href="http://twitter.com/TechRetreat"></a>
+    </p>
+  </section>
+  <script type='text/javascript' src='src/konami.js'></script>
+  <script type='text/javascript' src='dist/main.js'></script>
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
