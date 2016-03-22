@@ -1,0 +1,525 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@mixin OpenSans {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+}
+
+@mixin OpenSansLight {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+}
+
+$footerHeight: 210px;
+$lightPurple: #7C4360;
+$darkPurple: #41286B;
+$blue: #244C69;
+$offWhite: #CAAC8F;
+
+// General CSS rules
+html {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  margin-bottom: $footerHeight;
+  &.error-page{
+    margin-bottom: 0;
+  }
+}
+
+h1, h2, h3, h4, p, a {
+  @include OpenSans;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  @include OpenSansLight;
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 46px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  @include OpenSansLight;
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  @include OpenSansLight;
+  font-size: 20px;
+}
+
+a {
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: $offWhite;
+  &:hover{
+    text-decoration: none;
+    color: lighten($offWhite, 10%);
+  }
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+header, section.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+a.tr-btn{
+  display: block;
+  margin: 10px auto;
+  width: 360px;
+  padding: 15px 30px;
+  transition: all .2s ease;
+  font-size: 20px;
+  border-radius: 6px;
+  text-align: center;
+  @include OpenSans;
+  &.tr-btn-primary {
+    margin: 40px auto 30px auto;
+    text-transform: uppercase;
+    background-color: white;
+    color: $darkPurple;
+    &:hover{
+      background-color: transparentize(white, 0.4);
+    }
+  }
+  &.tr-btn-secondary{
+    color: white;
+    border: 2px solid white;
+    background-color: $darkPurple;
+    &:hover{
+      background-color: transparentize($darkPurple, 0.4);
+    }
+    &.transparent{
+      background-color: transparent;
+      &:hover{
+        background-color: opacify(transparent, 0.4);
+      }
+    }
+  }
+
+}
+.signup {
+  //Signup form
+  input.email {
+    margin:0;
+    border-radius:4px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    font-size: 20px;
+    padding: 6px;
+    height: 100%;
+    width: 450px !important;
+    text-align: center;
+    max-width:100%;
+    margin: 20px auto;
+    color: white;
+    @include OpenSans;
+    background-color: rgba(white, 0.2);
+    transition:all 0.3s ease;
+  }
+  button.signup-btn {
+    transition: all .2s ease;
+    font-size: 20px;
+    border-radius: 6px;
+    text-align: center;
+    @include OpenSans;
+    text-transform: uppercase;
+    background-color: white;
+    color: $darkPurple;
+    &:hover{
+      background-color: transparentize(white, 0.4);
+    }
+  }
+}
+
+a.fa {
+  color: white;
+  padding-bottom: 20px;
+  opacity: 0.6;
+  display: inline-block;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+div.social{
+  font-size: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Parallax!
+
+.earth {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
+  img {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+.rocket {
+  position: absolute;
+  padding-left: 70%;
+  padding-top: 10%;
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.moon {
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 50px;
+  img {
+    width: 75%;
+    height: auto;
+  }
+}
+
+// Parallax Mobile
+@media (max-width: 800px) {
+  .rocket {
+    position: absolute;
+    padding-left: 70%;
+    padding-top: 70vh;
+    img {
+      width: 75%;
+      height: auto;
+    }
+  }
+  .moon {
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 15px;
+    img {
+      width: 50%;
+      height: auto;
+    }
+  }
+}
+
+header {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transform: translateZ(0);
+  height: 100vh;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  color: azure;
+  @include OpenSans;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+
+  .social {
+    padding-top: 20px;
+  }
+  .read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container-fluid {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-image: url('/img/techretreat-shaded-bkg.jpg');
+    background-color: #2f0057;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    z-index: -2;
+  }
+
+  .parallax {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    background-image: none;
+    z-index: -1;
+  }
+}
+
+section.schedule {
+  background: #ECECEC;
+  .table {
+    table-layout: fixed;
+    td {
+      border-top: none !important;
+      border-bottom: 1px solid #A8A5A5;
+      color: #302E2F;
+      img {
+        width: 50%;
+        height: auto;
+      }
+      &:first-child {
+        width: 12%;
+      }
+      &:nth-child(2) {
+        width: 18%;
+      }
+      &:nth-child(3) {
+        width: 35%;
+      }
+      &:last-child {
+        width: 35%;
+      }
+    }
+    th{
+      @extend td;
+      color: #41286B;
+    }
+  }
+}
+
+section.sponsors-partners {
+  .sponsors, .partners {
+    line-height: 30px;
+  }
+  .inline-img {
+    display: inline-block;
+    max-height: 90px;
+    width: auto;
+    margin: 50px;
+  }
+  .gold {
+    img {
+      max-height: 200px !important;
+    }
+  }
+}
+
+section.showcase {
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
+
+  h3 {
+    line-height: 35px;
+  }
+  p.sub {
+    font-size: 14px;
+  }
+  .img-showcase {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img-rocket {
+    height: 400px;
+    width: auto;
+  }
+  .tagline {
+    text-align: center;
+    padding: 40px 0 0 10px;
+  }
+}
+
+section.about {
+  background: url('../img/waterloo-campus.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+  h1, h2, h3, p {
+    color: white;
+  }
+  p {
+    @include OpenSans;
+  }
+}
+
+section.faq {
+  background-color: #244C69;
+  color: white;
+  h1 {
+    @include OpenSans;
+  }
+  p.question {
+    @include OpenSans;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p.answer {
+    @include OpenSansLight;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    color: #e7e1ed;
+  }
+}
+
+section.sponsors-partners {
+  h1 {
+    @include OpenSans;
+  }
+  .sponsors, .partners {
+    text-align: center;
+  }
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: $footerHeight;
+  background-color: #2a1447;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: white;
+
+  .love {
+    @include OpenSansLight;
+  }
+}
+
+@media (max-width: 1300px) {
+  header {
+    background-size: 200% 100%;
+  }
+}
+
+// For mobile devices.
+@media (max-width: 991px) {
+
+  section.showcase {
+    p.sub {
+      font-size: 14px;
+    }
+    .img-showcase {
+      display: none;
+    }
+    .img-rocket {
+      height: 400px;
+      width: auto;
+    }
+  }
+  section.sponsors-partners {
+    .inline-img {
+      margin: 15px 0;
+      max-width: 40%;
+    }
+    .gold img {
+      max-width: 95%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+// For mobile devices.
+@media (max-width: 800px) {
+  h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4{
+    font-size: 17px;
+  }
+  p {
+    font-size: 14px;
+  }
+  section.showcase {
+    h3{
+      line-height: 24px;
+    }
+    p.sub {
+      font-size: 14px;
+    }
+    .img-showcase {
+      display: none;
+    }
+    .img-rocket {
+      height: 400px;
+      width: auto;
+    }
+  }
+  header {
+    a.fa {
+      padding-bottom: 0;
+    }
+  }
+  section.about {
+    background-size: auto;
+  }
+  section.faq{
+    p.answer{
+      padding-left: 0;
+    }
+  }
+  a.tr-btn{
+    width: 320px;
+  }
+  .table{
+    font-size: 12px;
+  }
+}
