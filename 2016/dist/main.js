@@ -57,8 +57,8 @@ var sample = function sample(arr, size) {
   var shuffled = arr.slice(0),
       i = arr.length,
       min = i - size,
-      temp = undefined,
-      index = undefined;
+      temp = void 0,
+      index = void 0;
   while (i-- > min) {
     index = Math.floor((i + 1) * Math.random());
     temp = shuffled[index];
@@ -91,4 +91,8 @@ req.addEventListener("load", function () {
 });
 req.open("GET", "data/team.json");
 req.send();
+
+/** This website is parrot-enabled **/
+var easter_egg = new Konami();
+easter_egg.load('https://youtu.be/9T1vfsHYiKY?t=52');
 //# sourceMappingURL=main.js.map
