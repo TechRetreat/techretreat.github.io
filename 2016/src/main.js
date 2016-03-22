@@ -80,3 +80,6 @@ req.open("GET", "data/team.json");
 req.send();
 
 
+/** This website is parrot-enabled **/
+var easter_egg = new Konami();
+easter_egg.load('https://youtu.be/9T1vfsHYiKY?t=52');
