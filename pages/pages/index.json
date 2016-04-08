@@ -1,0 +1,8 @@
+{
+  "home": "home",
+  "title": "Tech Retreat - Where passionate high schoolers get together to learn and create",
+  "scripts": [
+    "/dist/main.js",
+    "/src/konami.js"
+  ]
+}

@@ -1,7 +1,9 @@
 <!doctype HTML>
 <html lang="en">
 <head>
-  <title>Tech Retreat | Home</title>
+  <title>
+      Tech Retreat - Where passionate high schoolers get together to learn and create
+  </title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,6 +34,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  
 </head>
 <body>
   <section class='header'>
@@ -51,7 +54,7 @@
   </section>
   <section class='nav'>
     <nav>
-      <a class="nav-link nav-link--toggle">Menu</a>
+      <a class="nav-link nav-link--toggle" onclick="var nav = document.querySelector('nav'); if (nav.className.indexOf('open') != -1) nav.classList.remove('open'); else nav.classList.add('open');">Menu</a>
       <h1>
         <a href="/" class="nav-link nav-link--title">
           <img src="img/rocketlogo.svg" alt="Tech Retreat" />
@@ -108,20 +111,20 @@
         
         <p class="question">When/where is Tech Retreat happening?</p>
         <p class="answer">Tech Retreat will run on the weekend of July 9-10 at St. Paul’s College, which is located at Canada’s most
-innovative school—The University of Waterloo.</p>
+  innovative school—The University of Waterloo.</p>
           
         <p class="question">How much does this cost?</p>
         <p class="answer">Nothing! It's absolutely free. Food will also be provided.</p>
         
         <p class="question">What food is provided?</p>
         <p class="answer">Saturday's lunch and dinner along with Sunday's breakfast and lunch will be provided by us. Also, we will have snacks available throughout the weekend.</p>
-
+  
         <p class="question">What should I bring?</p>
         <p class="answer">A laptop and charger, reusable water bottle, government photo ID (if you're signing out hardware), and your brilliant mind. Feel free to bring a sleeping bag, toothbrush, and other basic amenities for this overnight event.</p>
           
         <p class="question">When do I apply?</p>
         <p class="answer">Applications will open in April. Leave your email with us above and we'll notify you when applications are open. For now, keep up to date by heading over to our <a href="https://www.facebook.com/kwtechretreat" target="_blank">Facebook</a> and <a href="http://twitter.com/TechRetreat" target="_blank">Twitter</a>.</p>
-
+  
         <p class="question">Is there a code of conduct?</p>
         <p class="answer">Yes, <a href="code.html" alt="Code of conduct">check it out!</a></p>
       </div>
@@ -166,8 +169,8 @@ innovative school—The University of Waterloo.</p>
       <a class="button button--social fa fa-twitter" href="http://twitter.com/TechRetreat"></a>
     </p>
   </section>
-  <script type='text/javascript' src='src/konami.js'></script>
-  <script type='text/javascript' src='dist/main.js'></script>
+  <script type='text/javascript' src='/dist/main.js'></script>
+  <script type='text/javascript' src='/src/konami.js'></script>
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -184,4 +187,3 @@ innovative school—The University of Waterloo.</p>
   ga('send', 'pageview');
 </script>
 </body>
-</html>

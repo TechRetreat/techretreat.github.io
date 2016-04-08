@@ -1,0 +1,8 @@
+{
+  "title": "2015 Transparency Report",
+  "jquery": true,
+  "scripts": [
+    "/js/highchart/highcharts.js",
+    "/js/highchart/modules/funnel.js"
+  ]
+}
