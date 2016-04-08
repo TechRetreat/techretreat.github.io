@@ -21,7 +21,8 @@
     "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-sass": "^0.9.2",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-http-server": "^1.2.0"
+    "grunt-http-server": "^1.2.0",
+    "grunt-mustache-html": "^0.1.9"
   },
   "repository": {
     "type": "git",

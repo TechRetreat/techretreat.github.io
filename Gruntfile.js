@@ -1,6 +1,10 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     watch: {
+      mustache_html: {
+        files: ['pages/**/*.{json,mustache}'],
+        tasks: ['mustache_html']
+      },
       sass: {
         files: ['scss/style.scss'],
         tasks: ['sass']
@@ -12,6 +16,17 @@ module.exports = function (grunt) {
       babel: {
         files: ['src/main.js'],
         tasks: ['babel']
+      }
+    },
+    mustache_html: {
+      development: {
+        options: {
+          src: 'pages',
+          dist: '.',
+          type: 'mustache' // mustache Or hbs 
+        },
+        globals: {
+        }
       }
     },
     babel: {
@@ -60,5 +75,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-http-server');
+  grunt.loadNpmTasks('grunt-mustache-html');
   grunt.registerTask('default', ['http-server', 'watch']);
 };
