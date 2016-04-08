@@ -1,75 +1,224 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="500px"
-	 height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-<g id="Layer_5" display="none">
-	<rect display="inline" fill="#492D7C" width="500" height="500"/>
-</g>
-<g id="Moon" display="none">
-	<g id="Layer_1" display="inline">
-		<circle fill="#A98995" cx="245.43" cy="254.602" r="148.772"/>
-	</g>
-	<g id="Layer_2" display="inline">
-		<defs>
-			<circle id="SVGID_1_" cx="246.183" cy="255.354" r="148.772"/>
-		</defs>
-		<clipPath id="SVGID_2_">
-			<use xlink:href="#SVGID_1_"  overflow="visible"/>
-		</clipPath>
-		<g id="Layer_3" clip-path="url(#SVGID_2_)">
-			<circle fill="#E2C7C1" cx="308.905" cy="213.438" r="148.772"/>
-		</g>
-	</g>
-	<g id="Layer_4" display="inline">
-		<circle fill="#A98995" cx="170.234" cy="216.679" r="37.922"/>
-		<circle fill="#A98995" cx="183.872" cy="299.694" r="29.416"/>
-		<circle fill="#A98995" cx="219.098" cy="254.602" r="19.368"/>
-		<circle fill="#A98995" cx="219.425" cy="342.342" r="44.06"/>
-	</g>
-</g>
-<g id="Rocket">
-	<g id="Layer_13">
-	</g>
-	<g id="Layer_14">
-		<circle fill="#A4A1B7" cx="150.861" cy="44.295" r="12.801"/>
-		<circle fill="#A4A1B7" cx="155.646" cy="60.982" r="8.686"/>
-		<circle fill="#A4A1B7" cx="131.179" cy="59.018" r="8.179"/>
-		<circle fill="#A4A1B7" cx="122.078" cy="51.691" r="6.411"/>
-		<circle fill="#A4A1B7" cx="116.401" cy="59.76" r="8.068"/>
-		<circle fill="#A4A1B7" cx="95.872" cy="73.128" r="3.461"/>
-		<circle fill="#A4A1B7" cx="95.333" cy="63.28" r="2.333"/>
-		<circle fill="#A4A1B7" cx="105.781" cy="61.371" r="5.296"/>
-	</g>
-	<g id="Layer_12">
-		<circle fill="#FFFFFF" stroke="#FBB040" stroke-width="5" stroke-miterlimit="10" cx="181.846" cy="45.858" r="13.212"/>
-		<circle fill="#FFFFFF" stroke="#FBB040" stroke-width="5" stroke-miterlimit="10" cx="174.194" cy="54.366" r="9.861"/>
-		<circle fill="#FFFFFF" stroke="#FBB040" stroke-width="5" stroke-miterlimit="10" cx="159.775" cy="45.281" r="8.231"/>
-		<circle fill="#FFFFFF" stroke="#FBB040" stroke-width="5" stroke-miterlimit="10" cx="145.216" cy="57.089" r="5.857"/>
-		<circle fill="#FFFFFF" stroke="#FBB040" stroke-width="5" stroke-miterlimit="10" cx="133.275" cy="46.052" r="4.785"/>
-	</g>
-	<g id="Layer_6">
-		<path fill="#D5CFE7" d="M192.657,35.858c0,0,56.036-5.172,78.449-5.172s57.758,14.655,57.758,14.655s-26.723,15.517-57.758,14.655
-			c-31.035-0.862-78.449-3.448-78.449-3.448"/>
-		<polyline fill="#BC344B" points="218.229,47.673 189.38,39.327 159.311,46.467 189.36,52.296 		"/>
-		<polyline fill="#BC344B" points="213.366,34.502 188.788,27.33 160.223,35.659 		"/>
-		<polyline fill="#BC344B" points="213.366,55.938 189.123,64.124 160.223,57.095 		"/>
-	</g>
-	<g id="Layer_9">
-		<ellipse fill="#6758A6" cx="256.743" cy="45.812" rx="6.743" ry="6.485"/>
-		<ellipse fill="#6758A6" cx="238.466" cy="45.812" rx="6.743" ry="6.485"/>
-	</g>
-	<g id="Layer_8">
-		<defs>
-			<path id="SVGID_3_" d="M192.657,35.858c0,0,56.036-5.172,78.449-5.172s57.758,14.655,57.758,14.655s-26.723,15.517-57.758,14.655
-				s-78.449-3.448-78.449-3.448"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  overflow="visible"/>
-		</clipPath>
-		<g id="Layer_10" clip-path="url(#SVGID_4_)">
-			<path fill="#BC344B" d="M282.76,10.466c0,0-7.759,15.552-7.759,33.638s7.759,37.052,7.759,37.052l53.448-37.052"/>
-		</g>
-	</g>
-</g>
-</svg>
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="500px"
+   height="500px"
+   viewBox="0 0 500 500"
+   enable-background="new 0 0 500 500"
+   xml:space="preserve"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="rocket.svg"><metadata
+     id="metadata88"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs86" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1093"
+     inkscape:window-height="618"
+     id="namedview84"
+     showgrid="false"
+     inkscape:zoom="0.472"
+     inkscape:cx="250"
+     inkscape:cy="250"
+     inkscape:window-x="20"
+     inkscape:window-y="43"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2" /><g
+     id="Layer_5"
+     display="none"><rect
+       display="inline"
+       fill="#492D7C"
+       width="500"
+       height="500"
+       id="rect5" /></g><g
+     id="Moon"
+     display="none"><g
+       id="Layer_1"
+       display="inline"><circle
+         fill="#A98995"
+         cx="245.43"
+         cy="254.602"
+         r="148.772"
+         id="circle9" /></g><g
+       id="Layer_2"
+       display="inline"><defs
+         id="defs12"><circle
+           id="SVGID_1_"
+           cx="246.183"
+           cy="255.354"
+           r="148.772" /></defs><clipPath
+         id="SVGID_2_"><use
+           xlink:href="#SVGID_1_"
+           overflow="visible"
+           id="use16" /></clipPath><g
+         id="Layer_3"
+         clip-path="url(#SVGID_2_)"><circle
+           fill="#E2C7C1"
+           cx="308.905"
+           cy="213.438"
+           r="148.772"
+           id="circle19" /></g></g><g
+       id="Layer_4"
+       display="inline"><circle
+         fill="#A98995"
+         cx="170.234"
+         cy="216.679"
+         r="37.922"
+         id="circle22" /><circle
+         fill="#A98995"
+         cx="183.872"
+         cy="299.694"
+         r="29.416"
+         id="circle24" /><circle
+         fill="#A98995"
+         cx="219.098"
+         cy="254.602"
+         r="19.368"
+         id="circle26" /><circle
+         fill="#A98995"
+         cx="219.425"
+         cy="342.342"
+         r="44.06"
+         id="circle28" /></g></g><g
+     id="Rocket"
+     transform="matrix(1.7015559,-1.8396598,1.7652534,1.8244719,-211.82274,527.00312)"><g
+       id="Layer_13" /><g
+       id="Layer_14"><circle
+         cx="150.86099"
+         cy="44.294998"
+         r="12.801"
+         id="circle33"
+         style="fill:#a4a1b7" /><circle
+         cx="155.646"
+         cy="60.981998"
+         r="8.6859999"
+         id="circle35"
+         style="fill:#a4a1b7" /><circle
+         cx="131.179"
+         cy="59.018002"
+         r="8.1789999"
+         id="circle37"
+         style="fill:#a4a1b7" /><circle
+         cx="122.078"
+         cy="51.691002"
+         r="6.4109998"
+         id="circle39"
+         style="fill:#a4a1b7" /><circle
+         cx="116.401"
+         cy="59.759998"
+         r="8.0679998"
+         id="circle41"
+         style="fill:#a4a1b7" /><circle
+         cx="95.872002"
+         cy="73.127998"
+         r="3.461"
+         id="circle43"
+         style="fill:#a4a1b7" /><circle
+         cx="95.333"
+         cy="63.279999"
+         r="2.3329999"
+         id="circle45"
+         style="fill:#a4a1b7" /><circle
+         cx="105.781"
+         cy="61.370998"
+         r="5.296"
+         id="circle47"
+         style="fill:#a4a1b7" /></g><g
+       id="Layer_12"><circle
+         stroke-miterlimit="10"
+         cx="181.84599"
+         cy="45.858002"
+         r="13.212"
+         id="circle50"
+         style="fill:#ffffff;stroke:#fbb040;stroke-width:5;stroke-miterlimit:10" /><circle
+         stroke-miterlimit="10"
+         cx="174.194"
+         cy="54.366001"
+         r="9.8610001"
+         id="circle52"
+         style="fill:#ffffff;stroke:#fbb040;stroke-width:5;stroke-miterlimit:10" /><circle
+         stroke-miterlimit="10"
+         cx="159.77499"
+         cy="45.280998"
+         r="8.2309999"
+         id="circle54"
+         style="fill:#ffffff;stroke:#fbb040;stroke-width:5;stroke-miterlimit:10" /><circle
+         stroke-miterlimit="10"
+         cx="145.216"
+         cy="57.089001"
+         r="5.8569999"
+         id="circle56"
+         style="fill:#ffffff;stroke:#fbb040;stroke-width:5;stroke-miterlimit:10" /><circle
+         stroke-miterlimit="10"
+         cx="133.27499"
+         cy="46.051998"
+         r="4.7849998"
+         id="circle58"
+         style="fill:#ffffff;stroke:#fbb040;stroke-width:5;stroke-miterlimit:10" /></g><g
+       id="Layer_6"><path
+         d="m 192.657,35.858 c 0,0 56.036,-5.172 78.449,-5.172 22.413,0 57.758,14.655 57.758,14.655 0,0 -26.723,15.517 -57.758,14.655 -31.035,-0.862 -78.449,-3.448 -78.449,-3.448"
+         id="path61"
+         inkscape:connector-curvature="0"
+         style="fill:#d5cfe7" /><polyline
+         points="218.229,47.673 189.38,39.327 159.311,46.467 189.36,52.296   "
+         id="polyline63"
+         style="fill:#bc344b" /><polyline
+         points="213.366,34.502 188.788,27.33 160.223,35.659   "
+         id="polyline65"
+         style="fill:#bc344b" /><polyline
+         points="213.366,55.938 189.123,64.124 160.223,57.095   "
+         id="polyline67"
+         style="fill:#bc344b" /></g><g
+       id="Layer_9"><ellipse
+         cx="256.74301"
+         cy="45.812"
+         rx="6.743"
+         ry="6.4850001"
+         id="ellipse70"
+         style="fill:#6758a6" /><ellipse
+         cx="238.466"
+         cy="45.812"
+         rx="6.743"
+         ry="6.4850001"
+         id="ellipse72"
+         style="fill:#6758a6" /></g><g
+       id="Layer_8"><defs
+         id="defs75"><path
+           id="SVGID_3_"
+           d="m 192.657,35.858 c 0,0 56.036,-5.172 78.449,-5.172 22.413,0 57.758,14.655 57.758,14.655 0,0 -26.723,15.517 -57.758,14.655 -31.035,-0.862 -78.449,-3.448 -78.449,-3.448"
+           inkscape:connector-curvature="0" /></defs><clipPath
+         id="SVGID_4_"><use
+           xlink:href="#SVGID_3_"
+           overflow="visible"
+           id="use79"
+           style="overflow:visible"
+           x="0"
+           y="0"
+           width="100%"
+           height="100%" /></clipPath><g
+         id="Layer_10"
+         clip-path="url(#SVGID_4_)"><path
+           d="m 282.76,10.466 c 0,0 -7.759,15.552 -7.759,33.638 0,18.086 7.759,37.052 7.759,37.052 l 53.448,-37.052"
+           id="path82"
+           inkscape:connector-curvature="0"
+           style="fill:#bc344b" /></g></g></g></svg>

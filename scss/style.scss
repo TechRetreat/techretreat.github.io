@@ -89,7 +89,7 @@ section, header, footer {
   justify-content: flex-start;
   background-color: $light;
 }
-section:nth-child(odd) {
+section:nth-child(odd), section.odd {
   background-color: $light-shade;
 }
 .row {
@@ -198,6 +198,9 @@ a.fa {
 .centered {
   text-align: center;
 }
+p img {
+  max-width: 100%;
+}
 img.centered {
   display: block;
   margin: 20px auto;
@@ -206,7 +209,7 @@ img.centered {
   height: auto;
 }
 @media all and (min-width: 1000px) {
-  img.centered {
+  img.centered, .graph {
     max-width: 1000px;
   }
 }

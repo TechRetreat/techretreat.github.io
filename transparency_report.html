@@ -34,7 +34,20 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<section>
+<section class='nav'>
+    <nav>
+      <a class="nav-link nav-link--toggle" onclick="var nav = document.querySelector('nav'); if (nav.className.indexOf('open') != -1) nav.classList.remove('open'); else nav.classList.add('open');">Menu</a>
+      <h1>
+        <a href="/" class="nav-link nav-link--title">
+          <img src="img/rocketlogo.svg" alt="Tech Retreat" />
+        </a>
+      </h1>
+      <a class="nav-link nav-link--selected" href="#">Home</a>
+      <a class="nav-link" href="https://medium.com/@TechRetreat">Blog</a>
+      <a class="nav-link" href="https://www.facebook.com/kwtechretreat/">Community</a>
+    </nav>
+  </section>
+<section class='odd'>
   <img class="centered" src="img/techretreat-shaded-moon.png"/>
   <h1 class="centered">Transparency Report 2015</h1>
   <p>We hope you had a great time at this year's Tech Retreat. We started organizing this event in May (technically April, but we also had exams) and throughout that process, one of our core values has always been, and will continue to be, transparency. That’s why we’re publishing this - our <b>Transparency Report</b>. So, without further adieu, here we go!</p>
