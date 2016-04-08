@@ -93,6 +93,7 @@ section:nth-child(odd) {
   background-color: $light-shade;
 }
 .row {
+  flex-wrap: wrap;
   max-width: 64rem;
   padding: 0;
 }
@@ -200,8 +201,14 @@ a.fa {
 img.centered {
   display: block;
   margin: 20px auto;
+  width: 100%;
   max-width: 100%;
   height: auto;
+}
+@media all and (min-width: 1000px) {
+  img.centered {
+    width: 1000px;
+  }
 }
 
 @media all and (max-width: 800px) {
