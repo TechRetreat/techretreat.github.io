@@ -201,13 +201,13 @@ a.fa {
 img.centered {
   display: block;
   margin: 20px auto;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   height: auto;
 }
 @media all and (min-width: 1000px) {
   img.centered {
-    width: 1000px;
+    max-width: 1000px;
   }
 }
 
