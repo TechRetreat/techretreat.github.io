@@ -4,7 +4,7 @@
   "description": "Waterloo Tech Retreat\r ===============\r A website for the Waterloo Tech Retreat.",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"We shipped too fast and forgot about testing\" && exit 0"
   },
   "author": "",
   "license": "ISC",

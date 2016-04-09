@@ -1,0 +1,5 @@
+deployment:
+  source:
+    branch: source
+    commands:
+      - ./deploy.sh
