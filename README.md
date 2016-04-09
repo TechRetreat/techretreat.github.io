@@ -1,5 +1,7 @@
 Tech Retreat
 ===============
+[![Circle CI](https://circleci.com/gh/TechRetreat/techretreat.github.io.svg?style=svg)](https://circleci.com/gh/TechRetreat/techretreat.github.io)
+
 A website for Tech Retreat.
 
 Tech Retreat brings together passionate high school students for a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate with like-minded peers to create something amazing.
