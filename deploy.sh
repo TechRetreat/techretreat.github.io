@@ -11,4 +11,4 @@ hash="Deploy commit $(git rev-parse HEAD)"
 echo "Deploying $(git rev-parse HEAD) to master"
 git add .
 git commit -m "$hash"
-git push --force source:master
+git push --force origin master
