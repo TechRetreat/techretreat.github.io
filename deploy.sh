@@ -12,3 +12,4 @@ echo "Deploying $(git rev-parse HEAD) to master"
 git add .
 git commit -m "$hash"
 git push --force --quiet "https://github.com/TechRetreat/techretreat.github.io.git" source:master > /dev/null 2>&1
+echo "Deployed! Going to sleep..."
