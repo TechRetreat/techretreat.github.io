@@ -207,6 +207,7 @@ img.centered {
   width: auto;
   max-width: 100%;
   height: auto;
+  /* chrome 48 bug fix */
   min-width: 0;
   min-height: 0;
 }
