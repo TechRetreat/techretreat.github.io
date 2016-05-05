@@ -420,6 +420,7 @@ a.header__inquiries {
   box-sizing: border-box;
 }
 .sponsors a {
+  vertical-align:middle;
   display: inline-block;
   transition: all 0.3s cubic-bezier(0,1.5,0.5,1);
   transform: scale(1) translate3d(0,0,0);
