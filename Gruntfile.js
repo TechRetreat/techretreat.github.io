@@ -77,4 +77,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-http-server');
   grunt.loadNpmTasks('grunt-mustache-html');
   grunt.registerTask('default', ['http-server', 'watch']);
+  grunt.registerTask('build', ['mustache_html', 'babel', 'sass', 'autoprefixer']);
 };
