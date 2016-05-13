@@ -2,17 +2,12 @@
 <html lang="en">
 <head>
   <title>
-    {{#home}}
-      {{title}}
-    {{/home}}
-    {{^home}}
-      {{title}} - Tech Retreat
-    {{/home}}
+    Apply - Tech Retreat
   </title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Tech, Retreat, Techretreat, Waterloo, Tech Retreat"/>
+  <meta name="keywords" content="" tent="Tech, Retreat, Techretreat, Waterloo, Tech Retreat"/>
   <meta name="description"
         content="Tech Retreat - Learn. Collaborate. Create. Tech Retreat brings together passionate high school students at a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate with like-minded peers to create something amazing."/>
   <meta property="og:title" content=" Tech Retreat"/>
@@ -39,48 +34,26 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  {{#jquery}}<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>{{/jquery}}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <style type="text/css">
+    html{
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    iframe{
+      position: absolute;
+      left:0;
+      right:0;
+      bottom:0;
+      top:0;
+      border:0;
+      padding:0;
+    }
+  </style>
 </head>
 <body>
-  {{#home}}
-  <section class='header'>
-    <div class='header__bg header__bg--dimmed'>
-      <div class='header__rocket'></div>
-    </div>
-    <div class='header__loader'></div>
-    <div class='header__content'>
-      <h1 class='header__title'>Tech Retreat</h1>
-      <p class='header__description'><span class='no-break'>Where passionate high schoolers</span> <span class='no-break'>get together to learn and create</span></p>
-      <p class='header__description'><span class='no-break'>July 9-10, University of Waterloo</span></p>
-      <a href="/apply" class="button button--primary">Apply</a>
-    </div>
-  </section>
-  {{/home}}
-  <section class='nav'>
-    <nav>
-      <a class="nav-link nav-link--toggle" onclick="var nav = document.querySelector('nav'); if (nav.className.indexOf('open') != -1) nav.classList.remove('open'); else nav.classList.add('open');">Menu</a>
-      <h1>
-        <a href="/" class="nav-link nav-link--title">
-          <img src="img/rocketlogo.svg" alt="Tech Retreat" />
-        </a>
-      </h1>
-      <a class="nav-link nav-link--selected" href="#">Home</a>
-      <a class="nav-link" href="https://medium.com/@TechRetreat">Blog</a>
-      <a class="nav-link" href="https://www.facebook.com/kwtechretreat/">Community</a>
-    </nav>
-  </section>
-  {{>content}}
-  <section class='footer'>
-    <p>Sponsorship inquiries? Questions? Say hello!</p>
-    <p>
-      <a class="button button--social fa fa-envelope" href="mailto:hello@techretreat.ca"></a>
-      <a class="button button--social fa fa-facebook" href="https://www.facebook.com/kwtechretreat"></a>
-      <a class="button button--social fa fa-twitter" href="http://twitter.com/TechRetreat"></a>
-    </p>
-  </section>
-  {{#scripts}}
-  <script type='text/javascript' src='{{.}}'></script>
-  {{/scripts}}
+  <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://techretreat2016.typeform.com/to/LO5TCU"></iframe>
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
