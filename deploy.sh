@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-grunt mustache_html
-grunt sass
-grunt autoprefixer
-grunt babel
+grunt build
 
 git config user.name "Circle CI"
 git config user.email "yuchen@techretreat.ca"
