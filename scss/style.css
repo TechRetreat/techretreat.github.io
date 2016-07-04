@@ -1,0 +1,680 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic);
+/* line 24, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400; }
+
+/* line 30, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+*::selection {
+  background: #F07C6C; }
+
+/* line 33, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300; }
+
+/* line 37, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, p, nav, ul, .row {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 64rem;
+  padding: 1.4em 3rem 1em 3rem;
+  margin: 0; }
+
+/* line 44, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+ul {
+  padding-left: 5rem; }
+
+/* line 47, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h1 {
+  font-size: 3em; }
+
+/* line 50, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 53, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h3 {
+  font-size: 1.6em; }
+
+/* line 56, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h4 {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.3em; }
+
+/* line 61, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h3:first-child, h3 + h4 {
+  padding-top: 0.1em; }
+
+/* line 64, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+p {
+  font-size: 1.2em; }
+
+/* line 67, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.social-buttons {
+  text-align: center;
+  padding-top: 1em; }
+
+/* line 72, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p, h7 + p, h8 + p, h9 + p, h10 + p, h11 + p, h12 + p, p + p {
+  padding-top: 0; }
+
+/* line 75, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+h2 {
+  font-size: 2.5em;
+  padding-top: 1em;
+  padding-bottom: 0.8em; }
+
+/* line 80, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+section, header, footer, .row, nav, iframe {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 2rem 0; }
+
+/* line 86, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+section, header, footer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff; }
+
+/* line 92, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+section:nth-child(odd), section.odd {
+  background-color: #eee; }
+
+/* line 95, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.row {
+  flex-wrap: wrap;
+  max-width: 64rem;
+  padding: 0; }
+
+/* line 100, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 1.5em;
+  align-items: center;
+  justify-content: center; }
+
+/* line 108, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.column--double {
+  flex: 2; }
+
+/* line 111, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.column:last-child {
+  padding-right: 0; }
+
+@media all and (max-width: 1000px) {
+  /* line 115, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .row {
+    display: block; }
+  /* line 118, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .column {
+    padding-right: 0;
+    display: block; } }
+
+/* line 123, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a {
+  transition: all ease 0.3s;
+  color: #F07C6C; }
+
+/* line 127, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a:hover {
+  color: #F39E8E; }
+
+/* line 130, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a img {
+  border: 0; }
+
+/* line 133, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.fa {
+  text-decoration: none; }
+
+/* line 136, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.no-break {
+  display: inline-block; }
+
+/* line 139, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.text-input {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0.6em 1.1em;
+  margin: 0.3em 0;
+  border-radius: 0.3em;
+  background-color: #fff;
+  color: #111;
+  font-size: 1em;
+  transition: all 0.3s ease; }
+
+/* line 150, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.text-input:hover {
+  opacity: 0.9; }
+
+/* line 153, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.text-input:focus {
+  outline: 0;
+  opacity: 1;
+  background-color: #eee; }
+
+/* line 158, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.text-input--primary {
+  font-size: 1.2em; }
+
+/* line 161, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.button, a.button {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  padding: 0.6em 1.1em;
+  margin: 0.3em;
+  border-radius: 0.3em;
+  -webkit-font-smoothing: antialiased;
+  transform: translate3d(0, 0, 0);
+  background-color: #fff;
+  color: #111;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0, 1.5, 0.5, 1); }
+
+/* line 175, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.button:hover {
+  transform: scale(1.1) translate3d(0, 0, 0); }
+
+/* line 178, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.button--primary, a.button--primary {
+  font-size: 1.2em;
+  background-color: #66C2A6;
+  color: #fff; }
+
+/* line 183, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.button--secondary, a.button--secondary {
+  background-color: #F07C6C;
+  color: #fff; }
+
+/* line 187, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.button--social, a.button--social {
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  min-width: 1em; }
+
+/* line 192, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.button--simple, a.button--simple {
+  font-weight: normal;
+  background-color: transparent;
+  color: #fff; }
+
+/* line 198, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.centered {
+  text-align: center; }
+
+/* line 201, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+p img {
+  max-width: 100%; }
+
+/* line 204, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+img.centered {
+  display: block;
+  margin: 20px auto;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  /* chrome 48 bug fix */
+  min-width: 0;
+  min-height: 0; }
+
+@media all and (min-width: 1000px) {
+  /* line 215, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  img.centered, .graph {
+    max-width: 1000px; } }
+
+@media all and (max-width: 800px) {
+  /* line 221, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  html {
+    font-size: 0.8em; } }
+
+/* Transparency report */
+/* line 227, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.stat {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  /* line 235, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .stat h1 {
+    margin: 0 0 10px 0;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0; }
+  /* line 242, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .stat p {
+    font-weight: lighter;
+    font-size: 1rem;
+    text-align: center; }
+
+/* line 248, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.qa {
+  width: 60%;
+  padding: 1.4em 3rem 1em 3rem;
+  margin: auto; }
+  /* line 252, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .qa h1 {
+    margin: 0 0 10px 0;
+    font-weight: bolder;
+    font-size: 1.2rem; }
+  /* line 257, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .qa p {
+    font-weight: lighter;
+    font-size: 1rem; }
+
+/* line 262, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.graph {
+  width: 100%;
+  margin: 20px auto; }
+
+/* line 267, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+p.caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9em;
+  margin-bottom: 2em; }
+
+/* line 277, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.frame {
+  background-size: cover;
+  background-position: center;
+  width: 16.5rem;
+  height: 16.5rem;
+  margin: 2rem;
+  border-radius: 50%;
+  display: block;
+  position: relative; }
+
+@media all and (max-width: 1000px) {
+  /* line 288, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .frame {
+    margin: 2rem auto; } }
+
+/* line 292, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.frame--qa:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3rem;
+  right: -2rem;
+  width: 11.2rem;
+  height: 8.9rem;
+  transform: scale(0.8);
+  background-position: center;
+  background-image: url("../img/rover.png");
+  background-size: cover; }
+
+/* line 305, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.frame--learnathon:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3rem;
+  left: -2rem;
+  width: 6.2rem;
+  height: 11.2rem;
+  transform: scale(0.8);
+  background-position: center;
+  background-image: url("../img/flag.png");
+  background-size: cover; }
+
+/* Block-specific */
+/* line 320, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+section.header {
+  background-color: #41286B;
+  background-image: url("../img/stars.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  box-sizing: border-box;
+  min-height: calc(100vh - 5rem);
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  perspective: 340px; }
+
+/* line 333, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__content {
+  position: relative;
+  z-index: 9002;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.3em;
+  margin-bottom: 2.5em; }
+
+/* line 342, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.6rem;
+  z-index: 9001;
+  background-color: #66C2A6;
+  transition: all ease 0.3s;
+  opacity: 0; }
+
+/* line 352, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__bg--dimmed + .header__loader {
+  opacity: 0.9; }
+
+/* line 355, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__title {
+  text-align: center;
+  font-size: 5em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em; }
+
+/* line 361, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__description {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 1em; }
+
+/* line 366, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__input {
+  box-sizing: border-box;
+  flex: 1;
+  margin-right: 0.5em; }
+
+/* line 371, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__form {
+  display: flex;
+  width: 100%;
+  padding-bottom: 0.5em;
+  max-width: 35em; }
+
+@media all and (max-width: 700px) {
+  /* line 378, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .header__input {
+    margin-right: 0;
+    align-self: stretch; }
+  /* line 382, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .header__form {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 3em;
+    padding-right: 3em; }
+  /* line 389, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  .button--primary {
+    padding-left: 2em;
+    padding-right: 2em; } }
+
+/* line 395, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.header__inquiries {
+  margin: 4em 2em 0 2em; }
+
+/* line 398, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__social {
+  text-align: center; }
+
+/* line 402, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.column--events {
+  justify-content: flex-start; }
+
+/* line 405, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.column--footer {
+  text-align: center;
+  font-style: normal; }
+
+/* line 410, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.question {
+  font-style: italic;
+  padding-bottom: 0.2em; }
+
+/* line 414, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.answer {
+  padding-left: 4em; }
+
+/* line 418, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.sponsors img {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* line 422, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.sponsors a {
+  vertical-align: middle;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0, 1.5, 0.5, 1);
+  transform: scale(1) translate3d(0, 0, 0); }
+
+/* line 428, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.sponsors a:hover {
+  transform: scale(1.1); }
+
+/* line 431, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.sponsors div {
+  text-align: center; }
+
+/* line 434, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.inline-img {
+  display: inline-block;
+  max-height: 8em;
+  border: 2em solid transparent; }
+
+/* line 439, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.gold img {
+  max-height: 12em; }
+
+/* line 443, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+section.footer {
+  background-color: #21084B;
+  color: #fff;
+  text-align: center; }
+
+/* line 449, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+section.nav {
+  background-color: #21084B;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* line 454, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.scrolled .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000; }
+
+/* line 461, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.scrolled .nav + section {
+  border-top: 5rem solid transparent; }
+
+/* line 464, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+nav {
+  color: #fff;
+  height: 5rem;
+  justify-content: flex-end;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden; }
+
+/* line 472, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+nav h1 {
+  flex: 1;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start; }
+
+/* line 479, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.nav-link {
+  height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  padding: 0 2rem;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.3s cubic-bezier(0, 1.5, 0.5, 1);
+  text-decoration: none; }
+
+/* line 489, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.nav-link:hover {
+  transform: scale(1.1); }
+
+/* line 492, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.nav-link--title {
+  justify-self: flex-start; }
+
+/* line 495, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.nav-link--selected {
+  background-color: rgba(255, 255, 255, 0.2); }
+
+/* line 498, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.nav-link img {
+  box-sizing: border-box;
+  height: 5rem;
+  padding: 0.7rem;
+  width: auto; }
+
+/* line 504, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+a.nav-link--toggle {
+  display: none;
+  cursor: pointer; }
+
+@media all and (max-width: 600px) {
+  /* line 509, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  nav {
+    display: block;
+    transition: all ease 0.3s; }
+  /* line 513, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  nav.open {
+    height: 20rem; }
+  /* line 516, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  nav h1 {
+    display: none; }
+  /* line 519, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  a.nav-link {
+    display: block; }
+  /* line 522, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+  a.nav-link--toggle {
+    display: block; } }
+
+/* Header effects */
+/* line 528, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/moonbg.png");
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: 30rem 15rem; }
+
+/* line 539, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__bg:after, .header__bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.4s linear;
+  opacity: 1; }
+
+/* line 549, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__bg:after {
+  background: linear-gradient(to bottom, rgba(215, 72, 20, 0.28) 0%, rgba(66, 150, 223, 0.21) 100%);
+  z-index: 8999; }
+
+/* line 553, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__bg:before {
+  background: #41286B;
+  z-index: 9000;
+  opacity: 0; }
+
+/* line 558, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__bg.header__bg--dimmed:before {
+  opacity: 1; }
+
+/* line 562, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__rocket {
+  position: absolute;
+  bottom: 1rem;
+  right: 4rem;
+  width: 16rem;
+  height: 26.7rem;
+  background-image: url("../img/rocket.png");
+  background-position: center;
+  background-size: 16rem 26.7rem;
+  background-repeat: no-repeat;
+  z-index: 50; }
+
+/* line 575, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__astronaut {
+  position: absolute;
+  width: 3rem;
+  height: 5rem; }
+
+/* line 580, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__astronaut:before {
+  content: '';
+  display: block;
+  background-color: rgba(65, 40, 107, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 1rem; }
+
+/* line 592, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__astronaut__body {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center bottom; }
+
+/* line 600, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.astronaut__body--1 {
+  background-image: url("../img/astronaut1.png");
+  left: 0;
+  right: 0; }
+
+/* line 605, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.astronaut__body--2 {
+  background-image: url("../img/astronaut2.png");
+  left: -0.2em;
+  right: -0.2em;
+  margin-left: -0.2em; }
+
+/* line 611, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.astronaut__body--3 {
+  background-image: url("../img/astronaut3.png");
+  left: -0.5em;
+  right: -0.5em;
+  bottom: 0.5em; }
+
+/* line 618, C:/Users/YuChen/Dropbox/Projects/Web/techretreat.github.io/scss/style.scss */
+.header__astronaut__head {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-size: 3.5rem auto;
+  background-position: 45% 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2.5rem;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 0.3rem solid #a9d2d4;
+  position: relative; }
+
+/*# sourceMappingURL=style.css.map */

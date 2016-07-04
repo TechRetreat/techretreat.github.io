@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-grunt build
+# grunt build
 
 git config user.name "Circle CI"
 git config user.email "yuchen@techretreat.ca"

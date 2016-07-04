@@ -8,7 +8,6 @@ tmp
 dist
 css
 node_modules
-*.html
 !2015/**/*
 !halloffame.html
 !thankyou.html
