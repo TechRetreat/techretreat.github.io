@@ -1,19 +1,21 @@
 <!doctype HTML>
 <html lang="en">
 <head>
-  <title>Tech Retreat | 2015 Thank You</title>
+  <title>
+      Tech Retreat - Where passionate high schoolers get together to learn and create
+  </title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Tech, Retreat, Techretreat, Waterloo, Tech Retreat"/>
   <meta name="description"
-        content="Tech Retreat - Learn. Collaborate. Create. Tech Retreat brings together passionate high school students at a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate with like-minded peers to create something amazing."/>
-  <meta property="og:title" content="Waterloo Tech Retreat"/>
+        content="Tech Retreat - Learn. Collaborate. Create. Tech Retreat brings together passionate high school students at a weekend event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. Learn and collaborate with like-minded peers to create something amazing."/>
+  <meta property="og:title" content=" Tech Retreat"/>
   <meta property="og:description"
-        content="Tech Retreat brings together passionate high school students at a one-day event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. "/>
+        content="Tech Retreat brings together passionate high school students at a weekend event held in the heart of Canada's technology hub. Hear from seasoned speakers and students in the industry. "/>
   <meta property="og:image" content="http://techretreat.ca/img/moonlogo-circled.png"/>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
@@ -32,37 +34,49 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  
 </head>
 <body>
-<section class="showcase container-fluid" style="line-height:2.2em;">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <a href="/"><img class="img-responsive center-img" src="/img/techretreat-shaded-moon.png"/></a>
-        <h2 class='center'>Update</h2>
-        <p class='header__description'>
-        Unfortunately due to issues securing funds for the event, we have made the decision to cancel Tech Retreat for this year. We hate that things have come to this, but at the current level of funding the event simply cannot meet our expectations of what the event should be.
-        </p><p class='header__description'>
-        Our team of organizers have worked hard over the last few months to turn things around. We are very sorry about the cancellation.
-        </p><p class='header__description'>
-        If you have any questions, please don’t hesitate to reach out at hello@techretreat.ca.</p>
-        <p class='header__description'>
-        The Tech Retreat Team </p>
+  <section class='header'>
+    <div class='header__bg header__bg--dimmed'>
+      <div class='header__rocket'></div>
     </div>
-</section>
-<footer id="contact-us" class="container-fluid">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2">
-      <p>Sponsorship inquiries? Questions?</p>
-
-      <p>Say hello!</p>
-
-      <div class="social"><a class="fa fa-2x fa-envelope-square" href="mailto:hello@techretreat.ca"></a> <a
-        class="fa fa-2x fa-facebook-square" href="https://www.facebook.com/kwtechretreat"></a> <a
-        class="fa fa-2x fa-twitter-square" href="http://twitter.com/TechRetreat"></a></div>
-      <p class="love">Made with love.</p>
+    <div class='header__loader'></div>
+    <div class='header__content'>
+      <h1 class='header__title'>Hi everyone!</h1>
+      <p class='header__description'>
+      Unfortunately due to issues securing funds for the event, we have made the decision to cancel Tech Retreat for this year. We hate that things have come to this, but at the current level of funding the event simply cannot meet our expectations of what the event should be.
+      </p><p class='header__description'>
+      Our team of organizers have worked hard over the last few months to turn things around. We are very sorry about the cancellation.
+      </p><p class='header__description'>
+      If you have any questions, please don’t hesitate to reach out at hello@techretreat.ca.</p>
+      <p class='header__description'>
+      The Tech Retreat Team </p>
     </div>
-  </div>
-</footer>
+  </section>
+  <section class='nav'>
+    <nav>
+      <a class="nav-link nav-link--toggle" onclick="var nav = document.querySelector('nav'); if (nav.className.indexOf('open') != -1) nav.classList.remove('open'); else nav.classList.add('open');">Menu</a>
+      <h1>
+        <a href="/" class="nav-link nav-link--title">
+          <img src="img/rocketlogo.svg" alt="Tech Retreat" />
+        </a>
+      </h1>
+      <a class="nav-link nav-link--selected" href="#">Home</a>
+      <a class="nav-link" href="https://medium.com/@TechRetreat">Blog</a>
+      <a class="nav-link" href="https://www.facebook.com/kwtechretreat/">Community</a>
+    </nav>
+  </section>
+  <section class='footer'>
+    <p>Questions? Say hello!</p>
+    <p>
+      <a class="button button--social fa fa-envelope" href="mailto:hello@techretreat.ca"></a>
+      <a class="button button--social fa fa-facebook" href="https://www.facebook.com/kwtechretreat"></a>
+      <a class="button button--social fa fa-twitter" href="http://twitter.com/TechRetreat"></a>
+    </p>
+  </section>
+  <script type='text/javascript' src='/dist/main.js'></script>
+  <script type='text/javascript' src='/src/konami.js'></script>
 <script>
   (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -79,4 +93,3 @@
   ga('send', 'pageview');
 </script>
 </body>
-</html>
