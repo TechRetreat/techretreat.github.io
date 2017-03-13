@@ -5148,6 +5148,21 @@ section.sponsors-partners .invitation {
   white-space: nowrap;
   line-height: 75px;
   margin: 5px; }
+section.sponsors-partners a.package {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 2px;
+    padding: 17px 30px;
+    transition: all 0.3s ease;
+    background-color: #551a8b;
+    color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400; }
+    section.sponsors-partners a.package:hover {
+      background-color: #551a8b;
+      opacity: 0.7; }
+  
 
 header, section.container-fluid {
   padding-top: 50px;
@@ -5184,7 +5199,7 @@ header {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  color: #9941ff;
+  color: #551a8b;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.75);
@@ -5236,15 +5251,15 @@ header {
     border-radius: 2px;
     padding: 17px 30px;
     transition: all 0.3s ease;
-    background-color: #a286ff;
+    background-color: #551a8b;
     color: #ffffff;
     font-family: "Open Sans", Arial, sans-serif;
     font-weight: 400; }
     header a.signup:hover {
-      background-color: #b36bfc;
+      background-color: #551a8b   ;
       opacity: 0.7; }
   header a.fa {
-    color: #a286ff;
+    color: #551a8b;
     padding-bottom: 20px;
     opacity: 0.6; }
     header a.fa:hover {
@@ -5264,7 +5279,7 @@ section.about {
     font-weight: 400; }
 
 section.faq {
-  background-color: #244C69;
+  background-color: #3D0158;
   color: white; }
   section.faq h1 {
     font-family: "Open Sans", Arial, sans-serif;
@@ -5286,14 +5301,14 @@ section.sponsors-partners h1 {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400; }
 section.sponsors-partners .sponsors, section.sponsors-partners .partners {
-  text-align: center; }
+  text-align: center;}
 
 footer {
   width: 100%;
   position: absolute;
   bottom: 0;
   height: 0;
-  background-color: #2a1447;
+  background-color: #551a8b;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
