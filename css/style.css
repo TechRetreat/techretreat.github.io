@@ -5306,8 +5306,8 @@ section.sponsors-partners .sponsors, section.sponsors-partners .partners {
 footer {
   width: 100%;
   position: absolute;
-  bottom: 0;
-  height: 0;
+  bottom: 1;
+  height: 100;
   background-color: #551a8b;
   padding-top: 30px;
   padding-bottom: 30px;
