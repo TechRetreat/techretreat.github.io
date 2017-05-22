@@ -5129,18 +5129,27 @@ section.schedule {
     border-top: 1px solid #969696 !important; }
   section.schedule h1, section.schedule h2, section.schedule h4, section.schedule p {
     color: black; }
-
-section.sponsors-partners .sponsors, section.sponsors-partners .partners {
+section.sponsors-partners .sponsors{
   line-height: 30px; }
 section.sponsors-partners .inline-img {
   display: inline-block;
   max-height: 110px;
   width: auto;
   margin: 50px; }
-section.sponsors-partners .gold {
-  margin-bottom: 50px; }
-  section.sponsors-partners .gold img {
-    max-height: 240px !important; }
+section.sponsors-partners .partner-img {
+  display: inline-block;
+  max-height: 200px;
+  width: auto;
+  margin: 50px; }
+section.sponsors-partners .gold{}
+section.sponsors-partners .gold img {
+    max-height: 100px !important; }
+section.sponsors-partners .silver{}
+section.sponsors-partners .silver img {
+    max-height: 100px !important; }
+section.sponsors-partners .bronze{}
+section.sponsors-partners .bronze img {
+    max-height: 50px !important; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
@@ -5333,10 +5342,18 @@ footer {
   section.sponsors-partners .inline-img {
     margin: 15px 0;
     max-width: 40%; }
+  section.sponsors-partners .partner-img {
+    margin: 15px 0;
+    max-width: 60%; 
+  }
   section.sponsors-partners .gold img {
-    max-width: 95%;
+    max-width: 35%;
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; } 
+  section.sponsors-partners .silver img {
+  max-width: 20%;
+  margin-left: 0;
+  margin-right: 0; }}
 
 @media (max-width: 800px) {
   h1, h2, h3 {
