@@ -19,8 +19,8 @@
     "grunt-http-server": "^1.2.0",
     "grunt-sass": "^0.18.1"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/EngHack/enghack.github.io.git"
-    }
+  }
 }
