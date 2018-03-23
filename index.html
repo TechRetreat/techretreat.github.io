@@ -13,7 +13,7 @@
         <meta property="og:description" content="EngHack is a 24-hour hackathon that brings together students from across Waterloo Engineering to learn about programming, brainstorm brilliant ideas, and create amazing projects." />
         <meta property="og:image" content="http://enghack.uwaterloo.ca/img/enghack.png" />
 
-        <title>EngHack S18</title>
+        <title>EngHack 2018</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href = "css/style.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -54,6 +54,55 @@
             </div>
 
         </header>
+
+
+            <!-- Navigation -->
+          <nav id="placeholderNav" class="navbar navbar-default navigation row text-center"></nav>
+          <nav id="myNav" class="navbar navbar-default navigation row text-center">
+
+<!--  -->
+<!--               <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu"> -->
+                <ul class="nav nav-justified">
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">ABOUT</font></h3></a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">SCHEDULE</font></h3></a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">FAQ</font></h3></a></div></li>
+                  <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">SPONSORS</font></h3></a></div></li>
+                  <li><div></div></li>
+                </ul>
+
+            </div>
+          </nav>
+
+          <script>
+        function jumpToSection(event, targetSection) {
+            console.log("activated");
+            event.preventDefault();
+            var navbarHeight = $("#myNav").height();
+            var controlString = null;
+            switch(targetSection){
+                case "s1":
+                    controlString = "#about";
+                break;
+                case "s2":
+                    controlString = "#schedule";
+                break;
+                case "s3":
+                    controlString = "#faq";
+                break;
+                case "s4":
+                    controlString = "#sponsors";
+                break;
+            default:
+                controlString = "#";
+            }
+
+            var sectionOffset = $(controlString).offset().top;
+            $("html, body").animate({
+                scrollTop : sectionOffset - navbarHeight + 1
+            }, 1000);
+        }
+       </script>
+
         <section class="about container-fluid">
             <div class ="row"  id = "about">
                 <div class = "col-lg-8 col-lg-offset-2">
@@ -155,7 +204,7 @@
             </div>
         </section>
         <section class = "faq container-fluid">
-            <div class = "row">
+            <div class = "row" id = "faq">
                 <div class = "col-lg-8 col-lg-offset-2">
                     <h2>FAQs</h2>
         
