@@ -5380,3 +5380,42 @@ footer {
     background-size: auto; } }
 
 /*# sourceMappingURL=style.css.map */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    height: 10vh;
+/*    line-height: 10vh;
+    background-color: #EBF5F4;
+    width: 100%;*/
+    z-index: 1;
+}
+
+ul {
+    background-color: #eeeeee;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 5px;
+    text-decoration: none;
+
+}
+li a:hover {
+    background-color: #b3b3b3;
+}
+
+
+
+
+
