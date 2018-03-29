@@ -3089,7 +3089,7 @@ tbody.collapse.in {
   .nav-justified > .dropdown .dropdown-menu {
     top: auto;
     left: auto; }
-  @media (min-width: 768px) {
+  @media (max-width: 500px) {
     .nav-justified > li, .nav-tabs.nav-justified > li {
       display: table-cell;
       width: 1%; }
@@ -5171,7 +5171,7 @@ section.sponsors-partners a.package {
     section.sponsors-partners a.package:hover {
       background-color: #551a8b;
       opacity: 0.7; }
-  
+
 
 header, section.container-fluid {
   padding-top: 50px;
@@ -5344,12 +5344,12 @@ footer {
     max-width: 40%; }
   section.sponsors-partners .partner-img {
     margin: 15px 0;
-    max-width: 60%; 
+    max-width: 60%;
   }
   section.sponsors-partners .gold img {
     max-width: 35%;
     margin-left: 0;
-    margin-right: 0; } 
+    margin-right: 0; }
   section.sponsors-partners .silver img {
   max-width: 20%;
   margin-left: 0;
@@ -5414,8 +5414,3 @@ li a {
 li a:hover {
     background-color: #b3b3b3;
 }
-
-
-
-
-
