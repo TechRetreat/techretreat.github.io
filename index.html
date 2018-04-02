@@ -141,14 +141,14 @@
 
         .show {display:block;}
 
-        @media (min-width: 814px)
+        @media (min-width: 23cm)
         {
             .dropbtn
             {
                 display: none;
             }
         }
-        @media (max-width: 813px)
+        @media (max-width: 22.9cm)
         {
             .navbar, .navbar-default, .navigation
             {
@@ -162,7 +162,17 @@
         }
 
         </style>
-
+        
+<!--         <script> 
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+                document.getElementByClassName("navbar").style.display = none;
+                document.getElementByClassName("navbar-default").style.display = none;
+                document.getElementByClassName("navigation").style.display = none;
+                document.getElementByClassName("package").style.width = 60%;
+                document.getElementByClassName("package").style.height = 60%;
+                document.getElementByClassName("package").style.margin = 10px;
+            }
+        </script> -->
 
         <div class="dropdown" style="display:block;position:fixed;left:0px;top:0;z-index:10000;" >
         <button onclick="myFunction()" class="dropbtn"></button>
