@@ -35,7 +35,7 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff"> -->
     </head>
-	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:20px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=gray" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/gray.svg" alt="Major League Hacking 2018 Hackathon Season" style="width:100%"></a>
+    <a id="engsoc-badge" style="display:block;max-width:200px;min-width:60px;position:absolute;right:20px;top:16px;z-index:10000" href="https://www.engsoc.uwaterloo.ca" target="_blank"><img src="/img/long_engsoc.png" style="width:100%"></a>
     <body>
         <header>
             <div class="background"></div>
@@ -54,22 +54,7 @@
                 </div>
             </div>
 
-                <!-- Navigation -->
-              <nav id="placeholderNav" class="navbar navbar-default navigation row text-center"></nav>
-              <nav id="myNav" class="navbar navbar-default navigation row text-center">
 
-    <!--  -->
-    <!--               <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu"> -->
-                    <ul class="nav nav-justified">
-                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">ABOUT</font></h3></a></div></li>
-                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">SCHEDULE</font></h3></a></div></li>
-                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">FAQ</font></h3></a></div></li>
-                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">SPONSORS</font></h3></a></div></li>
-                      <li><div></div></li>
-                    </ul>
-
-                </div>
-              </nav>
 
               <script>
             function jumpToSection(event, targetSection) {
@@ -111,10 +96,14 @@
 
         </header>
         <style>
+
         .dropbtn {
             background-image:url(img/navicon.png);
             height: 50px;
             width: 50px;
+            position: fixed;
+            left: 20px;
+            margin-top: 20px;
             background-color: rgba(0,0,0,0);
             padding: 16px;
             font-size: 16px;
@@ -141,25 +130,25 @@
             z-index: 1;
         }
 
-        .dropdown-content a {
+        .dropdown-content li a {
             color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
         }
 
-        .dropdown a:hover {background-color: rgba(0,0,0,0)}
+        .dropdown li a:hover {background-color: rgba(0,0,0,0)}
 
         .show {display:block;}
 
-        @media (min-width: 500px)
+        @media (min-width: 814px)
         {
             .dropbtn
             {
                 display: none;
             }
         }
-        @media (max-width: 500px)
+        @media (max-width: 813px)
         {
             .navbar, .navbar-default, .navigation
             {
@@ -177,12 +166,12 @@
 
         <div class="dropdown" style="display:block;position:fixed;left:0px;top:0;z-index:10000;" >
         <button onclick="myFunction()" class="dropbtn"></button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#home" id = "s1" onclick="jumpToSection(event, this.id)">About</a>
-            <a href="#about"id = "s2" onclick="jumpToSection(event, this.id)">Schedule</a>
-            <a href="#contact"id = "s3" onclick="jumpToSection(event, this.id)">FAQ</a>
-            <a href="#contact"id = "s4" onclick="jumpToSection(event, this.id)">Sponsors</a>
-          </div>
+          <ul id="myDropdown" class="dropdown-content">
+            <li><a href="#home" id = "s1" onclick="jumpToSection(event, this.id)">About</a></li>
+            <li><a href="#about"id = "s2" onclick="jumpToSection(event, this.id)">Schedule</a></li>
+            <li><a href="#contact"id = "s3" onclick="jumpToSection(event, this.id)">FAQ</a></li>
+            <li><a href="#contact"id = "s4" onclick="jumpToSection(event, this.id)">Sponsors</a></li>
+          </ul>
         </div>
 
         <script>
@@ -211,7 +200,24 @@
 
         </head>
         <body>
+                        <!-- Navigation -->
+              <nav id="myNav" class="navbar navbar-default navigation row text-center">
 
+    <!--  -->
+    <!--               <div id="can-collapse" class="collapse navbar-collapse navbar-collapsible-menu"> -->
+                    <ul class="nav nav-justified">
+                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s1" class="about nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">ABOUT</font></h3></a></div></li>
+                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s2" class="schedule nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">SCHEDULE</font></h3></a></div></li>
+                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s3" class="faq nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">FAQ</font></h3></a></div></li>
+                      <li><div><a data-toggle="collapse" data-target=".navbar-collapsible-menu" id="s4" class="sponsors nav-button" onclick="jumpToSection(event, this.id)" href="#"><h3><font color="#551a8b">SPONSORS</font></h3></a></div></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+
+                </div>
+              </nav>
 
         <section class="about container-fluid">
             <div class ="row"  id = "about">
@@ -333,8 +339,8 @@
                     <p class = "question">What do I need to know about teams?</p>
                     <p class = "answer">Teams can be formed informally - we'll have more info about team registration closer to the event.</p>
 
-                    <p class = "question"> Is there a code of conduct? </p>
-                    <p class = "answer"> Yes there is! We're using MLH's code of conduct for our event. Check it out here: <a>http://static.mlh.io/docs/mlh-code-of-conduct.pdf</a>
+<!--                     <p class = "question"> Is there a code of conduct? </p>
+                    <p class = "answer"> Yes there is! We're using MLH's code of conduct for our event. Check it out here: <a>http://static.mlh.io/docs/mlh-code-of-conduct.pdf</a> -->
                 </div>
             </div>
         </section>
@@ -361,7 +367,7 @@
                             <hr>
                             <h3><b>Silver Level </b></h3>
                             <div class = "silver">
-                                <a href="http://www.mlh.io/" target="_blank"><img class="inline-img" src="img/mlh.png" alt="MLH"/></a>
+<!--                                 <a href="http://www.mlh.io/" target="_blank"><img class="inline-img" src="img/mlh.png" alt="MLH"/></a> -->
                                 <a href="http://github.com/" target="_blank"><img class="inline-img" style="max-width:250px" src="img/github.png" alt="GitHub"/></a>
                                 <a href="http://tunnelbear.com/" target="_blank"><img class="inline-img" style="max-width:250px" src="img/tunnelbear.png" alt="Tunnelbear"/></a>
                                 <a href="http://hubdoc.com/" target="_blank"><img class="inline-img" style="max-width:250px"src="img/hubdoc.png" alt="HubDoc"/></a>
