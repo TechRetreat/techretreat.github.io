@@ -5150,6 +5150,9 @@ section.sponsors-partners .silver img {
 section.sponsors-partners .bronze{}
 section.sponsors-partners .bronze img {
     max-height: 50px !important; }
+section.sponsors-partners .supporter{}
+section.sponsors-partners .supporter img {
+    max-height: 30px !important; }
 section.sponsors-partners .invitation {
   border-width: 5px;
   border-style: dashed;
