@@ -26,6 +26,30 @@ $footerHeight: 0;
   }
 }
 
+@media (max-width: 600px) {
+  .mobile-padding-right-24 {
+    margin-right: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  ._answer {
+      @include OpenSansLight;
+      margin-bottom: 20px;
+      padding-right: 26px;
+      color: #e7e1ed;
+  }
+}
+
+@media (min-width: 800px) {
+  ._answer {
+      @include OpenSansLight;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      color: #e7e1ed;
+  }
+}
+
 @media (min-width: 800px) {
   header {
       a.sign_up {
