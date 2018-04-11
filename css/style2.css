@@ -5798,6 +5798,35 @@ button.close {
   .hidden-print {
     display: none !important; } }
 @media (min-width: 800px) {
+  ._gold {
+    max-width: 460px !important; } }
+@media (max-width: 600px) {
+  ._gold {
+    max-width: 240px !important; } }
+@media (min-width: 800px) {
+  ._silver {
+    max-width: 160px !important; } }
+@media (max-width: 600px) {
+  ._silver {
+    max-width: 80px !important;
+    margin-right: 6px !important;
+    margin-left: 6px !important; } }
+@media (min-width: 800px) {
+  ._supporter {
+    max-width: 60px !important; } }
+@media (max-width: 600px) {
+  ._supporter {
+    max-width: 30px !important;
+    margin-right: 48px !important; } }
+@media (min-width: 800px) {
+  ._ritual {
+    max-width: 90px !important;
+    margin: 25px !important; } }
+@media (max-width: 600px) {
+  ._ritual {
+    max-width: 70px !important;
+    margin-right: 20px !important; } }
+@media (min-width: 800px) {
   ._logo {
     width: 30%;
     height: auto; } }
