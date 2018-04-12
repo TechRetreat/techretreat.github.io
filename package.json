@@ -17,10 +17,13 @@
     "grunt-contrib-cssmin": "^0.12.2",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-http-server": "^1.2.0",
-    "grunt-sass": "^0.18.1"
+    "grunt-sass": "^2.1.0"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/EngHack/enghack.github.io.git"
+  },
+  "dependencies": {
+    "sass": "^1.1.1"
   }
 }
